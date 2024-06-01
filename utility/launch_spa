@@ -1,0 +1,5 @@
+#! /bin/bash
+source $HOME/.virtualenvs/ery/bin/activate
+make browserify-spa
+python3 scripts/spa_demo_files/launch_spa.py
+

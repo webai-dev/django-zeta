@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <slug>ContentTemplate-nUbUJcuU</slug>
+  <state>prealpha</state>
+  <parental_template>TestRoot-JhcdjEGC</parental_template>
+  <frontend>frontend-0</frontend>
+  <template_widgets/>
+  <blocks>
+    <item>
+      <translations>
+        <item>
+          <frontend>SMS</frontend>
+          <language>en</language>
+          <content>This is the content for the title block.</content>
+        </item>
+      </translations>
+      <name>Title</name>
+    </item>
+    <item>
+      <translations>
+        <item>
+          <frontend>SMS</frontend>
+          <language>en</language>
+          <content>This is the content for the content block.</content>
+        </item>
+      </translations>
+      <name>Content</name>
+    </item>
+    <item>
+      <translations>
+        <item>
+          <frontend>SMS</frontend>
+          <language>en</language>
+          <content>This is the content for the footer block.</content>
+        </item>
+      </translations>
+      <name>Footer</name>
+    </item>
+  </blocks>
+  <primary_language>en</primary_language>
+  <comment>rsTnAZYdcxQtuLDHVnXCBYyBUXxgGxjUNBOutdvFbfCtzhMWseYTcyPuLwfMhPnqNLsiVZpEfLxrvTEzckUNrADNrCLeREhrlzjR</comment>
+  <name>ContentTemplate</name>
+  <published>False</published>
+  <keywords/>
+</template>

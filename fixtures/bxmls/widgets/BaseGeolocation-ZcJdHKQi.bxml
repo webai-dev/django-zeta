@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>BaseGeolocation-ZcJdHKQi</slug>
+  <state>prealpha</state>
+  <frontend>Web-foKmSGxB</frontend>
+  <related_widgets/>
+  <connections>
+    <item>
+      <target>Typography-GoPCrlLg</target>
+      <name>Typography</name>
+      <comment/>
+    </item>
+    <item>
+      <target>TableBody-CuaPwPtW</target>
+      <name>TableBody</name>
+      <comment/>
+    </item>
+    <item>
+      <target>TableRow-FhrhgDLc</target>
+      <name>TableRow</name>
+      <comment/>
+    </item>
+    <item>
+      <target>TableHead-umcWgRvP</target>
+      <name>TableHead</name>
+      <comment/>
+    </item>
+    <item>
+      <target>TableCell-KWCxxBXv</target>
+      <name>TableCell</name>
+      <comment/>
+    </item>
+    <item>
+      <target>Table-PhfDJSvJ</target>
+      <name>Table</name>
+      <comment/>
+    </item>
+  </connections>
+  <events/>
+  <props>
+    <item>
+      <name>isGeolocationAvailable</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>coords</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+  </props>
+  <states/>
+  <name>BaseGeolocation</name>
+  <comment/>
+  <published>False</published>
+  <code>{(!isGeolocationAvailable) ?
+&lt;Typography variant="body1"&gt;Your browser does not support Geolocation&lt;/Typography&gt; : coords ? 
+&lt;Table &gt;
+    &lt;TableHead&gt;
+        &lt;TableRow&gt;
+            &lt;TableCell align="left"&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/TableCell&gt;
+            &lt;TableCell align="left"&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/TableCell&gt;
+        &lt;/TableRow&gt;
+    &lt;/TableHead&gt;
+    &lt;TableBody&gt;
+        &lt;TableRow&gt;
+            &lt;TableCell align="left"&gt;Latitude&lt;/TableCell&gt;
+            &lt;TableCell align="left"&gt;{coords.latitude}&lt;/TableCell&gt;
+        &lt;/TableRow&gt;
+        &lt;TableRow&gt;
+            &lt;TableCell align="left"&gt;Longitude&lt;/TableCell&gt;
+            &lt;TableCell align="left"&gt;{coords.longitude}&lt;/TableCell&gt;
+        &lt;/TableRow&gt;
+        &lt;TableRow&gt;
+            &lt;TableCell align="left"&gt;Altitude&lt;/TableCell&gt;
+            &lt;TableCell align="left"&gt;{coords.altitude ? coords.altitude : "N/A"}&lt;/TableCell&gt;
+        &lt;/TableRow&gt;
+        &lt;TableRow&gt;
+            &lt;TableCell align="left"&gt;Heading&lt;/TableCell&gt;
+            &lt;TableCell align="left"&gt;{coords.heading ? coords.heading : "N/A"}&lt;/TableCell&gt;
+        &lt;/TableRow&gt;
+        &lt;TableRow&gt;
+            &lt;TableCell align="left"&gt;Speed&lt;/TableCell&gt;
+            &lt;TableCell align="left"&gt;{coords.speed ? coords.speed : "N/A"}&lt;/TableCell&gt;
+        &lt;/TableRow&gt;
+    &lt;/TableBody&gt;
+&lt;/Table&gt; :
+&lt;Typography variant='body1'&gt;{location.protocol == 'https' ? "Getting the location data&amp;hellip;" : "GPS tracking can only be used on  secured connections"} &lt;/Typography&gt; }</code>
+  <is_multiple_choice>False</is_multiple_choice>
+  <address/>
+  <external>False</external>
+  <namespace>Widget</namespace>
+  <value_parameter>event.target.value</value_parameter>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <save_null>True</save_null>
+  <primary_language>en</primary_language>
+  <keywords/>
+</widget>

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>EryDialog-FYasWVKM</slug>
+  <state>prealpha</state>
+  <frontend>Web-foKmSGxB</frontend>
+  <related_widgets/>
+  <connections>
+    <item>
+      <target>DialogCloser-qjkPVrwP</target>
+      <name>DialogCloser</name>
+      <comment/>
+    </item>
+    <item>
+      <target>Button-yTjJiGYY</target>
+      <name>Button</name>
+      <comment/>
+    </item>
+    <item>
+      <target>Dialog-AYKChlIC</target>
+      <name>Dialog</name>
+      <comment/>
+    </item>
+  </connections>
+  <events/>
+  <props>
+    <item>
+      <name>open</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>closeWidget</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+  </props>
+  <states>
+    <item>
+      <name>close</name>
+      <comment/>
+      <default_value/>
+      <from_prop>False</from_prop>
+    </item>
+  </states>
+  <name>EryDialog</name>
+  <comment/>
+  <published>False</published>
+  <code>&lt;Dialog open={close ? false : open}&gt;
+{children||null}
+{
+    (() =&gt; {
+        if (closeWidget){
+            const CloseWidget = closeWidget;
+            return &lt;CloseWidget
+                        closeDialog={() =&gt; {setClose(true)}}
+                    /&gt;
+        }
+        else {
+            return &lt;DialogCloser closeDialog={() =&gt; {setClose(true)}}
+            /&gt;
+        }
+    })()
+}
+&lt;br/&gt;
+&lt;/Dialog&gt;</code>
+  <is_multiple_choice>False</is_multiple_choice>
+  <address/>
+  <external>False</external>
+  <namespace>Widget</namespace>
+  <value_parameter>event.target.value</value_parameter>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <save_null>True</save_null>
+  <primary_language>en</primary_language>
+  <keywords/>
+</widget>

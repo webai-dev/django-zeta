@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <parental_template>Lenns-NmIiDRpa</parental_template>
+  <blocks>
+    <item>
+      <translations>
+        <item>
+          <frontend>Web</frontend>
+          <created>2020-01-11T13:32:22.068628Z</created>
+          <modified>2020-01-11T13:32:22.068628Z</modified>
+          <content>&lt;FormHolder /&gt;</content>
+          <language>en</language>
+        </item>
+      </translations>
+      <name>Canvas</name>
+    </item>
+    <item>
+      <translations>
+        <item>
+          <frontend>Web</frontend>
+          <created>2020-01-11T13:32:40.805582Z</created>
+          <modified>2020-01-11T13:32:40.805582Z</modified>
+          <content>&lt;Box mt={2}&gt;
+            &lt;Button style={{marginalLeft: 2}} variant="contained"&gt;
+              Back
+            &lt;/Button&gt;
+            &lt;Button style={{marginalLeft: 2}} variant="contained"&gt;
+              Next
+            &lt;/Button&gt;
+          &lt;/Box&gt;</content>
+          <language>en</language>
+        </item>
+      </translations>
+      <name>ButtonList</name>
+    </item>
+  </blocks>
+  <template_widgets/>
+  <keywords/>
+  <name>LennsHCFStepper</name>
+  <comment/>
+  <state>prealpha</state>
+  <published>False</published>
+  <frontend>Web</frontend>
+  <primary_language>en</primary_language>
+</template>

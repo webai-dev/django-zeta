@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if is_marketplace %}
+    <meta name="theme-color" content="{{vendor.theme_color or "#0c4229"}}"/>
+    <link rel="manifest" href="/manifest.json">
+		<link rel="apple-touch-icon" href="https://about.behavery.com/icons/icon-192x192.png?v=a0de402a97dd37d2c742831fe97d89ca">
+    <script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+    </script>
+{% endif %}
+    <title>{{stint_definition.name}}</title>
+  </head>
+  <body>
+    <div id="container"></div>
+    <noscript>
+      Please use a web browser with Javascript support.
+    </noscript>
+    <script>
+{{code|safe}}
+    </script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>Dropdown-cfuhycxr</slug>
+  <state>prealpha</state>
+  <frontend>Web-foKmSGxB</frontend>
+  <related_widgets/>
+  <connections>
+    <item>
+      <target>InputLabel-OCnQAsBk</target>
+      <name>InputLabel</name>
+      <comment/>
+    </item>
+    <item>
+      <target>CustomMenuItem-WdYnIWkm</target>
+      <name>CustomMenuItem</name>
+      <comment/>
+    </item>
+    <item>
+      <target>FormHelperText-KzhuSMjL</target>
+      <name>FormHelperText</name>
+      <comment/>
+    </item>
+    <item>
+      <target>Select-DPFMSlRt</target>
+      <name>Select</name>
+      <comment/>
+    </item>
+    <item>
+      <target>FormControl-iMhNwgzj</target>
+      <name>FormControl</name>
+      <comment/>
+    </item>
+  </connections>
+  <events>
+    <item>
+      <name/>
+      <event_type>onClick</event_type>
+      <steps>
+        <item>
+          <event_action_type>run_code</event_action_type>
+          <code>if (event.target.value != null){
+  setStateValue(event.target.value);}</code>
+          <order>0</order>
+        </item>
+      </steps>
+    </item>
+    <item>
+      <name/>
+      <event_type>onChange</event_type>
+      <steps/>
+    </item>
+  </events>
+  <props>
+    <item>
+      <name>label</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>defaultValue</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>disabled</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>labelWidth</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>id</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>labelId</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>helperText</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>name</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+  </props>
+  <states>
+    <item>
+      <name>stateValue</name>
+      <comment/>
+      <default_value/>
+      <from_prop>False</from_prop>
+    </item>
+  </states>
+  <name>Dropdown</name>
+  <comment>Must be wrapped in a ModuleDefinitionWidget with WidgetChoices</comment>
+  <published>False</published>
+  <code>{choices ?
+&lt;FormControl&gt;
+  &lt;InputLabel id={labelId}&gt;{label}&lt;/InputLabel&gt;
+  &lt;Select 
+    displayEmpty
+    value= {
+    stateValue == null ? 
+        defaultValue != null  ?
+        defaultValue :
+        "":
+    stateValue} 
+    disabled={disabled}
+    labelWidth={labelWidth}
+    id={id}
+    labelId={labelId}
+    onChange={handleChange}
+    onClick={handleClick}
+    name={name}
+  
+  &gt;
+    &lt;CustomMenuItem value=""&gt;
+      &lt;em&gt;Click to Select&lt;/em&gt;
+    &lt;/CustomMenuItem&gt;
+    {choices.map((choice, index) =&gt; &lt;CustomMenuItem className="dropdown-choice" key={index} value={choice.value} id={index} &gt; 
+      {choice.caption}
+    &lt;/CustomMenuItem&gt;)}
+  &lt;/Select&gt;
+  &lt;FormHelperText&gt;{helperText}&lt;/FormHelperText&gt;
+&lt;/FormControl&gt;:  &lt;div&gt;Warning: Dropdown widget needs choices&lt;/div&gt;}</code>
+  <is_multiple_choice>False</is_multiple_choice>
+  <address/>
+  <external>False</external>
+  <namespace>Widget</namespace>
+  <value_parameter>event.target.value</value_parameter>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <save_null>True</save_null>
+  <primary_language>en</primary_language>
+  <keywords/>
+</widget>

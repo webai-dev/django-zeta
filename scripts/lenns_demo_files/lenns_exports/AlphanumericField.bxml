@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>AlphanumericField-bcsrHChi</slug>
+  <primary_language>en</primary_language>
+  <frontend>Web-foKmSGxB</frontend>
+  <events>
+    <item>
+      <event_type>onFocus</event_type>
+      <steps>
+        <item>
+          <code>if (event.target.value != null){
+      parent.setState({value: event.target.value});
+    }
+    else{
+      parent.setState({value: ''});
+    }</code>
+          <event_action_type>run_code</event_action_type>
+        </item>
+      </steps>
+    </item>
+    <item>
+      <event_type>onSubmit</event_type>
+      <steps>
+        <item>
+          <code>const re = /[\W]+/; 
+    const val = (event.target.value);
+    const match = re.exec(val);
+    const has_match = match == null;
+    if (has_match){
+      event.target.value = parent.state.value
+    }
+    else{
+      parent.setState({value: event.target.value})
+    }</code>
+          <event_action_type>run_code</event_action_type>
+        </item>
+      </steps>
+    </item>
+    <item>
+      <event_type>onChange</event_type>
+      <steps>
+        <item>
+          <code>const re = /[^a-zA-Z0-9]+/;
+    const val = (event.target.value);
+    const match = re.exec(val);
+    const has_match = match != null;
+    if (has_match){
+      if (parent.state != null){
+        event.target.value = parent.state.value;
+      }
+      else{
+        event.target.value = '';
+      }}
+    else {
+      parent.setState({value: event.target.value});
+    }</code>
+          <event_action_type>run_code</event_action_type>
+        </item>
+      </steps>
+    </item>
+  </events>
+  <related_widgets/>
+  <keywords/>
+  <connections>
+    <item>
+      <target>EryInput-vOcGUNdR</target>
+      <name>Input</name>
+      <comment/>
+    </item>
+  </connections>
+  <name>AlphanumericField</name>
+  <comment>Allows input of alphanumerical characters, and nothing else.</comment>
+  <state>prealpha</state>
+  <published>False</published>
+  <code>&lt;Input {...props} /&gt;</code>
+  <address/>
+  <namespace>Widget</namespace>
+  <external>False</external>
+</widget>

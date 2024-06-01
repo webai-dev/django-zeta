@@ -1,0 +1,6 @@
+-r ../base.txt
+-r ../production.txt
+
+# Web serving
+gevent==1.4.0  # norot
+gunicorn==20.0.4

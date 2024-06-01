@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <slug>RootMedium-XHEFjkCG</slug>
+  <parental_template/>
+  <blocks>
+    <item>
+      <translations>
+        <item>
+          <frontend>Web</frontend>
+          <created>2020-01-11T13:17:34.901983Z</created>
+          <modified>2020-01-11T13:17:34.901983Z</modified>
+          <content>&lt;Container maxWidth="md"&gt;
+  &lt;MediumContainer /&gt;
+&lt;/Container&gt;</content>
+          <language>en</language>
+        </item>
+      </translations>
+      <name>Root</name>
+    </item>
+  </blocks>
+  <template_widgets>
+    <item>
+      <widget>Container-RYylgXcT</widget>
+      <created>2019-12-18T03:39:33.053835Z</created>
+      <modified>2019-12-18T04:48:54.595210Z</modified>
+      <name>Container</name>
+      <comment>MUI Container</comment>
+    </item>
+  </template_widgets>
+  <keywords/>
+  <name>RootMedium</name>
+  <comment/>
+  <state>prealpha</state>
+  <published>True</published>
+  <frontend>Web</frontend>
+  <primary_language>en</primary_language>
+</template>

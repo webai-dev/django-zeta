@@ -1,0 +1,74 @@
+FROM python:3.6.9-alpine3.10
+
+ENV PYTHONUNBUFFERED 1
+
+RUN apk update && apk add --virtual build-deps \
+		g++ \
+		gcc \
+		python3-dev \
+		musl-dev \
+		libffi-dev \
+		libffi \
+		jpeg-dev \
+		zlib-dev \
+		postgresql-dev \
+		libxml2-dev \
+		libxslt-dev
+RUN pip install --no-cache-dir pip
+
+# Set up user and groups
+RUN addgroup -S ery_backend \
+    && adduser -S ery_backend ery_backend
+
+# Setup run script
+COPY ./config/docker/scripts/entrypoint.sh /
+RUN sed -i 's/\r//' /entrypoint.sh \
+    && chmod +x /entrypoint.sh \
+    && chown ery_backend /entrypoint.sh 
+
+RUN pip install --upgrade pip
+RUN pip install setuptools
+RUN pip install numpy
+
+# Install python module requirements
+COPY requirements /tmp/requirements
+RUN pip install --no-cache-dir -r /tmp/requirements/sms_runner/production.txt && rm -rf /tmp/requirements
+
+# Clean up build tools
+RUN apk del build-deps
+
+RUN apk update && apk add \
+	libxml2 \
+	libxslt \
+	libstdc++ \
+	postgresql-libs
+
+# Copy project
+COPY . /ery_backend
+
+RUN sed -i 's/local/production/' /ery_backend/sms_runner.py
+
+# Clean up
+RUN rm -rf \
+    /ery_backend/.pylintrc \
+    /ery_backend/Makefile \
+    /ery_backend/manage.py \
+    /ery_backend/requirements \
+    /ery_backend/tests \
+    /ery_backend/fixtures \
+    /ery_backend/config/docker \
+    /ery_backend/config/settings/backend \
+    /ery_backend/config/settings/web_runner \
+    /ery_backend/config/settings/sms_runner/local.py* \
+    /ery_backend/ery_backend/Makefile \
+    /ery_backend/ery_backend/*/tests \
+    /ery_backend/ery_backend/*/migrations
+
+# Change privileges
+RUN chown -R ery_backend /ery_backend
+
+# This is who and where I am.
+USER ery_backend
+WORKDIR /ery_backend
+
+ENTRYPOINT ["/entrypoint.sh"]

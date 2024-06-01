@@ -1,0 +1,19 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: Certificate
+metadata:
+  name: ingress-cert-staging
+  namespace: istio-system
+spec:
+  secretName: ingress-cert-staging
+  issuerRef:
+    name: letsencrypt-staging
+    kind: ClusterIssuer
+  commonName: stg.behavery.com
+  dnsNames:
+  - stg.behavery.com
+  acme:
+    config:
+    - http01:
+        ingressClass: istio
+      domains:
+      - stg.behavery.com

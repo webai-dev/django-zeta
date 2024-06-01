@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <slug>Root-egEABsKg</slug>
+  <state>prealpha</state>
+  <parental_template/>
+  <frontend>Web</frontend>
+  <template_widgets/>
+  <blocks>
+    <item>
+      <translations>
+        <item>
+          <language>en</language>
+          <content>&lt;Content/&gt;&lt;Widget.NextButton/&gt;</content>
+        </item>
+      </translations>
+      <name>Root</name>
+    </item>
+  </blocks>
+  <primary_language>en</primary_language>
+  <name>Root</name>
+  <comment>Default web template for stages.</comment>
+  <published>True</published>
+  <keywords/>
+</template>

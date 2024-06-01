@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>QrReader-yqrIwFhz</slug>
+  <state>prealpha</state>
+  <frontend>Web-foKmSGxB</frontend>
+  <related_widgets/>
+  <connections/>
+  <events/>
+  <props/>
+  <states/>
+  <name>QrReader</name>
+  <comment/>
+  <published>True</published>
+  <code/>
+  <is_multiple_choice>False</is_multiple_choice>
+  <address>react-qr-reader</address>
+  <external>True</external>
+  <namespace>react-qr-reader</namespace>
+  <value_parameter>data</value_parameter>
+  <parameters>
+    <item>data</item>
+  </parameters>
+  <save_null>True</save_null>
+  <primary_language>en</primary_language>
+  <keywords/>
+</widget>

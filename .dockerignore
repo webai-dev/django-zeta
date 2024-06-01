@@ -1,0 +1,16 @@
+.*
+!.pylintrc
+**/__pycache__
+
+README.md
+config/k8s
+drivers
+docs
+htmlcov
+logs
+pytest.ini
+protos
+react-spa
+setup.cfg
+staticfiles
+utility

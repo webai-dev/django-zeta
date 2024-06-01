@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module_definition>
+    <name>ActionMD</name>
+    <primary_frontend>Web</primary_frontend>
+    <primary_language>en</primary_language>
+    <action_set>
+        <item>
+            <name>IHaveAName</name>
+            <steps>
+                <item>
+                    <order>1</order>
+                    <for_each>current_hand_only</for_each>
+                    <action_type>log</action_type>
+                    <log_message>That I do</log_message>
+                </item>
+                <item>
+                    <order>2</order>
+                    <for_each>hand_in_team</for_each>
+                    <action_type>save_data</action_type>
+                    <condition>MyCond1</condition>
+                </item>
+            </steps>
+        </item>
+        <item>
+            <name>IHaveAName2</name>
+            <steps>
+                <item>
+                    <order>0</order>
+                    <for_each>hand_in_stint</for_each>
+                    <action_type>log</action_type>
+                    <log_message>This should not work</log_message>
+                    <condition>MyCond2</condition>
+                </item>
+            </steps>
+        </item>
+        <item>
+            <name>IHaveAName3</name>
+        </item>
+    </action_set>
+    <condition_set>
+        <item>
+            <name>MyCond1</name>
+            <left_type>expression</left_type>
+            <right_type>expression</right_type>
+            <left_expression>1</left_expression>
+            <right_expression>2</right_expression>
+            <relation>equal</relation>
+        </item>
+    </condition_set>
+</module_definition>

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block extrastyle %}{% endblock %}
+{% block bodyclass %}menu{% endblock %}
+
+{% block head %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+<h1>Import StintDefinition from file</h1>
+<p>
+<form id="stintDefinitionForm" action="/import/stint_definition" method="post" enctype="multipart/form-data">
+{% csrf_token %}
+<h3>Upload file in .bxml format</h3>
+{% if error_msg %}
+<p style="color: red">{{ error_msg }}</p>
+{% endif %}
+<div style="margin-top: 20px; width: 200px;">
+StintDefinition name:
+<input type="value" name="name" id="name"><p>
+BXML file:
+<input type="file" name="file_to_import" id="file_to_import" value="hej">
+<div>
+	Put some simple on it!
+	<input type="checkbox" id="simplebox">
+</div>
+<div style="text-align: right;"><input type="submit" value="Upload" name="submit" id="submit_button"></div>
+</div>
+
+<script>
+	$('#simplebox').click(function(){
+		if ($('#simplebox')[0].checked){
+			$('#stintDefinitionForm').attr('action', '/import/simple_stint_definition')
+		}
+		else {
+			$('#stintDefinitionForm').attr('action', '/import/stint_definition')
+		}
+	})
+</script>
+</form>
+
+{% endblock %}

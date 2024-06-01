@@ -1,0 +1,156 @@
+[
+{
+    "model": "languages_plus.language",
+    "pk": "aa",
+    "fields": {
+        "iso_639_2T": "aar",
+        "iso_639_2B": "aar",
+        "iso_639_3": "aar",
+        "name_en": "Afar",
+        "name_native": "Afaraf",
+        "family": "Afro-Asiatic",
+        "notes": "",
+        "countries_spoken": []
+    }
+},
+{
+    "model": "languages_plus.language",
+    "pk": "ab",
+    "fields": {
+        "iso_639_2T": "abk",
+        "iso_639_2B": "abk",
+        "iso_639_3": "abk",
+        "name_en": "Abkhaz",
+        "name_native": "\u0430\u04a7\u0441\u0443\u0430 \u0431\u044b\u0437\u0448\u04d9\u0430, \u0430\u04a7\u0441\u0448\u04d9\u0430",
+        "family": "Northwest Caucasian",
+        "notes": "",
+        "countries_spoken": []
+    }
+},
+{
+    "model": "languages_plus.language",
+    "pk": "ae",
+    "fields": {
+        "iso_639_2T": "ave",
+        "iso_639_2B": "ave",
+        "iso_639_3": "ave",
+        "name_en": "Avestan",
+        "name_native": "avesta",
+        "family": "Indo-European",
+        "notes": "ancient",
+        "countries_spoken": []
+    }
+},
+{
+    "model": "languages_plus.language",
+    "pk": "af",
+    "fields": {
+        "iso_639_2T": "afr",
+        "iso_639_2B": "afr",
+        "iso_639_3": "afr",
+        "name_en": "Afrikaans",
+        "name_native": "Afrikaans",
+        "family": "Indo-European",
+        "notes": "",
+        "countries_spoken": []
+    }
+},
+{
+    "model": "languages_plus.language",
+    "pk": "ak",
+    "fields": {
+        "iso_639_2T": "aka",
+        "iso_639_2B": "aka",
+        "iso_639_3": "aka",
+        "name_en": "Akan",
+        "name_native": "Akan",
+        "family": "Niger\u2013Congo",
+        "notes": "macrolanguage, Twi is [tw/twi], Fanti is [fat]",
+        "countries_spoken": []
+    }
+},
+{
+    "model": "languages_plus.language",
+    "pk": "am",
+    "fields": {
+        "iso_639_2T": "amh",
+        "iso_639_2B": "amh",
+        "iso_639_3": "amh",
+        "name_en": "Amharic",
+        "name_native": "\u12a0\u121b\u122d\u129b",
+        "family": "Afro-Asiatic",
+        "notes": "",
+        "countries_spoken": []
+    }
+},
+{
+    "model": "languages_plus.language",
+    "pk": "an",
+    "fields": {
+        "iso_639_2T": "arg",
+        "iso_639_2B": "arg",
+        "iso_639_3": "arg",
+        "name_en": "Aragonese",
+        "name_native": "aragon\u00e9s",
+        "family": "Indo-European",
+        "notes": "",
+        "countries_spoken": []
+    }
+},
+{
+    "model": "languages_plus.language",
+    "pk": "ar",
+    "fields": {
+        "iso_639_2T": "ara",
+        "iso_639_2B": "ara",
+        "iso_639_3": "ara",
+        "name_en": "Arabic",
+        "name_native": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+        "family": "Afro-Asiatic",
+        "notes": "macrolanguage, Standard Arabic is [arb]",
+        "countries_spoken": []
+    }
+},
+{
+    "model": "languages_plus.language",
+    "pk": "as",
+    "fields": {
+        "iso_639_2T": "asm",
+        "iso_639_2B": "asm",
+        "iso_639_3": "asm",
+        "name_en": "Assamese",
+        "name_native": "\u0985\u09b8\u09ae\u09c0\u09af\u09bc\u09be",
+        "family": "Indo-European",
+        "notes": "",
+        "countries_spoken": []
+    }
+},
+{
+    "model": "languages_plus.language",
+    "pk": "en",
+    "fields": {
+        "iso_639_2T": "eng",
+        "iso_639_2B": "eng",
+        "iso_639_3": "eng",
+        "name_en": "English",
+        "name_native": "English",
+        "family": "Indo-European",
+        "notes": "",
+        "countries_spoken": []
+    }
+},
+{
+    "model": "languages_plus.language",
+    "pk": "ru",
+    "fields": {
+        "iso_639_2T": "rus",
+        "iso_639_2B": "rus",
+        "iso_639_3": "rus",
+        "name_en": "Russian",
+        "name_native": "русский язык",
+        "family": "Indo-European",
+        "notes": "",
+        "countries_spoken": []
+    }
+}
+]

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>FormImageRadioButtons-SFmwQLDb</slug>
+  <state>prealpha</state>
+  <frontend>Web-foKmSGxB</frontend>
+  <related_widgets/>
+  <connections>
+    <item>
+      <target>FormHorizontalRadioButtons-EtwUVqwU</target>
+      <name>FormHorizontalRadioButtons</name>
+      <comment/>
+    </item>
+    <item>
+      <target>Grid-boiBQcEE</target>
+      <name>Grid</name>
+      <comment/>
+    </item>
+  </connections>
+  <events/>
+  <props>
+    <item>
+      <name>imageUrl</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>imageWidth</name>
+      <comment/>
+      <default_value>200</default_value>
+      <preview_value/>
+    </item>
+    <item>
+      <name>imageHeight</name>
+      <comment/>
+      <default_value>250</default_value>
+      <preview_value/>
+    </item>
+    <item>
+      <name>label</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>defaultValue</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>disabled</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>id</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>helperText</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+  </props>
+  <states/>
+  <name>FormImageRadioButtons</name>
+  <comment/>
+  <published>False</published>
+  <code>&lt;Grid container&gt;
+  &lt;Grid item xs={12} md={6}&gt;
+    &lt;FormHorizontalRadioButtons helperText={helperText} name={name} id={id} choices={JSON.stringify(choices)} /&gt;
+  &lt;/Grid&gt;
+  &lt;Grid item xs={12} md={6}&gt;
+    &lt;img src={imageUrl} height={imageHeight} width={imageWidth} /&gt;
+  &lt;/Grid&gt;
+&lt;/Grid&gt;</code>
+  <is_multiple_choice>False</is_multiple_choice>
+  <address/>
+  <external>False</external>
+  <namespace>Widget</namespace>
+  <value_parameter>event.target.value</value_parameter>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <save_null>True</save_null>
+  <primary_language>en</primary_language>
+  <keywords/>
+</widget>

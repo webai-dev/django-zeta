@@ -1,0 +1,64 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: ery-gateway
+  namespace: istio-system
+spec:
+  selector:
+    istio: ingressgateway # use istio default controller
+  servers:
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - "*"
+    tls:
+      httpsRedirect: true
+  - port:
+      number: 443
+      name: https
+      protocol: HTTPS
+    hosts:
+    - "*"
+    tls:
+      mode: SIMPLE
+      credentialName: ingress-cert-staging
+      privateKey: sds
+      serverCertificate: sds
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: ery-virtual-service
+  namespace: istio-system
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - ery-gateway
+  http:
+  - match:
+    - uri:
+        prefix: "/graphql"
+    route:
+    - destination:
+        host: ery-backend.staging.svc.cluster.local
+        port:
+          number: 8000
+  - match:
+    - uri:
+        prefix: "/smser"
+    route:
+    - destination:
+        host: ery-smser.staging.svc.cluster.local
+        port:
+          number: 30036
+  - match:
+    - uri:
+        prefix: "/"
+    route:
+    - destination:
+        host: behavery-frontend.staging.svc.cluster.local
+        port:
+          number: 5000

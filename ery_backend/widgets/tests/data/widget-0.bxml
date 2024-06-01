@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <frontend>Web-foKmSGxB</frontend>
+  <events>
+    <item>
+      <event_type>('onSubmit', 'On Submit')</event_type>
+      <steps>
+        <item>
+          <code>tsejLkWSPi</code>
+          <event_action_type>run_code</event_action_type>
+        </item>
+      </steps>
+    </item>
+    <item>
+      <event_type>('onChange', 'On Change')</event_type>
+      <steps>
+        <item>
+          <code>eBlmCGLJYs</code>
+          <event_action_type>run_code</event_action_type>
+        </item>
+      </steps>
+    </item>
+  </events>
+  <related_widgets>
+    <item>notarealslug-asdghjkl</item>
+  </related_widgets>
+  <slug>SerializeWidget-VkbhFAEJ</slug>
+  <name>ImportWidget</name>
+  <comment>Used for serialization testing</comment>
+  <code>mJJtrZzSvlXsWBxgtBwZiwRvqAMzoKZBPvUjBFvOyBrKXuNgINk</code>
+  <external>False</external>
+</widget>

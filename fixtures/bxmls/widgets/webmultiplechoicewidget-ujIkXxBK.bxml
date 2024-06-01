@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>webmultiplechoicewidget-ujIkXxBK</slug>
+  <state>prealpha</state>
+  <frontend>Web-foKmSGxB</frontend>
+  <related_widgets/>
+  <connections>
+    <item>
+      <target>Divider-tOHtiNmr</target>
+      <name>Divider</name>
+      <comment/>
+    </item>
+    <item>
+      <target>Button-yTjJiGYY</target>
+      <name>Button</name>
+      <comment/>
+    </item>
+  </connections>
+  <events/>
+  <props/>
+  <states/>
+  <name>DefaultWebMultipleChoiceWidget</name>
+  <comment>Displays values for Web Inputs with multiple choice options</comment>
+  <published>False</published>
+  <code>{choices ? choices.map((choice, index) =&gt; &lt;React.Fragment key={index}&gt;&lt;Button id={'button-' + index}&gt;{choice.caption || choice.value}&lt;/Button&gt;&lt;Divider /&gt;&lt;/React.Fragment&gt;) : 'WebMultipleChoiceWidget needs choices in order to render.'}</code>
+  <is_multiple_choice>False</is_multiple_choice>
+  <address/>
+  <external>False</external>
+  <namespace>Widget</namespace>
+  <value_parameter>event.target.value</value_parameter>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <save_null>True</save_null>
+  <primary_language>en</primary_language>
+  <keywords/>
+</widget>

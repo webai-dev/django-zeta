@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <slug>DNMHcfChildForward-ixVczGgg</slug>
+  <frontend>Web</frontend>
+  <parental_template>HeaderContentFooter-IwVBXtpq</parental_template>
+  <blocks>
+    <item>
+      <translations>
+        <item>
+          <frontend>Web</frontend>
+          <created>2019-07-22T20:49:42.075086Z</created>
+          <modified>2020-02-03T23:00:00.325096Z</modified>
+          <content>This is the content</content>
+          <language>en</language>
+        </item>
+      </translations>
+      <name>Content</name>
+    </item>
+    <item>
+      <translations>
+        <item>
+          <frontend>Web</frontend>
+          <created>2020-01-29T22:44:52.243044Z</created>
+          <modified>2020-02-03T23:00:00.384479Z</modified>
+          <content/>
+          <language>en</language>
+        </item>
+      </translations>
+      <name>Subheader</name>
+    </item>
+    <item>
+      <translations>
+        <item>
+          <frontend>Web</frontend>
+          <created>2020-02-03T23:28:40.302443Z</created>
+          <modified>2020-02-03T23:31:52.110258Z</modified>
+          <content>&lt;SubmitButton color='primary' /&gt;</content>
+          <language>en</language>
+        </item>
+      </translations>
+      <name>RightBottomButton</name>
+    </item>
+    <item>
+      <translations>
+        <item>
+          <frontend>SMS</frontend>
+          <created>2019-07-29T17:31:07.690617Z</created>
+          <modified>2020-02-03T23:33:09.538828Z</modified>
+          <content>&lt;Typography variant='button' align='right'&gt;
+
+  &lt;Grid item xs={5} sm={5} md={5} lg={5} xl={5}&gt;
+    &lt;span&gt;Press next to continue&lt;/span&gt;
+  &lt;/Grid&gt;
+  &lt;Grid item xs={5} sm={5} md={5} lg={5} xl={5}&gt;
+  &lt;/Grid&gt;
+&lt;/Grid&gt;</content>
+          <language>ru</language>
+        </item>
+        <item>
+          <frontend>Web</frontend>
+          <created>2019-07-22T20:49:53.075319Z</created>
+          <modified>2020-02-03T23:33:09.547004Z</modified>
+          <content>&lt;Grid container direction="row" justify="space-between" alignItems="flex-end" &gt;
+	&lt;Grid item&gt;
+	&lt;/Grid&gt;
+	&lt;Grid item&gt;
+		&lt;RightBottomButton/&gt;
+	&lt;/Grid&gt;
+&lt;/Grid&gt;</content>
+          <language>en</language>
+        </item>
+      </translations>
+      <name>Footer</name>
+    </item>
+  </blocks>
+  <child_templates/>
+  <template_widgets>
+    <item>
+      <widget>SubmitButton-sGuVqQCu</widget>
+      <created>2019-07-22T20:51:19.639974Z</created>
+      <modified>2020-02-03T23:00:00.402797Z</modified>
+      <name>SubmitButton</name>
+      <comment/>
+    </item>
+    <item>
+      <widget>Grid-boiBQcEE</widget>
+      <created>2019-07-29T17:13:54.381799Z</created>
+      <modified>2020-02-03T23:00:00.409655Z</modified>
+      <name>Grid</name>
+      <comment/>
+    </item>
+    <item>
+      <widget>Typography-GoPCrlLg</widget>
+      <created>2019-07-29T17:14:18.343427Z</created>
+      <modified>2020-02-03T23:00:00.415368Z</modified>
+      <name>Typography</name>
+      <comment/>
+    </item>
+    <item>
+      <widget>Container-RYylgXcT</widget>
+      <created>2019-07-29T17:36:20.174201Z</created>
+      <modified>2020-02-03T23:00:00.421309Z</modified>
+      <name>Container</name>
+      <comment/>
+    </item>
+    <item>
+      <widget>Paper-TThdEqct</widget>
+      <created>2019-07-29T17:36:31.856685Z</created>
+      <modified>2020-02-03T23:00:00.427185Z</modified>
+      <name>Paper</name>
+      <comment/>
+    </item>
+  </template_widgets>
+  <keywords/>
+  <name>DNMHcfChildForward</name>
+  <comment/>
+  <state>prealpha</state>
+  <published>False</published>
+  <primary_language>en</primary_language>
+</template>

@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>SummaryTable-AQQbJkad</slug>
+  <connections>
+    <item>
+      <target>Typography-GoPCrlLg</target>
+      <name>Typography</name>
+      <comment/>
+    </item>
+    <item>
+      <target>Table-PhfDJSvJ</target>
+      <name>Table</name>
+      <comment/>
+    </item>
+    <item>
+      <target>TableHead-umcWgRvP</target>
+      <name>TableHead</name>
+      <comment/>
+    </item>
+    <item>
+      <target>TableRow-FhrhgDLc</target>
+      <name>TableRow</name>
+      <comment/>
+    </item>
+    <item>
+      <target>TableBody-CuaPwPtW</target>
+      <name>TableBody</name>
+      <comment/>
+    </item>
+    <item>
+      <target>TableCell-KWCxxBXv</target>
+      <name>TableCell</name>
+      <comment/>
+    </item>
+  </connections>
+  <events/>
+  <frontend>Web-foKmSGxB</frontend>
+  <keywords/>
+  <related_widgets/>
+  <props>
+    <item>
+      <name>widgetChoices</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>variables</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+  </props>
+  <steps/>
+  <states/>
+  <primary_language>en</primary_language>
+  <name>SummaryTable</name>
+  <comment/>
+  <state>prealpha</state>
+  <published>False</published>
+  <code>&lt;Typography variant="body2"&gt;Summary&lt;/Typography&gt;
+&lt;Table&gt;
+  &lt;TableHead&gt;
+    &lt;TableRow&gt;
+      &lt;TableCell&gt;id&lt;/TableCell&gt;
+      &lt;TableCell&gt;hh_relation&lt;/TableCell&gt;
+      &lt;TableCell&gt;sex&lt;/TableCell&gt;
+      &lt;TableCell&gt;age&lt;/TableCell&gt;
+      &lt;TableCell&gt;report_type&lt;/TableCell&gt;
+    &lt;/TableRow&gt;
+  &lt;/TableHead&gt;
+  &lt;TableBody&gt;
+  { 
+      (
+          () =&gt; {
+              const full_summary_vals = [];
+              const rel_to_head_choices = {};
+              widgetChoices.forEach(element =&gt; rel_to_head_choices[element.value] = element.caption);
+              let summary_vals = {};
+              for (let i=1; i &lt;= variables.hh_size; i++){
+                  summary_vals = {};
+                  summary_vals["id"] = i;
+                  summary_vals["hh_relation"] = rel_to_head_choices[variables.rels_to_head[i]];
+                  summary_vals["sex"] = variables.sexes[i];
+                  summary_vals["age"] = variables.ages[i];
+                  summary_vals["report_type"] = i != 1 ? variables.sources[i] : "N/A";
+                  full_summary_vals.push(summary_vals);
+
+              }
+              return full_summary_vals
+          }
+      )().map(
+              (summary_vals) =&gt; 
+                &lt;TableRow key={summary_vals.id}&gt;
+                    &lt;TableCell&gt;{summary_vals.id}&lt;/TableCell&gt;
+                    &lt;TableCell&gt;{summary_vals.hh_relation}&lt;/TableCell&gt;
+                    &lt;TableCell&gt;{summary_vals.sex == 1 ? "Female" : summary_vals.sex == 2 ? "Male" : "" }&lt;/TableCell&gt;
+                    &lt;TableCell&gt;{summary_vals.age}&lt;/TableCell&gt;
+                    &lt;TableCell&gt;{summary_vals.report_type == 1 ? "Proxy" : summary_vals.report_type != null ? "Direct" : ""}&lt;/TableCell&gt;
+                  &lt;/TableRow&gt;
+          )
+  }
+
+
+  &lt;/TableBody&gt;
+&lt;/Table&gt;</code>
+  <address/>
+  <namespace>Widget</namespace>
+  <external>False</external>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <value_parameter>event.target.value</value_parameter>
+  <save_null>True</save_null>
+</widget>

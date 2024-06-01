@@ -1,0 +1,16 @@
+{% load static i18n %}<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %}ery_backend{% endblock title %}</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+    {% block head %} {% endblock head %}
+  </head>
+  <body>
+    <div class="container">
+      {% block content %}
+        <p>Use this document as a way to quick start any new project.</p>
+      {% endblock content %}
+    </div> <!-- /container -->
+  </body>
+</html>
+ 

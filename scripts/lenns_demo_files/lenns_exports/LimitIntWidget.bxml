@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <frontend>Web-foKmSGxB</frontend>
+  <primary_language>en</primary_language>
+  <slug>LimitIntWidget-WIzjHqDr</slug>
+  <events>
+    <item>
+      <event_type>onFocus</event_type>
+      <steps>
+        <item>
+          <code>parent.setState({value: event.target.value});</code>
+          <event_action_type>run_code</event_action_type>
+        </item>
+      </steps>
+    </item>
+    <item>
+      <event_type>onBlur</event_type>
+      <steps>
+        <item>
+          <code>if (event.target.value &gt; parent.props.maxValue || event.target.value &lt; parent.props.minValue &amp;&amp; ! [null, ""].includes(event.target.value)){
+      event.target.value = parent.state.value
+    }
+    else{
+      parent.setState({value: event.target.value})
+    }</code>
+          <event_action_type>run_code</event_action_type>
+        </item>
+      </steps>
+    </item>
+  </events>
+  <related_widgets/>
+  <keywords/>
+  <connections>
+    <item>
+      <target>WebIntWidget-HOGphFYC</target>
+      <name>WebIntWidget</name>
+      <comment/>
+    </item>
+  </connections>
+  <name>LimitIntWidget</name>
+  <comment/>
+  <state>prealpha</state>
+  <published>False</published>
+  <code>&lt;WebIntWidget defaultValue={defaultValue} onChange={onChange} onBlur={onBlur} onFocus={onFocus} /&gt;</code>
+  <address/>
+  <namespace>Widget</namespace>
+  <external>False</external>
+</widget>

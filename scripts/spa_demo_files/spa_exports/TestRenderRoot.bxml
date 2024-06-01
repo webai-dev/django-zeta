@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <frontend>Web</frontend>
+  <slug>TestRenderRoot-uQEHnVsU</slug>
+  <parental_template/>
+  <blocks>
+    <item>
+      <translations>
+        <item>
+          <frontend>Web</frontend>
+          <created>2019-08-27T17:05:20.055903Z</created>
+          <modified>2019-12-19T03:37:31.721155Z</modified>
+          <content>&lt;span&gt;For Test RenderRoot&lt;/span&gt;&lt;SPATemplateWidget1/&gt;&lt;SPATemplateWidget2/&gt;&lt;SPATemplateWidget3/&gt;&lt;ClickWidget/&gt;&lt;SPADependentWidget/&gt;&lt;FormHolder/&gt;</content>
+          <language>en</language>
+        </item>
+      </translations>
+      <name>Root</name>
+    </item>
+  </blocks>
+  <template_widgets>
+    <item>
+      <widget>SPAWidget1-VZDRAlgU</widget>
+      <created>2019-12-18T03:39:33.053835Z</created>
+      <modified>2019-12-18T04:48:54.595210Z</modified>
+      <name>SPATemplateWidget1</name>
+      <comment>Basic template widget</comment>
+    </item>
+    <item>
+      <widget>SPAWidget1-VZDRAlgU</widget>
+      <created>2019-12-18T03:49:14.252694Z</created>
+      <modified>2019-12-18T04:48:54.604174Z</modified>
+      <name>SPATemplateWidget2</name>
+      <comment>Same template and widget as original</comment>
+    </item>
+    <item>
+      <widget>SPAWidget1-VZDRAlgU</widget>
+      <created>2019-12-18T03:50:13.435061Z</created>
+      <modified>2019-12-18T04:48:54.612989Z</modified>
+      <name>SPATemplateWidget3</name>
+      <comment>Same Template and Widget as original</comment>
+    </item>
+    <item>
+      <widget>SPAClickAlert-diOkDjYa</widget>
+      <created>2019-12-18T03:55:02.841676Z</created>
+      <modified>2019-12-18T04:48:54.636398Z</modified>
+      <name>ClickWidget</name>
+      <comment>Renders an alert when clicked</comment>
+    </item>
+    <item>
+      <widget>SPADependentWidget-BNvOEMnr</widget>
+      <created>2019-12-19T02:54:32.828169Z</created>
+      <modified>2019-12-19T02:54:32.828169Z</modified>
+      <name>SPADependentWidget</name>
+      <comment>Test dependencies functionality</comment>
+    </item>
+  </template_widgets>
+  <keywords/>
+  <name>TestRenderRoot</name>
+  <comment/>
+  <state>prealpha</state>
+  <published>False</published>
+  <primary_language>en</primary_language>
+</template>

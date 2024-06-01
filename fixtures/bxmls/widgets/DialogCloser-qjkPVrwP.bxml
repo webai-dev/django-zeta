@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>DialogCloser-qjkPVrwP</slug>
+  <state>prealpha</state>
+  <frontend>Web-foKmSGxB</frontend>
+  <related_widgets/>
+  <connections>
+    <item>
+      <target>Button-yTjJiGYY</target>
+      <name>Button</name>
+      <comment/>
+    </item>
+  </connections>
+  <events>
+    <item>
+      <name/>
+      <event_type>onClick</event_type>
+      <steps>
+        <item>
+          <event_action_type>run_code</event_action_type>
+          <code>closeDialog(true)</code>
+          <order>0</order>
+        </item>
+      </steps>
+    </item>
+  </events>
+  <props>
+    <item>
+      <name>closeDialog</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>fullWidth</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+  </props>
+  <states/>
+  <name>DialogCloser</name>
+  <comment/>
+  <published>False</published>
+  <code>&lt;Button className="close-dialog" color='primary' variant='contained' onClick={handleClick} fullWidth={fullWidth} &gt;{children != null ? children : "Continue"}&lt;/Button&gt;</code>
+  <is_multiple_choice>False</is_multiple_choice>
+  <address/>
+  <external>False</external>
+  <namespace>Widget</namespace>
+  <value_parameter>event.target.value</value_parameter>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <save_null>True</save_null>
+  <primary_language>en</primary_language>
+  <keywords/>
+</widget>

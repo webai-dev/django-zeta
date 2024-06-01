@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <frontend>Web-foKmSGxB</frontend>
+  <slug>SPADependentWidget-BNvOEMnr</slug>
+  <events/>
+  <related_widgets/>
+  <keywords/>
+  <connections>
+    <item>
+      <target>SPAClickAlert-diOkDjYa</target>
+      <name>SPAClickAlert</name>
+      <comment/>
+    </item>
+  </connections>
+  <name>SPADependentWidget</name>
+  <comment>A widget with dependencies</comment>
+  <state>prealpha</state>
+  <published>False</published>
+  <code>&lt;SPAClickAlert/&gt;</code>
+  <address/>
+  <namespace>Widget</namespace>
+  <external>False</external>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <value_parameter>event.target.value</value_parameter>
+  <save_null>True</save_null>
+  <primary_language>en</primary_language>
+</widget>

@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>RadioButtons-NWguxVJa</slug>
+  <state>prealpha</state>
+  <frontend>Web-foKmSGxB</frontend>
+  <related_widgets/>
+  <connections>
+    <item>
+      <target>Radio-CqNIyweI</target>
+      <name>Radio</name>
+      <comment/>
+    </item>
+    <item>
+      <target>FormControlLabel-yquWKGZO</target>
+      <name>FormControlLabel</name>
+      <comment/>
+    </item>
+    <item>
+      <target>RadioGroup-LbVMARYb</target>
+      <name>RadioGroup</name>
+      <comment/>
+    </item>
+    <item>
+      <target>FormControl-iMhNwgzj</target>
+      <name>FormControl</name>
+      <comment/>
+    </item>
+  </connections>
+  <events>
+    <item>
+      <name/>
+      <event_type>onChange</event_type>
+      <steps/>
+    </item>
+  </events>
+  <props>
+    <item>
+      <name>label</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>row</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>defaultValue</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>disabled</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>id</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>name</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>gqlId</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+  </props>
+  <states>
+    <item>
+      <name>value</name>
+      <comment/>
+      <default_value/>
+      <from_prop>False</from_prop>
+    </item>
+  </states>
+  <name>RadioButtons</name>
+  <comment>Must be wrapped in a ModuleDefinitionWidget with WidgetChoices</comment>
+  <published>False</published>
+  <code>{choices ? &lt;FormControl component="fieldset"&gt;
+    &lt;RadioGroup
+   
+        row={row}
+       onChange={handleChange}       
+       id={id}
+&gt;
+        {choices.map((choice, index) =&gt; 
+            &lt;FormControlLabel
+                key={index}
+                control={
+                    &lt;Radio
+     name={name}  id={gqlId + '-radio' + String(index)}
+                       name={name}
+                       value={choice.value}
+                        checked={
+                            (value == null) ? 
+                                (defaultValue != null) ?
+                                    defaultValue == choice.value :
+                                false :
+                              value == choice.value }
+                              onClick = {(e) =&gt; {setValue(e.target.value)}}
+                        disabled={disabled} /&gt; }
+                label=&lt;span className="widget-choice"&gt;{choice.caption}&lt;/span&gt;
+            /&gt;)}
+    &lt;/RadioGroup&gt;
+  &lt;/FormControl&gt; : &lt;div&gt;Warning: RadioButtons widget needs choices&lt;/div&gt;}</code>
+  <is_multiple_choice>False</is_multiple_choice>
+  <address/>
+  <external>False</external>
+  <namespace>Widget</namespace>
+  <value_parameter>event.target.value</value_parameter>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <save_null>True</save_null>
+  <primary_language>en</primary_language>
+  <keywords/>
+</widget>

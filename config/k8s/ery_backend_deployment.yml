@@ -1,0 +1,115 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: ery-backend
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: ery-backend
+    spec:
+      containers:
+        - name: ery-backend
+          image: gcr.io/eryservices-176219/ery_backend:latest
+          args:
+            - /usr/local/bin/daphne
+            - -p
+            - "8000"
+            - --access-log
+            - "-"
+            - config.asgi:application
+          env:
+            - name: DEPLOYMENT
+              value: staging
+            - name: PRIMARY_SITE
+              value: stg.behavery.com
+            - name: REDIS_URL
+              value: 'redis://10.0.0.11:6379'
+            - name: DJANGO_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: django-secret-key
+                  key: secret_key
+            - name: GOOGLE_APPLICATION_CREDENTIALS
+              value: /secrets/google/credentials.json
+            - name: DATABASE_HOST
+              value: 10.63.0.3
+            - name: DATABASE_NAME
+              value: ery
+            - name: DATABASE_USER
+              valueFrom:
+                secretKeyRef:
+                  name: ery-cloudsql-secret
+                  key: username
+            - name: DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: ery-cloudsql-secret
+                  key: password
+            - name: FACEBOOK_ID
+              valueFrom:
+                secretKeyRef:
+                  name: oauth-facebook
+                  key: id
+            - name: FACEBOOK_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: oauth-facebook
+                  key: secret
+            - name: LINKEDIN_ID
+              valueFrom:
+                secretKeyRef:
+                  name: oauth-linkedin
+                  key: id
+            - name: LINKEDIN_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: oauth-linkedin
+                  key: secret
+            - name: AUTH0_GRAPHQL_URL
+              value: "https://stg.behavery.com/graphql/"
+          ports:
+            - containerPort: 8000
+          volumeMounts:
+            - name: ery-backend-credentials
+              mountPath: /secrets/google
+              readOnly: true
+        - image: gcr.io/cloudsql-docker/gce-proxy:1.12
+          name: cloudsql-proxy
+          command: ["/cloud_sql_proxy", "--dir=/cloudsql",
+                    "-instances=eryservices-176219:us-east4:ery-staging=tcp:5432",
+                    "-credential_file=/secrets/cloudsql/credentials.json"]
+          volumeMounts:
+            - name: ery-sql-credentials
+              mountPath: /secrets/cloudsql
+              readOnly: true
+            - name: ssl-certs
+              mountPath: /etc/ssl/certs
+            - name: cloudsql
+              mountPath: /cloudsql
+      restartPolicy: Always
+      volumes:
+        - name: ery-backend-credentials
+          secret:
+            secretName: ery-backend-credentials
+        - name: ery-sql-credentials
+          secret:
+            secretName: ery-sql-credentials
+        - name: ssl-certs
+          hostPath:
+            path: /etc/ssl/certs
+        - name: cloudsql
+          emptyDir:
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ery-backend
+spec:
+  ports:
+  - port: 8000
+    targetPort: 8000
+  selector:
+    app: ery-backend
+  type: NodePort

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<stint_definition>
+  <stint_definition_module_definitions>
+    <item>
+      <module_definition>moduledefinition1-PBdzLcxg</module_definition>
+      <order>0</order>c
+    </item>
+    <item>
+      <module_definition>moduledefinition0-tTPTcTkz</module_definition>
+      <order>1</order>
+    </item>
+  </stint_definition_module_definitions>
+  <name>StintDefinitionZero</name>
+  <comment>kjIARKciXHtRsEvtBmKAYWCMDOicTZCMfjSFOFtJtZIYKWHagNbYCWicDZuxwUrvMxgsPcfLqYLQlwxirVqzFEnjGFHUsrxqarOA</comment>
+</stint_definition>

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>WebTextFieldWidget-droWZrHX</slug>
+  <state>prealpha</state>
+  <frontend>Web-foKmSGxB</frontend>
+  <related_widgets/>
+  <connections>
+    <item>
+      <target>Box-ewCfjnQt</target>
+      <name>Box</name>
+      <comment/>
+    </item>
+    <item>
+      <target>TextField-mKSlkfLR</target>
+      <name>TextField</name>
+      <comment/>
+    </item>
+  </connections>
+  <events>
+    <item>
+      <name/>
+      <event_type>onBlur</event_type>
+      <steps/>
+    </item>
+    <item>
+      <name/>
+      <event_type>onChange</event_type>
+      <steps/>
+    </item>
+  </events>
+  <props>
+    <item>
+      <name>label</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>defaultValue</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+  </props>
+  <states/>
+  <name>WebTextFieldWidget</name>
+  <comment/>
+  <published>False</published>
+  <code>&lt;Box py={2}&gt;
+&lt;TextField variant='outlined' fullWidth multiline rows={3} rowsMax={6} label={label} defaultValue={defaultValue} onChange={handleChange} onBlur={handleBlur}/&gt;
+&lt;/Box&gt;</code>
+  <is_multiple_choice>False</is_multiple_choice>
+  <address/>
+  <external>False</external>
+  <namespace>Widget</namespace>
+  <value_parameter>event.target.value</value_parameter>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <save_null>True</save_null>
+  <primary_language>en</primary_language>
+  <keywords/>
+</widget>

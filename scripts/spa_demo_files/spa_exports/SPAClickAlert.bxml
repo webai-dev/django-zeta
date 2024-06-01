@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <frontend>Web-foKmSGxB</frontend>
+  <slug>SPAClickAlert-diOkDjYa</slug>
+  <events>
+    <item>
+      <event_type>onClick</event_type>
+      <steps>
+        <item>
+          <code>window.alert("That's all folks");</code>
+          <event_action_type>run_code</event_action_type>
+          <order>0</order>
+        </item>
+        <item>
+          <code>console.log("This is event2");</code>
+          <event_action_type>run_code</event_action_type>
+          <order>1</order>
+        </item>
+        <item>
+          <code>console.log("This is event3");</code>
+          <event_action_type>run_code</event_action_type>
+          <order>2</order>
+        </item>
+      </steps>
+    </item>
+  </events>
+  <related_widgets/>
+  <keywords/>
+  <connections>
+	  <item>
+		  <target>Button-yTjJiGYY</target>
+		  <name>Button</name>
+		  <comment/>
+	  </item>
+  </connections>
+  <name>SPAClickAlert</name>
+  <comment>Shows an alert when clicked</comment>
+  <state>prealpha</state>
+  <published>False</published>
+  <code>&lt;Button onClick={handleClick}&gt;Click Me for Alert!&lt;/Button&gt;</code>
+  <address/>
+  <namespace>Widget</namespace>
+  <external>False</external>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <value_parameter>event.target.value</value_parameter>
+  <save_null>True</save_null>
+  <primary_language>en</primary_language>
+</widget>

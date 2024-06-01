@@ -1,0 +1,33 @@
+version: '2'
+
+volumes:
+  postgres_data_local: {}
+  postgres_backup_local: {}
+
+services:
+  postgres:
+    build: ./compose/postgres
+    volumes:
+      - postgres_data_local:/var/lib/postgresql/data
+      - postgres_backup_local:/backups
+    environment:
+      - POSTGRES_USER=ery_backend
+
+  ery_backend:
+    build:
+      context: .
+      dockerfile: ./compose/ery_backend/Dockerfile-local
+    command: /start-local.sh
+    depends_on:
+      - postgres
+    environment:
+      - POSTGRES_USER=ery_backend
+      - USE_DOCKER=yes
+    volumes:
+      - .:/ery_backend
+    ports:
+      - "8000:8000"
+
+
+
+

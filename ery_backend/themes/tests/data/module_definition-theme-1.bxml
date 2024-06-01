@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<theme>
+  <palettes>
+    <item>
+      <name>primary</name>
+      <main>#034fde</main>
+      <light>#342dfe</light>
+      <dark>#342dff</dark>
+      <contrast_text>#fe2134</contrast_text>
+    </item>
+  </palettes>
+  <slug/>
+  <name>module_definition-theme-1</name>
+  <comment>yoTCEwqScvkCnIUFeXfcLMBzDhpfVcevpcsnIPsQxsPZiHjsAHeRuDysgZMKwIXuQcEWWxVjGktKwfxJDLFmZzcsCMtiXFiUIPrq</comment>
+  <published>True</published>
+</theme>

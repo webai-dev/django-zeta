@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <slug>template3-lMuolVeZ</slug>
+  <state>prealpha</state>
+  <parental_template/>
+  <frontend>SMS</frontend>
+  <template_widgets/>
+  <blocks>
+    <item>
+      <translations>
+        <item>
+          <frontend>SMS</frontend>
+          <language>en</language>
+          <content>&lt;Intro/&gt;
+&lt;Options/&gt;
+&lt;Closer/&gt;</content>
+        </item>
+      </translations>
+      <name>Root</name>
+    </item>
+  </blocks>
+  <primary_language>en</primary_language>
+  <comment>cWYeWDIJnxgUuVqAtfTHdwgJLxkEGLGhhhmycACyDeCxbgWpdEhGyuMNNqnXxmKcvPHaayGoAbtFlxSmrAkTmsmWGsCJCMJTSHOw</comment>
+  <name>template-3</name>
+  <published>False</published>
+  <keywords/>
+</template>

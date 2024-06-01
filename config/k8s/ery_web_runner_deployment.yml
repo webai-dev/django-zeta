@@ -1,0 +1,104 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: ery-web-runner
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: ery-web-runner
+    spec:
+      containers:
+      - name: ery-web-runner
+        image: gcr.io/eryservices-176219/ery_web_runner:latest
+        args:
+            - /usr/local/bin/daphne
+            - -p
+            - "8000"
+            - --access-log
+            - "-"
+            - config.asgi:application
+        env:
+        - name: DEPLOYMENT
+          value: staging
+        - name: PRIMARY_SITE
+          value: stg.stintery.com
+        - name: REDIS_URL
+          value: 'redis://10.0.0.11:6379'
+        - name: DJANGO_SECRET_KEY
+          valueFrom:
+            secretKeyRef:
+              name: django-secret-key
+              key: secret_key
+        - name: DATABASE_HOST
+          value: 10.63.0.3
+        - name: DATABASE_USER
+          valueFrom:
+            secretKeyRef:
+              name: ery-cloudsql-secret
+              key: username
+        - name: DATABASE_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: ery-cloudsql-secret
+              key: password
+        - name: DJANGO_SETTINGS_MODULE
+          value: "config.settings.web_runner.production"
+        - name: GOOGLE_APPLICATION_CREDENTIALS
+          value: /var/secrets/google/credentials.json
+        - name: AUTH0_GRAPHQL_URL
+          value: "https://stg.stintery.com/graphql/"
+        - name: AUTH0_CLIENT_ID
+          valueFrom:
+            secretKeyRef:
+              name: auth0
+              key: id
+        - name: AUTH0_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: auth0
+              key: secret
+        ports:
+        - containerPort: 8000
+        volumeMounts:
+        - name: ery-web-runner-credentials
+          mountPath: /var/secrets/google
+      - name: cloudsql-proxy
+        image: gcr.io/cloudsql-docker/gce-proxy:1.12
+        command: ["/cloud_sql_proxy", "--dir=/cloudsql",
+                  "-instances=eryservices-176219:us-east4:ery-staging=tcp:5432",
+                  "-credential_file=/secrets/cloudsql/credentials.json"]
+        volumeMounts:
+          - name: ery-sql-credentials
+            mountPath: /secrets/cloudsql
+            readOnly: true
+          - name: ssl-certs
+            mountPath: /etc/ssl/certs
+          - name: cloudsql
+            mountPath: /cloudsql
+      restartPolicy: Always
+      volumes:
+        - name: ery-web-runner-credentials
+          secret:
+            secretName: ery-web-runner-credentials
+        - name: ery-sql-credentials
+          secret:
+            secretName: ery-sql-credentials
+        - name: ssl-certs
+          hostPath:
+            path: /etc/ssl/certs
+        - name: cloudsql
+          emptyDir:
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ery-web-runner
+spec:
+  ports:
+  - port: 8000
+    targetPort: 8000
+  selector:
+    app: ery-web-runner
+  type: NodePort

@@ -1,0 +1,623 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <slug>HeaderContentFooter-IwVBXtpq</slug>
+  <frontend>Web</frontend>
+  <parental_template/>
+  <blocks>
+    <item>
+      <translations>
+        <item>
+          <created>2019-07-29T13:38:08.285980Z</created>
+          <modified>2020-01-29T18:18:05.599129Z</modified>
+          <content>&lt;style dangerouslySetInnerHTML={{__html: `
+      h1 { font-size: 2em; }
+      p { color: red; font-size: 1.5em; }
+      #body { width: 90%; height: 100%; margin: auto; background: white; padding-left: 125px; padding-top: 10px; padding-right: 125px; box-sizing: border-box;}
+      #canvas { background: silver; width: 100%; height: 100%; box-sizing: border-box;}
+    `}} /&gt;
+&lt;div id="canvas"&gt;
+&lt;div id="body"&gt;
+&lt;Header/&gt;
+&lt;Content/&gt;
+&lt;Footer/&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+          <language>ru</language>
+        </item>
+        <item>
+          <created>2019-11-20T03:38:00.740327Z</created>
+          <modified>2020-01-29T18:18:05.644080Z</modified>
+          <content>&lt;CssBaseline /&gt; 
+&lt;AppBar position="absolute" color="default"&gt;
+	&lt;Toolbar&gt;
+		&lt;Typography variant="h6" color="inherit" noWrap&gt;
+			The PennSoNG LENNS project
+		&lt;/Typography&gt;
+	&lt;/Toolbar&gt;
+&lt;/AppBar&gt;
+&lt;Container maxWidth="md"&gt;
+	&lt;Box mt={10} maxHeight={758} &gt;
+		&lt;Paper &gt;
+			&lt;Box p={5} minHeight={600} &gt;
+				&lt;Header/&gt;
+				&lt;Box pt={3} &gt;
+					&lt;Content/&gt;
+				&lt;/Box &gt;
+			&lt;/Box &gt;
+		&lt;/Paper&gt;
+	&lt;/Box&gt;
+	&lt;Box p={5} &gt;
+		&lt;Footer /&gt;
+	&lt;/Box &gt;
+	&lt;Grid container justify="center"&gt;
+		&lt;img alt="PennSoNG" src="https://cpb-us-w2.wpmucdn.com/web.sas.upenn.edu/dist/3/28/files/2017/12/PENNSoNG-logo-horiz-13icmng-632x134.png" height={50} width="auto" /&gt;
+	&lt;/Grid &gt;
+&lt;/Container&gt;</content>
+          <language>ab</language>
+        </item>
+        <item>
+          <created>2019-07-16T13:15:13.449414Z</created>
+          <modified>2020-01-29T22:31:10.428734Z</modified>
+          <content>&lt;CssBaseline /&gt; 
+&lt;AppBar position="absolute" color="default"&gt;
+	&lt;Toolbar&gt;
+		&lt;Typography variant="h6" color="inherit" noWrap&gt;
+			The PennSoNG LENNS project
+		&lt;/Typography&gt;
+	&lt;/Toolbar&gt;
+&lt;/AppBar&gt;
+&lt;Container maxWidth="lg"&gt;
+	&lt;Box mt={10} &gt;
+		&lt;Paper &gt;
+			&lt;Box p={5} minHeight={600} &gt;
+				&lt;Typography variant='h2' align='center'&gt;&lt;Header/&gt;&lt;/Typography&gt;&lt;br/&gt;&lt;Typography variant='h5' align='center'&gt;&lt;Subheader/&gt;&lt;/Typography&gt;
+				&lt;Box pt={3} &gt;
+					&lt;Content/&gt;
+				&lt;/Box &gt;
+			&lt;/Box &gt;
+		&lt;/Paper&gt;
+	&lt;/Box&gt;
+	&lt;Box p={5} &gt;
+		&lt;Footer /&gt;
+	&lt;/Box &gt;
+	&lt;Grid container justify="center"&gt;
+		&lt;img alt="PennSoNG" src="https://cpb-us-w2.wpmucdn.com/web.sas.upenn.edu/dist/3/28/files/2017/12/PENNSoNG-logo-horiz-13icmng-632x134.png" height={50} width="auto" /&gt;
+	&lt;/Grid &gt;
+&lt;/Container&gt;</content>
+          <language>en</language>
+        </item>
+      </translations>
+      <name>Root</name>
+    </item>
+  </blocks>
+  <child_templates>
+    <item>
+      <frontend>Web</frontend>
+      <parental_template>HeaderContentFooter-IwVBXtpq</parental_template>
+      <blocks>
+        <item>
+          <translations>
+            <item>
+              <created>2019-07-29T17:12:30.762133Z</created>
+              <modified>2020-01-29T17:29:23.882958Z</modified>
+              <content>&lt;Container&gt;
+    &lt;Typography variant='button' align='right'&gt;
+
+&lt;br/&gt;
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;BackButton/&gt;&lt;/td&gt;&lt;td&gt;&lt;NextButton/&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+              <language>ru</language>
+            </item>
+            <item>
+              <created>2019-07-19T14:31:46.126108Z</created>
+              <modified>2020-01-29T17:29:23.889116Z</modified>
+              <content>
+&lt;Grid container direction="row" justify="space-between" alignItems="flex-end" &gt;
+	&lt;Grid item&gt;
+		&lt;BackButton/&gt;
+	&lt;/Grid&gt;
+	&lt;Grid item&gt;
+		&lt;NextButton/&gt;
+	&lt;/Grid&gt;
+&lt;/Grid&gt;
+			  </content>
+              <language>en</language>
+            </item>
+          </translations>
+          <name>Footer</name>
+        </item>
+        <item>
+          <translations>
+            <item>
+              <created>2019-07-19T14:34:23.977537Z</created>
+              <modified>2020-01-29T17:29:23.901255Z</modified>
+              <content>This is the content.</content>
+              <language>en</language>
+            </item>
+          </translations>
+          <name>Content</name>
+        </item>
+        <item>
+          <translations>
+            <item>
+              <created>2020-01-29T22:44:42.475665Z</created>
+              <modified>2020-01-29T22:44:42.475665Z</modified>
+              <content/>
+              <language>en</language>
+            </item>
+          </translations>
+          <name>Subheader</name>
+        </item>
+      </blocks>
+      <child_templates/>
+      <template_widgets>
+        <item>
+          <widget>SubmitButton-sGuVqQCu</widget>
+          <created>2019-07-19T14:32:03.798629Z</created>
+          <modified>2020-01-29T17:29:23.937020Z</modified>
+          <name>NextButton</name>
+          <comment/>
+        </item>
+        <item>
+          <widget>BackButton-adWnIsOD</widget>
+          <created>2019-07-19T15:20:39.221793Z</created>
+          <modified>2020-01-29T17:29:23.944751Z</modified>
+          <name>BackButton</name>
+          <comment/>
+        </item>
+        <item>
+          <widget>Grid-boiBQcEE</widget>
+          <created>2019-07-29T17:13:36.578390Z</created>
+          <modified>2020-01-29T17:29:23.951564Z</modified>
+          <name>Grid</name>
+          <comment/>
+        </item>
+        <item>
+          <widget>Typography-GoPCrlLg</widget>
+          <created>2019-07-29T17:14:05.902965Z</created>
+          <modified>2020-01-29T17:29:23.957961Z</modified>
+          <name>Typography</name>
+          <comment/>
+        </item>
+      </template_widgets>
+      <keywords/>
+      <name>DNMHcfChildProgression</name>
+      <comment/>
+      <state>prealpha</state>
+      <published>False</published>
+      <primary_language>en</primary_language>
+    </item>
+    <item>
+      <frontend>Web</frontend>
+      <parental_template>HeaderContentFooter-IwVBXtpq</parental_template>
+      <blocks>
+        <item>
+          <translations>
+            <item>
+              <created>2019-07-22T20:49:42.075086Z</created>
+              <modified>2020-01-29T17:29:23.790423Z</modified>
+              <content>This is the content</content>
+              <language>en</language>
+            </item>
+          </translations>
+          <name>Content</name>
+        </item>
+        <item>
+          <translations>
+            <item>
+              <created>2019-07-29T17:31:07.690617Z</created>
+              <modified>2020-01-29T17:29:23.802517Z</modified>
+              <content>&lt;Typography variant='button' align='right'&gt;
+
+  &lt;Grid item xs={5} sm={5} md={5} lg={5} xl={5}&gt;
+    &lt;span&gt;Press next to continue&lt;/span&gt;
+  &lt;/Grid&gt;
+  &lt;Grid item xs={5} sm={5} md={5} lg={5} xl={5}&gt;
+  &lt;/Grid&gt;
+&lt;/Grid&gt;</content>
+              <language>ru</language>
+            </item>
+            <item>
+              <created>2019-07-22T20:49:53.075319Z</created>
+              <modified>2020-01-29T17:29:23.808839Z</modified>
+              <content>
+&lt;Grid container direction="row" justify="space-between" alignItems="flex-end" &gt;
+	&lt;Grid item&gt;
+	&lt;/Grid&gt;
+	&lt;Grid item&gt;
+		&lt;NextButton/&gt;
+	&lt;/Grid&gt;
+&lt;/Grid&gt;
+			  </content>
+              <language>en</language>
+            </item>
+          </translations>
+          <name>Footer</name>
+        </item>
+        <item>
+          <translations>
+            <item>
+              <created>2020-01-29T22:44:52.243044Z</created>
+              <modified>2020-01-29T22:44:52.243044Z</modified>
+              <content/>
+              <language>en</language>
+            </item>
+          </translations>
+          <name>Subheader</name>
+        </item>
+      </blocks>
+      <child_templates/>
+      <template_widgets>
+        <item>
+          <widget>SubmitButton-sGuVqQCu</widget>
+          <created>2019-07-22T20:51:19.639974Z</created>
+          <modified>2020-01-29T17:29:23.824318Z</modified>
+          <name>NextButton</name>
+          <comment/>
+        </item>
+        <item>
+          <widget>Grid-boiBQcEE</widget>
+          <created>2019-07-29T17:13:54.381799Z</created>
+          <modified>2020-01-29T17:29:23.830630Z</modified>
+          <name>Grid</name>
+          <comment/>
+        </item>
+        <item>
+          <widget>Typography-GoPCrlLg</widget>
+          <created>2019-07-29T17:14:18.343427Z</created>
+          <modified>2020-01-29T17:29:23.836674Z</modified>
+          <name>Typography</name>
+          <comment/>
+        </item>
+        <item>
+          <widget>Container-RYylgXcT</widget>
+          <created>2019-07-29T17:36:20.174201Z</created>
+          <modified>2020-01-29T17:29:23.842877Z</modified>
+          <name>Container</name>
+          <comment/>
+        </item>
+        <item>
+          <widget>Paper-TThdEqct</widget>
+          <created>2019-07-29T17:36:31.856685Z</created>
+          <modified>2020-01-29T17:29:23.848968Z</modified>
+          <name>Paper</name>
+          <comment/>
+        </item>
+      </template_widgets>
+      <keywords/>
+      <name>DNMHcfChildForward</name>
+      <comment/>
+      <state>prealpha</state>
+      <published>False</published>
+      <primary_language>en</primary_language>
+    </item>
+    <item>
+      <frontend>Web</frontend>
+      <parental_template>HeaderContentFooter-IwVBXtpq</parental_template>
+      <blocks>
+        <item>
+          <translations>
+            <item>
+              <created>2019-07-16T13:19:09.836660Z</created>
+              <modified>2020-01-29T17:29:23.519869Z</modified>
+              <content>This is the footer.</content>
+              <language>en</language>
+            </item>
+          </translations>
+          <name>Footer</name>
+        </item>
+        <item>
+          <translations>
+            <item>
+              <created>2019-07-16T13:18:55.142768Z</created>
+              <modified>2020-01-29T17:29:23.535957Z</modified>
+              <content>This is the content.</content>
+              <language>en</language>
+            </item>
+          </translations>
+          <name>Content</name>
+        </item>
+        <item>
+          <translations>
+            <item>
+              <created>2020-01-29T22:45:00.247791Z</created>
+              <modified>2020-01-29T22:45:00.247791Z</modified>
+              <content/>
+              <language>en</language>
+            </item>
+          </translations>
+          <name>Subheader</name>
+        </item>
+      </blocks>
+      <child_templates/>
+      <template_widgets/>
+      <keywords/>
+      <name>LennsHcfChild</name>
+      <comment/>
+      <state>prealpha</state>
+      <published>False</published>
+      <primary_language>en</primary_language>
+    </item>
+    <item>
+      <frontend>Web</frontend>
+      <parental_template>HeaderContentFooter-IwVBXtpq</parental_template>
+      <blocks>
+        <item>
+          <translations>
+            <item>
+              <created>2019-07-19T14:34:23.977537Z</created>
+              <modified>2020-01-29T17:29:23.393965Z</modified>
+              <content>This is the content.</content>
+              <language>en</language>
+            </item>
+          </translations>
+          <name>Content</name>
+        </item>
+        <item>
+          <translations>
+            <item>
+              <created>2019-07-29T17:12:30.762133Z</created>
+              <modified>2020-01-29T17:29:23.409863Z</modified>
+              <content>&lt;Container&gt;
+    &lt;Typography variant='button' align='right'&gt;
+
+&lt;br/&gt;
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;BackButton/&gt;&lt;/td&gt;&lt;td&gt;&lt;NextButton/&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+              <language>ru</language>
+            </item>
+            <item>
+              <created>2019-07-19T14:31:46.126108Z</created>
+              <modified>2020-01-29T17:29:23.417151Z</modified>
+              <content>
+&lt;Grid container direction="row" justify="space-between" alignItems="flex-end" &gt;
+	&lt;Grid item&gt;
+		&lt;BackButton/&gt;
+	&lt;/Grid&gt;
+	&lt;Grid item&gt;
+		&lt;NextButton/&gt;
+	&lt;/Grid&gt;
+&lt;/Grid&gt;
+			  </content>
+              <language>en</language>
+            </item>
+          </translations>
+          <name>Footer</name>
+        </item>
+        <item>
+          <translations>
+            <item>
+              <created>2020-01-29T22:45:07.452093Z</created>
+              <modified>2020-01-29T22:45:07.452093Z</modified>
+              <content/>
+              <language>en</language>
+            </item>
+          </translations>
+          <name>Subheader</name>
+        </item>
+      </blocks>
+      <child_templates/>
+      <template_widgets>
+        <item>
+          <widget>SubmitButton-sGuVqQCu</widget>
+          <created>2019-07-19T14:32:03.798629Z</created>
+          <modified>2020-01-29T17:29:23.435644Z</modified>
+          <name>NextButton</name>
+          <comment/>
+        </item>
+        <item>
+          <widget>BackButton-adWnIsOD</widget>
+          <created>2019-07-19T15:20:39.221793Z</created>
+          <modified>2020-01-29T17:29:23.454329Z</modified>
+          <name>BackButton</name>
+          <comment/>
+        </item>
+        <item>
+          <widget>Grid-boiBQcEE</widget>
+          <created>2019-07-29T17:13:36.578390Z</created>
+          <modified>2020-01-29T17:29:23.475739Z</modified>
+          <name>Grid</name>
+          <comment/>
+        </item>
+        <item>
+          <widget>Typography-GoPCrlLg</widget>
+          <created>2019-07-29T17:14:05.902965Z</created>
+          <modified>2020-01-29T17:29:23.487577Z</modified>
+          <name>Typography</name>
+          <comment/>
+        </item>
+      </template_widgets>
+      <keywords/>
+      <name>LennsHcfChildProgression</name>
+      <comment/>
+      <state>prealpha</state>
+      <published>False</published>
+      <primary_language>en</primary_language>
+    </item>
+    <item>
+      <frontend>Web</frontend>
+      <parental_template>HeaderContentFooter-IwVBXtpq</parental_template>
+      <blocks>
+        <item>
+          <translations>
+            <item>
+              <created>2019-07-29T17:31:07.690617Z</created>
+              <modified>2020-01-29T17:29:23.239330Z</modified>
+              <content>&lt;Typography variant='button' align='right'&gt;
+
+  &lt;Grid item xs={5} sm={5} md={5} lg={5} xl={5}&gt;
+    &lt;span&gt;Press next to continue&lt;/span&gt;
+  &lt;/Grid&gt;
+  &lt;Grid item xs={5} sm={5} md={5} lg={5} xl={5}&gt;
+  &lt;/Grid&gt;
+&lt;/Grid&gt;</content>
+              <language>ru</language>
+            </item>
+            <item>
+              <created>2019-07-22T20:49:53.075319Z</created>
+              <modified>2020-01-29T17:29:23.246936Z</modified>
+              <content>
+&lt;Grid container direction="row" justify="space-between" alignItems="flex-end" &gt;
+	&lt;Grid item&gt;
+	&lt;/Grid&gt;
+	&lt;Grid item&gt;
+		&lt;NextButton/&gt;
+	&lt;/Grid&gt;
+&lt;/Grid&gt;
+			  </content>
+              <language>en</language>
+            </item>
+          </translations>
+          <name>Footer</name>
+        </item>
+        <item>
+          <translations>
+            <item>
+              <created>2019-07-22T20:49:42.075086Z</created>
+              <modified>2020-01-29T17:29:23.260939Z</modified>
+              <content>This is the content</content>
+              <language>en</language>
+            </item>
+          </translations>
+          <name>Content</name>
+        </item>
+        <item>
+          <translations>
+            <item>
+              <created>2020-01-29T22:45:14.883752Z</created>
+              <modified>2020-01-29T22:45:14.883752Z</modified>
+              <content/>
+              <language>en</language>
+            </item>
+          </translations>
+          <name>Subheader</name>
+        </item>
+      </blocks>
+      <child_templates/>
+      <template_widgets>
+        <item>
+          <widget>SubmitButton-sGuVqQCu</widget>
+          <created>2019-07-22T20:51:19.639974Z</created>
+          <modified>2020-01-29T17:29:23.279488Z</modified>
+          <name>NextButton</name>
+          <comment/>
+        </item>
+        <item>
+          <widget>Grid-boiBQcEE</widget>
+          <created>2019-07-29T17:13:54.381799Z</created>
+          <modified>2020-01-29T17:29:23.286610Z</modified>
+          <name>Grid</name>
+          <comment/>
+        </item>
+        <item>
+          <widget>Typography-GoPCrlLg</widget>
+          <created>2019-07-29T17:14:18.343427Z</created>
+          <modified>2020-01-29T17:29:23.294322Z</modified>
+          <name>Typography</name>
+          <comment/>
+        </item>
+        <item>
+          <widget>Container-RYylgXcT</widget>
+          <created>2019-07-29T17:36:20.174201Z</created>
+          <modified>2020-01-29T17:29:23.317996Z</modified>
+          <name>Container</name>
+          <comment/>
+        </item>
+        <item>
+          <widget>Paper-TThdEqct</widget>
+          <created>2019-07-29T17:36:31.856685Z</created>
+          <modified>2020-01-29T17:29:23.335723Z</modified>
+          <name>Paper</name>
+          <comment/>
+        </item>
+      </template_widgets>
+      <keywords/>
+      <name>LennsHcfChildForward</name>
+      <comment/>
+      <state>prealpha</state>
+      <published>False</published>
+      <primary_language>en</primary_language>
+    </item>
+  </child_templates>
+  <template_widgets>
+    <item>
+      <widget>Container-RYylgXcT</widget>
+      <created>2019-07-29T13:42:09.528278Z</created>
+      <modified>2020-01-29T17:29:23.567680Z</modified>
+      <name>Container</name>
+      <comment/>
+    </item>
+    <item>
+      <widget>Box-ewCfjnQt</widget>
+      <created>2019-07-29T13:55:31.401480Z</created>
+      <modified>2020-01-29T17:29:23.584681Z</modified>
+      <name>Box</name>
+      <comment/>
+    </item>
+    <item>
+      <widget>Typography-GoPCrlLg</widget>
+      <created>2019-07-29T14:01:08.228993Z</created>
+      <modified>2020-01-29T17:29:23.600419Z</modified>
+      <name>Typography</name>
+      <comment/>
+    </item>
+    <item>
+      <widget>Paper-TThdEqct</widget>
+      <created>2019-07-29T14:45:24.202567Z</created>
+      <modified>2020-01-29T17:29:23.616113Z</modified>
+      <name>Paper</name>
+      <comment/>
+    </item>
+    <item>
+      <widget>Grid-boiBQcEE</widget>
+      <created>2019-07-29T14:52:53.125126Z</created>
+      <modified>2020-01-29T17:29:23.643664Z</modified>
+      <name>Grid</name>
+      <comment/>
+    </item>
+    <item>
+      <widget>Button-yTjJiGYY</widget>
+      <created>2019-07-29T20:11:35.265229Z</created>
+      <modified>2020-01-29T17:29:23.674490Z</modified>
+      <name>Button</name>
+      <comment/>
+    </item>
+    <item>
+      <widget>CssBaseline-TarJZbne</widget>
+      <created>2019-07-29T13:55:31.401480Z</created>
+      <modified>2020-01-29T17:29:23.692005Z</modified>
+      <name>CssBaseline</name>
+      <comment/>
+    </item>
+    <item>
+      <widget>Toolbar-eXZsLwYm</widget>
+      <created>2019-07-29T13:55:31.401480Z</created>
+      <modified>2020-01-29T17:29:23.707880Z</modified>
+      <name>Toolbar</name>
+      <comment/>
+    </item>
+    <item>
+      <widget>AppBar-YVrvDHnJ</widget>
+      <created>2019-07-29T13:55:31.401480Z</created>
+      <modified>2020-01-29T17:29:23.724068Z</modified>
+      <name>AppBar</name>
+      <comment/>
+    </item>
+  </template_widgets>
+  <keywords/>
+  <name>WebHeaderContentFooter</name>
+  <comment/>
+  <state>prealpha</state>
+  <published>False</published>
+  <primary_language>en</primary_language>
+</template>

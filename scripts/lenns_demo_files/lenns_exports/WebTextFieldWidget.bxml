@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>WebTextFieldWidget-droWZrHX</slug>
+  <connections>
+    <item>
+      <target>TextField-mKSlkfLR</target>
+      <name>TextField</name>
+      <comment/>
+    </item>
+    <item>
+      <target>Box-ewCfjnQt</target>
+      <name>Box</name>
+      <comment/>
+    </item>
+  </connections>
+  <events>
+    <item>
+      <steps/>
+      <name/>
+      <event_type>onBlur</event_type>
+    </item>
+    <item>
+      <steps/>
+      <name/>
+      <event_type>onChange</event_type>
+    </item>
+  </events>
+  <frontend>Web-foKmSGxB</frontend>
+  <keywords/>
+  <related_widgets/>
+  <props>
+    <item>
+      <name>label</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>defaultValue</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+  </props>
+  <steps/>
+  <states/>
+  <primary_language>en</primary_language>
+  <name>WebTextFieldWidget</name>
+  <comment/>
+  <state>prealpha</state>
+  <published>False</published>
+  <code>&lt;Box py={2}&gt;
+&lt;TextField variant='outlined' fullWidth multiline rows={3} rowsMax={6} label={label} defaultValue={defaultValue} onChange={handleChange} onBlur={handleBlur}/&gt;
+&lt;/Box&gt;</code>
+  <address/>
+  <namespace>Widget</namespace>
+  <external>False</external>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <value_parameter>event.target.value</value_parameter>
+  <save_null>True</save_null>
+</widget>

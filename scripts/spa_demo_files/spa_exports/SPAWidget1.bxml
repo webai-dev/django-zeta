@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <frontend>Web-foKmSGxB</frontend>
+  <slug>SPAWidget1-VZDRAlgU</slug>
+  <events/>
+  <related_widgets/>
+  <keywords/>
+  <connections/>
+  <name>SPAWidget1</name>
+  <comment>Basic widget to be rendered in template</comment>
+  <state>prealpha</state>
+  <published>False</published>
+  <code>&lt;div&gt;I am a sample template widget&lt;/div&gt;</code>
+  <address/>
+  <namespace>Widget</namespace>
+  <external>False</external>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <value_parameter>event.target.value</value_parameter>
+  <save_null>True</save_null>
+  <primary_language>en</primary_language>
+</widget>

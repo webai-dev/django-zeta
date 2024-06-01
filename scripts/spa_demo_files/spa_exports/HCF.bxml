@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <slug>HCF-isyeDhqK</slug>
+  <parental_template>RootMedium-XHEFjkCG</parental_template>
+  <blocks>
+    <item>
+      <translations>
+        <item>
+          <frontend>Web</frontend>
+          <created>2020-01-11T13:20:33.375789Z</created>
+          <modified>2020-01-11T13:20:33.375789Z</modified>
+          <content>&lt;Grid
+      style={{
+        minHeight: "100%",
+      }}
+      container
+      alignContent="center"
+      justify="space-between"
+      direction="column"
+    &gt;
+      &lt;Grid item&gt;
+        &lt;Box mb={2}&gt;
+          &lt;Grid container direction="column"&gt;
+            &lt;Grid item&gt;
+              &lt;Typography component={"div"} variant="h2"&gt;
+                &lt;Header /&gt;
+              &lt;/Typography&gt;
+            &lt;/Grid&gt;
+            &lt;Grid item&gt;
+              &lt;Typography component={"div"} variant="h3"&gt;
+                &lt;SubHeader /&gt;
+              &lt;/Typography&gt;
+            &lt;/Grid&gt;
+          &lt;/Grid&gt;
+        &lt;/Box&gt;
+      &lt;/Grid&gt;
+      &lt;Grid item&gt;
+        &lt;Content /&gt;
+      &lt;/Grid&gt;
+      &lt;Grid item&gt;
+        &lt;Box mt={2}&gt;
+          &lt;Typography component={"span"} variant="body2"&gt;
+            &lt;Footer /&gt;
+          &lt;/Typography&gt;
+        &lt;/Box&gt;
+      &lt;/Grid&gt;
+    &lt;/Grid&gt;</content>
+          <language>en</language>
+        </item>
+      </translations>
+      <name>MediumContainer</name>
+    </item>
+  </blocks>
+  <template_widgets/>
+  <keywords/>
+  <name>HCF</name>
+  <comment/>
+  <state>prealpha</state>
+  <published>True</published>
+  <frontend>Web</frontend>
+  <primary_language>en</primary_language>
+</template>

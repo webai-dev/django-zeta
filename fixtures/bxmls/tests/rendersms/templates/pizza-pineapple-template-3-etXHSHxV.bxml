@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <slug>pizza-pineapple-template-3-etXHSHxV</slug>
+  <state>prealpha</state>
+  <parental_template>template0-hrIpecpX</parental_template>
+  <frontend>SMS</frontend>
+  <template_widgets/>
+  <blocks>
+    <item>
+      <translations>
+        <item>
+          <frontend>SMS</frontend>
+          <language>en</language>
+          <content>Go get some pizza. Preferrably Hawaiian.</content>
+        </item>
+      </translations>
+      <name>Content</name>
+    </item>
+  </blocks>
+  <primary_language>en</primary_language>
+  <name>pizza-pineapple-template-3</name>
+  <comment>Ends all arguments about pizza and pinapples.</comment>
+  <published>False</published>
+  <keywords/>
+</template>

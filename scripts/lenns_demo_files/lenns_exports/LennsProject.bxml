@@ -1,0 +1,1192 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<stint_definition>
+  <keywords/>
+  <specifications>
+    <item>
+      <language>en</language>
+      <backup_stint_specification/>
+      <stintspecificationcountry_set/>
+      <stintspecificationvariable_set/>
+      <stint_specification_robots/>
+      <name>TestLenns</name>
+      <comment/>
+      <where_to_run>lab</where_to_run>
+      <team_size>1</team_size>
+      <min_team_size>1</min_team_size>
+      <max_team_size>1</max_team_size>
+      <min_earnings>0.0</min_earnings>
+      <max_earnings>0.0</max_earnings>
+      <late_arrival>False</late_arrival>
+      <immediate_payment_method>PHONE_RECHARGE</immediate_payment_method>
+    </item>
+  </specifications>
+  <stint_definition_module_definitions>
+    <item>
+      <module_definition>
+        <start_stage>LennsWelcome</start_stage>
+        <warden_stage/>
+        <start_era>TestMD-start</start_era>
+        <action_set>
+          <item>
+            <steps>
+              <item>
+                <subaction/>
+                <era/>
+                <condition>lenns_int_gt_10</condition>
+                <variable_definition>lenns_int_response</variable_definition>
+                <to_save/>
+                <order>0</order>
+                <invert_condition>False</invert_condition>
+                <for_each>current_hand_only</for_each>
+                <action_type>set_variable</action_type>
+                <value>1</value>
+                <code/>
+                <log_message/>
+              </item>
+              <item>
+                <subaction/>
+                <era/>
+                <condition>lenns_int_gt_10</condition>
+                <variable_definition>lenns_int_response</variable_definition>
+                <to_save/>
+                <order>1</order>
+                <invert_condition>True</invert_condition>
+                <for_each>current_hand_only</for_each>
+                <action_type>set_variable</action_type>
+                <value>2</value>
+                <code/>
+                <log_message/>
+              </item>
+              <item>
+                <subaction>update_accumulator</subaction>
+                <era/>
+                <condition>Always</condition>
+                <variable_definition/>
+                <to_save/>
+                <order>2</order>
+                <invert_condition>False</invert_condition>
+                <for_each>current_hand_only</for_each>
+                <action_type>subaction</action_type>
+                <value/>
+                <code/>
+                <log_message/>
+              </item>
+              <item>
+                <subaction/>
+                <era/>
+                <condition>Always</condition>
+                <variable_definition/>
+                <to_save>
+                  <item>
+                    <name>lenns_int_response</name>
+                  </item>
+                  <item>
+                    <name>lenns_dropdown_variable</name>
+                  </item>
+                  <item>
+                    <name>lenns_int_variable</name>
+                  </item>
+                  <item>
+                    <name>lenns_float_variable</name>
+                  </item>
+                  <item>
+                    <name>lenns_textfield_variable</name>
+                  </item>
+                  <item>
+                    <name>lenns_accumulator</name>
+                  </item>
+                  <item>
+                    <name>lenns_radio_variable</name>
+                  </item>
+                </to_save>
+                <order>3</order>
+                <invert_condition>False</invert_condition>
+                <for_each>current_hand_only</for_each>
+                <action_type>save_data</action_type>
+                <value/>
+                <code/>
+                <log_message/>
+              </item>
+            </steps>
+            <name>calc_responses</name>
+            <comment/>
+          </item>
+          <item>
+            <steps>
+              <item>
+                <subaction/>
+                <era/>
+                <condition>Always</condition>
+                <variable_definition>lenns_accumulator</variable_definition>
+                <to_save/>
+                <order>0</order>
+                <invert_condition>False</invert_condition>
+                <for_each>current_hand_only</for_each>
+                <action_type>set_variable</action_type>
+                <value>lenns_accumulator + lenns_float_variable</value>
+                <code/>
+                <log_message/>
+              </item>
+            </steps>
+            <name>update_accumulator</name>
+            <comment/>
+          </item>
+          <item>
+            <steps>
+              <item>
+                <subaction/>
+                <era/>
+                <condition/>
+                <variable_definition/>
+                <to_save/>
+                <order>0</order>
+                <invert_condition>False</invert_condition>
+                <for_each>current_hand_only</for_each>
+                <action_type>quit</action_type>
+                <value/>
+                <code/>
+                <log_message/>
+              </item>
+            </steps>
+            <name>Default-Command-Quit</name>
+            <comment>Opts-out user from Stint.</comment>
+          </item>
+          <item>
+            <steps>
+              <item>
+                <subaction/>
+                <era/>
+                <condition/>
+                <variable_definition/>
+                <to_save/>
+                <order>0</order>
+                <invert_condition>False</invert_condition>
+                <for_each>current_hand_only</for_each>
+                <action_type>forward_stage</action_type>
+                <value/>
+                <code/>
+                <log_message/>
+              </item>
+            </steps>
+            <name>Default-Command-Next</name>
+            <comment>Sends user to next breadcrumb if one exists.</comment>
+          </item>
+          <item>
+            <steps>
+              <item>
+                <subaction/>
+                <era/>
+                <condition/>
+                <variable_definition/>
+                <to_save/>
+                <order>0</order>
+                <invert_condition>False</invert_condition>
+                <for_each>current_hand_only</for_each>
+                <action_type>back_stage</action_type>
+                <value/>
+                <code/>
+                <log_message/>
+              </item>
+            </steps>
+            <name>Default-Command-Back</name>
+            <comment>Sends user to previous breadcrumb if one exists.</comment>
+          </item>
+        </action_set>
+        <stage_definitions>
+          <item>
+            <stage_templates>
+              <item>
+                <template>LennsHcfChild-ITTexgEv</template>
+                <theme>Demo-oPzFXrZo</theme>
+                <blocks/>
+              </item>
+            </stage_templates>
+            <pre_action/>
+            <name>LennsHeadContentFooter</name>
+            <comment/>
+            <breadcrumb_type>all</breadcrumb_type>
+            <end_stage>False</end_stage>
+          </item>
+          <item>
+            <stage_templates>
+              <item>
+                <template>LennsHcfChildForward-vBOzwCgM</template>
+                <theme>Demo-oPzFXrZo</theme>
+                <blocks>
+                  <item>
+                    <translations>
+                      <item>
+                        <frontend>Web</frontend>
+                        <created>2019-07-22T20:45:46.183920Z</created>
+                        <modified>2019-07-30T16:40:47.744628Z</modified>
+                        <content>&lt;Box pt={3} px={3}&gt;
+
+&lt;Grid item xs={12}&gt;
+  &lt;br/&gt;
+  &lt;Typography variant='body1' paragraph={true}&gt;
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  &lt;/Typography&gt;
+&lt;/Grid&gt;
+&lt;Grid item xs={12} &gt;
+  &lt;Typography variant='body1'  paragraph={true}&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  &lt;/Typography&gt;
+&lt;/Grid&gt;
+&lt;Grid item xs={12}&gt;
+  &lt;Typographygopcrllg variant='body1' paragraph={true} mt={3}&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  &lt;/Typographygopcrllg&gt;
+&lt;br/&gt;
+&lt;/Grid&gt;
+&lt;/Box&gt;</content>
+                        <language>en</language>
+                      </item>
+                    </translations>
+                    <name>Content</name>
+                    <comment/>
+                  </item>
+                  <item>
+                    <translations>
+                      <item>
+                        <frontend>Web</frontend>
+                        <created>2019-07-22T20:44:24.537472Z</created>
+                        <modified>2019-07-30T16:40:47.755040Z</modified>
+                        <content>&lt;Container xs={12}&gt;
+  &lt;Typography variant='h2' align='center'&gt;
+    Welcome
+  &lt;/Typography&gt;
+&lt;/Container&gt;</content>
+                        <language>en</language>
+                      </item>
+                    </translations>
+                    <name>Header</name>
+                    <comment/>
+                  </item>
+                </blocks>
+              </item>
+            </stage_templates>
+            <pre_action/>
+            <name>LennsWelcome</name>
+            <comment/>
+            <breadcrumb_type>all</breadcrumb_type>
+            <end_stage>False</end_stage>
+          </item>
+          <item>
+            <stage_templates>
+              <item>
+
+                <template>LennsHcfChildProgression-HMjaZDJz</template>
+                <theme>Demo-oPzFXrZo</theme>
+                <blocks>
+                  <item>
+                    <translations>
+                      <item>
+                        <frontend>Web</frontend>
+                        <created>2019-07-30T21:03:29.659028Z</created>
+                        <modified>2019-07-30T21:05:00.391381Z</modified>
+                        <content>&lt;Grid container direction="row" justify="space-between" alignItems="flex-end" &gt;
+    &lt;Grid item&gt;
+		&lt;LennsBlankBackWidget/&gt;
+    &lt;/Grid&gt;
+    &lt;Grid item&gt;
+		{!(["null", "", null].includes(lenns_int_variable) || ["null", "", null].includes(lenns_float_variable)) ? &lt;LennsBlankForwardWidget/&gt; : &lt;LennsFakeForwardWidget color='primary' variant='contained' disabled&gt;Next&lt;/LennsFakeForwardWidget&gt;}
+    &lt;/Grid&gt;
+&lt;/Grid&gt;</content>
+                        <language>en</language>
+                      </item>
+                    </translations>
+                    <name>Footer</name>
+                    <comment>For MultipleChoice</comment>
+                  </item>
+                  <item>
+                    <translations>
+                      <item>
+                        <frontend>Web</frontend>
+                        <created>2019-07-16T14:29:39.363718Z</created>
+                        <modified>2019-07-30T18:22:52.766394Z</modified>
+						<content>
+&lt;Box p={10} &gt;
+	&lt;FormControl fullWidth margin="normal" component="fieldset" &gt;
+		&lt;FormLabel&gt;General&lt;/FormLabel&gt;
+
+		&lt;Box py={3} &gt;
+			&lt;LennsIntWidget label="Number of toilets in household" defaultValue={ lenns_int_variable } /&gt;
+			&lt;br/&gt;
+			&lt;LennsFloatWidget label="Coins to contribute" defaultValue={ lenns_float_variable } /&gt;
+		&lt;/Box&gt;
+
+		&lt;LennsTextFieldWidget label="Comment (optional)" defaultValue={ lenns_textfield_variable } /&gt;
+	&lt;/FormControl&gt;
+&lt;/Box&gt;
+						</content>
+                        <language>en</language>
+                      </item>
+                      <item>
+                        <frontend>SMS</frontend>
+                        <created>2019-07-29T22:08:15.934247Z</created>
+                        <modified>2019-07-30T17:55:48.561892Z</modified>
+                        <content>&lt;Box mx={3} my={2}&gt;
+
+
+&lt;/Box&gt;</content>
+                        <language>ru</language>
+                      </item>
+                    </translations>
+                    <name>Content</name>
+                    <comment/>
+                  </item>
+                  <item>
+                    <translations>
+                      <item>
+                        <frontend>Web</frontend>
+                        <created>2019-07-16T14:28:39.706880Z</created>
+                        <modified>2019-07-30T16:40:47.696863Z</modified>
+                        <content>&lt;Container xs={12}&gt;
+  &lt;Typography variant='h2' align='center'&gt;
+Sanitation and contributions
+  &lt;/Typography&gt;
+&lt;/Container&gt;</content>
+                        <language>en</language>
+                      </item>
+                    </translations>
+                    <name>Header</name>
+                    <comment/>
+                  </item>
+
+                </blocks>
+              </item>
+            </stage_templates>
+            <pre_action/>
+            <name>LennsInputs</name>
+            <comment/>
+            <breadcrumb_type>all</breadcrumb_type>
+            <end_stage>False</end_stage>
+          </item>
+          <item>
+            <stage_templates>
+              <item>
+                <template>LennsHcfChildProgression-HMjaZDJz</template>
+                <theme>Demo-oPzFXrZo</theme>
+                <blocks>
+                  <item>
+                    <translations>
+                      <item>
+                        <frontend>Web</frontend>
+                        <created>2019-07-30T21:03:29.659028Z</created>
+                        <modified>2019-07-30T21:05:00.391381Z</modified>
+                        <content>&lt;Grid container direction="row" justify="space-between" alignItems="flex-end" &gt;
+    &lt;Grid item&gt;
+		&lt;LennsBlankBackWidget/&gt;
+    &lt;/Grid&gt;
+    &lt;Grid item&gt;
+		{(!["null", "", null].includes(lenns_radio_variable)) ? &lt;LennsBlankForwardWidget/&gt; : &lt;LennsFakeForwardWidget color='primary' variant='contained' disabled&gt;Next&lt;/LennsFakeForwardWidget&gt;}
+    &lt;/Grid&gt;
+&lt;/Grid&gt;</content>
+                        <language>en</language>
+                      </item>
+                    </translations>
+                    <name>Footer</name>
+                    <comment>For MultipleChoice</comment>
+                  </item>
+                  <item>
+                    <translations>
+                      <item>
+                        <frontend>Web</frontend>
+                        <created>2019-07-16T18:29:36.655762Z</created>
+                        <modified>2019-07-30T18:58:41.073937Z</modified>
+                        <content>&lt;Box pt={9} pb={3}&gt;
+  &lt;Grid container spacing={2}&gt;
+    &lt;Grid item xs={2}&gt;
+     &lt;/Grid&gt;
+    &lt;Grid item xs={8}&gt;
+      &lt;Typography variant='h4' align='center'&gt;
+One, two! One, two! And through and through 
+      The vorpal blade went snicker-snack! 
+He left it dead, and with its head 
+      He went ...
+      &lt;/Typography&gt;
+    &lt;Grid item xs={12}&gt;
+      &lt;br/&gt;
+    &lt;/Grid&gt;
+
+    &lt;/Grid&gt;
+    &lt;Grid item xs={2}&gt;
+    &lt;/Grid&gt;
+
+    &lt;Grid item xs={3}&gt;
+    &lt;/Grid&gt;
+    &lt;Grid item xs={6}&gt;
+      &lt;LennsRadioButtons
+  aria-label="Radio Buttons"
+  name="radio_buttons"
+  defaultValue={lenns_radio_variable}
+/&gt;
+    &lt;/Grid&gt;
+    &lt;Grid item xs={3}&gt;
+    &lt;/Grid&gt;
+  &lt;/Grid&gt;
+&lt;/Box&gt;</content>
+                        <language>en</language>
+                      </item>
+                    </translations>
+                    <name>Content</name>
+                    <comment/>
+                  </item>
+                  <item>
+                    <translations>
+                      <item>
+                        <frontend>Web</frontend>
+                        <created>2019-07-16T18:30:23.238280Z</created>
+                        <modified>2019-07-30T16:40:47.658377Z</modified>
+                        <content>&lt;Container xs={12}&gt;
+  &lt;Typography variant='h2' align='center'&gt;
+    Complete the phrase...
+  &lt;/Typography&gt;
+&lt;/Container&gt;</content>
+                        <language>en</language>
+                      </item>
+                    </translations>
+                    <name>Header</name>
+                    <comment/>
+                  </item>
+                </blocks>
+              </item>
+            </stage_templates>
+            <pre_action/>
+            <name>LennsMultipleChoice</name>
+            <comment/>
+            <breadcrumb_type>all</breadcrumb_type>
+            <end_stage>False</end_stage>
+          </item>
+          <item>
+            <stage_templates>
+              <item>
+                <template>LennsHcfChildProgression-HMjaZDJz</template>
+                <theme/>
+                <blocks>
+                  <item>
+                    <translations>
+                      <item>
+                        <frontend>Web</frontend>
+                        <created>2019-07-19T16:01:42.793039Z</created>
+                        <modified>2019-07-30T19:07:48.601113Z</modified>
+                        <content>&lt;Box pt={9} pb={3}&gt;
+  &lt;Grid container spacing={2}&gt;
+    &lt;Grid item xs={2}&gt;
+     &lt;/Grid&gt;
+    &lt;Grid item xs={8}&gt;
+      &lt;Typography variant='h4' align='center'&gt;
+Choose from the colors below
+      &lt;/Typography&gt;
+    &lt;Grid item xs={12}&gt;
+      &lt;br/&gt;
+    &lt;/Grid&gt;
+
+    &lt;/Grid&gt;
+    &lt;Grid item xs={2}&gt;
+    &lt;/Grid&gt;
+
+    &lt;Grid item xs={4}&gt;
+    &lt;/Grid&gt;
+    &lt;Grid item xs={4}&gt;
+&lt;LennsDropdown label="" selectedValue={lenns_dropdown_variable} /&gt;
+    &lt;/Grid&gt;
+    &lt;Grid item xs={4}&gt;
+    &lt;/Grid&gt;
+  &lt;/Grid&gt;
+&lt;/Box&gt;</content>
+                        <language>en</language>
+                      </item>
+                    </translations>
+                    <name>Content</name>
+                    <comment>For Dropdown</comment>
+                  </item>
+                  <item>
+                    <translations>
+                      <item>
+                        <frontend>Web</frontend>
+                        <created>2019-07-30T02:06:54.183774Z</created>
+                        <modified>2019-07-30T16:40:47.627083Z</modified>
+                        <content>&lt;Container xs={12}&gt;
+  &lt;Typography variant='h2' align='center'&gt;
+    Pick a color... any color...
+  &lt;/Typography&gt;
+&lt;/Container&gt;</content>
+                        <language>en</language>
+                      </item>
+                    </translations>
+                    <name>Header</name>
+                    <comment>For Dropdown</comment>
+                  </item>
+                </blocks>
+              </item>
+            </stage_templates>
+            <pre_action/>
+            <name>LennsDropdown</name>
+            <comment/>
+            <breadcrumb_type>all</breadcrumb_type>
+            <end_stage>False</end_stage>
+          </item>
+          <item>
+            <stage_templates>
+              <item>
+                <template>LennsHcfChildProgression-HMjaZDJz</template>
+                <theme>Demo-oPzFXrZo</theme>
+                <blocks>
+                  <item>
+                    <translations>
+                      <item>
+                        <frontend>Web</frontend>
+                        <created>2019-07-22T21:52:31.061880Z</created>
+                        <modified>2019-07-30T16:40:47.542111Z</modified>
+						<content>
+&lt;Box py={6} px={12}&gt;
+	&lt;Typography variant='h4'&gt;
+	{lenns_int_variable == 1 ? "You got a toilet!" : 
+	lenns_int_variable &gt; 1 ? "You got " + lenns_int_variable + " toilets!" :
+	"Consider building a toilet."}
+	&lt;/Typography&gt;
+	&lt;Box p={3}&gt;
+	&lt;Typography variant='h6' &gt;
+Collected coins: {module.lenns_accumulator}
+	&lt;/Typography&gt;
+	&lt;Typography variant='h6' &gt;
+Your comment: {lenns_textfield_variable || ""}
+	&lt;/Typography&gt;
+	&lt;Typography variant='h6'&gt;
+	You chose: {
+	lenns_radio_variable == "a" ? "to get his kids a snack" : 
+	lenns_radio_variable == "b" ? "galumphing back" : 
+	lenns_radio_variable == "c" ? "to finish off the rest of his enemies" : "no choice"} 
+	&lt;/Typography&gt;
+	&lt;Typography variant='h6'&gt;
+	You also chose: {
+	lenns_dropdown_variable == "a" ? "Red" : 
+	lenns_dropdown_variable == "b" ? "Blue" : 
+	lenns_dropdown_variable == "c" ? "Orange" : 
+	lenns_dropdown_variable == "d" ? "Green" : "no choice"} 
+	&lt;/Typography&gt;
+	&lt;/Box&gt;
+&lt;/Box&gt;</content>
+                        <language>en</language>
+                      </item>
+                    </translations>
+                    <name>Content</name>
+                    <comment/>
+                  </item>
+                  <item>
+                    <translations>
+                      <item>
+                        <frontend>Web</frontend>
+                        <created>2019-07-22T20:44:24.537472Z</created>
+                        <modified>2019-07-29T18:19:44.132786Z</modified>
+                        <content>&lt;Typography variant='h2' align='center'&gt;
+							Result
+  &lt;/Typography&gt;</content>
+                        <language>en</language>
+                      </item>
+                    </translations>
+                    <name>Header</name>
+                    <comment/>
+                  </item>
+                  <item>
+                    <translations>
+                      <item>
+                        <frontend>Web</frontend>
+                        <created>2019-07-31T15:50:56.943096Z</created>
+                        <modified>2019-07-31T15:50:57.006151Z</modified>
+                        <content>&lt;span/&gt;</content>
+                        <language>en</language>
+                      </item>
+                    </translations>
+                    <name>Footer</name>
+                    <comment/>
+                  </item>
+                </blocks>
+              </item>
+            </stage_templates>
+            <pre_action>calc_responses</pre_action>
+            <name>LennsEnd</name>
+            <comment/>
+            <breadcrumb_type>all</breadcrumb_type>
+            <end_stage>False</end_stage>
+          </item>
+        </stage_definitions>
+        <era_set>
+          <item>
+            <action/>
+            <name>TestMD-start</name>
+            <comment>Initial era for TestMD</comment>
+            <is_team>False</is_team>
+          </item>
+        </era_set>
+        <variabledefinition_set>
+          <item>
+            <validator/>
+            <variablechoiceitem_set>
+              <item>
+                <translations/>
+                <value>d</value>
+              </item>
+              <item>
+                <translations/>
+                <value>a</value>
+              </item>
+              <item>
+                <translations/>
+                <value>b</value>
+              </item>
+              <item>
+                <translations/>
+                <value>c</value>
+              </item>
+            </variablechoiceitem_set>
+            <name>lenns_radio_variable</name>
+            <comment/>
+            <scope>hand</scope>
+            <data_type>choice</data_type>
+            <default_value/>
+            <specifiable>False</specifiable>
+            <is_payoff>False</is_payoff>
+            <is_output_data>True</is_output_data>
+            <monitored>True</monitored>
+          </item>
+          <item>
+            <validator/>
+            <variablechoiceitem_set/>
+            <name>lenns_accumulator</name>
+            <comment/>
+            <scope>module</scope>
+            <data_type>float</data_type>
+			<default_value>0</default_value>
+            <specifiable>False</specifiable>
+            <is_payoff>False</is_payoff>
+            <is_output_data>False</is_output_data>
+            <monitored>False</monitored>
+          </item>
+          <item>
+            <validator/>
+            <variablechoiceitem_set/>
+            <name>lenns_textfield_variable</name>
+            <comment/>
+            <scope>hand</scope>
+            <data_type>str</data_type>
+            <default_value> </default_value>
+            <specifiable>False</specifiable>
+            <is_payoff>False</is_payoff>
+            <is_output_data>True</is_output_data>
+            <monitored>True</monitored>
+          </item>
+          <item>
+            <validator/>
+            <variablechoiceitem_set/>
+            <name>lenns_float_variable</name>
+            <comment/>
+            <scope>hand</scope>
+            <data_type>float</data_type>
+			<default_value/>
+            <specifiable>False</specifiable>
+            <is_payoff>False</is_payoff>
+            <is_output_data>True</is_output_data>
+            <monitored>True</monitored>
+          </item>
+          <item>
+            <validator/>
+            <variablechoiceitem_set/>
+            <name>lenns_int_variable</name>
+            <comment/>
+            <scope>hand</scope>
+            <data_type>int</data_type>
+			<default_value />
+            <specifiable>False</specifiable>
+            <is_payoff>False</is_payoff>
+            <is_output_data>True</is_output_data>
+            <monitored>True</monitored>
+          </item>
+          <item>
+            <validator/>
+            <variablechoiceitem_set/>
+            <name>lenns_dropdown_variable</name>
+            <comment/>
+            <scope>hand</scope>
+            <data_type>str</data_type>
+            <default_value>a</default_value>
+            <specifiable>False</specifiable>
+            <is_payoff>False</is_payoff>
+            <is_output_data>True</is_output_data>
+            <monitored>True</monitored>
+          </item>
+          <item>
+            <validator/>
+            <variablechoiceitem_set/>
+            <name>lenns_int_response</name>
+            <comment/>
+            <scope>hand</scope>
+            <data_type>int</data_type>
+            <default_value/>
+            <specifiable>False</specifiable>
+            <is_payoff>False</is_payoff>
+            <is_output_data>False</is_output_data>
+            <monitored>True</monitored>
+          </item>
+          <item>
+            <validator/>
+            <variablechoiceitem_set/>
+            <name>lenns_float_response</name>
+            <comment/>
+            <scope>hand</scope>
+            <data_type>int</data_type>
+            <default_value/>
+            <specifiable>False</specifiable>
+            <is_payoff>False</is_payoff>
+            <is_output_data>False</is_output_data>
+            <monitored>True</monitored>
+          </item>
+        </variabledefinition_set>
+        <condition_set>
+          <item>
+            <left_variable_definition>lenns_int_variable</left_variable_definition>
+            <right_variable_definition/>
+            <left_sub_condition/>
+            <right_sub_condition/>
+            <created>2019-07-22T21:09:16.801309Z</created>
+            <modified>2019-07-30T16:40:48.163867Z</modified>
+            <name>lenns_int_gt_10</name>
+            <comment/>
+            <left_type>variable</left_type>
+            <right_type>expression</right_type>
+            <left_expression/>
+            <right_expression>10</right_expression>
+            <relation>greater</relation>
+            <operator/>
+          </item>
+          <item>
+            <left_variable_definition>lenns_float_variable</left_variable_definition>
+            <right_variable_definition/>
+            <left_sub_condition/>
+            <right_sub_condition/>
+            <created>2019-07-22T22:33:21.365988Z</created>
+            <modified>2019-07-30T16:40:48.158386Z</modified>
+            <name>lenns_float_lte_5.4</name>
+            <comment/>
+            <left_type>variable</left_type>
+            <right_type>expression</right_type>
+            <left_expression/>
+            <right_expression>5.4</right_expression>
+            <relation>less_or_equal</relation>
+            <operator/>
+          </item>
+          <item>
+            <left_variable_definition/>
+            <right_variable_definition/>
+            <left_sub_condition/>
+            <right_sub_condition/>
+            <created>2019-07-29T12:45:07.939400Z</created>
+            <modified>2019-07-30T16:40:48.152932Z</modified>
+            <name>Always</name>
+            <comment/>
+            <left_type>expression</left_type>
+            <right_type>expression</right_type>
+            <left_expression>1</left_expression>
+            <right_expression>1</right_expression>
+            <relation>equal</relation>
+            <operator/>
+          </item>
+        </condition_set>
+        <command_set>
+          <item>
+            <action>Default-Command-Quit</action>
+            <command_templates>
+              <item>
+                <template>template0-hrIpecpX</template>
+                <blocks>
+                  <item>
+                    <translations>
+                      <item>
+                        <frontend>SMS</frontend>
+                        <created>2019-07-30T16:40:47.493188Z</created>
+                        <modified>2019-07-30T16:40:47.493463Z</modified>
+                        <content>Task stopped. Thank you for participating!</content>
+                        <language>en</language>
+                      </item>
+                    </translations>
+                    <created>2019-07-30T16:40:47.492243Z</created>
+                    <modified>2019-07-30T16:40:47.492559Z</modified>
+                    <name>Content</name>
+                    <comment/>
+                  </item>
+                </blocks>
+                <created>2019-07-30T16:40:47.489042Z</created>
+                <modified>2019-07-30T16:40:47.489293Z</modified>
+              </item>
+            </command_templates>
+            <created>2019-07-30T16:40:47.488121Z</created>
+            <modified>2019-07-30T16:40:47.488395Z</modified>
+            <name>quit</name>
+            <comment/>
+            <trigger_pattern>[Qq]+[Uu]+[Ii]+[Tt]+</trigger_pattern>
+          </item>
+          <item>
+            <action>Default-Command-Next</action>
+            <command_templates/>
+            <created>2019-07-30T16:40:47.485447Z</created>
+            <modified>2019-07-30T16:40:47.485725Z</modified>
+            <name>next</name>
+            <comment/>
+            <trigger_pattern>[Nn]+[Ee]+[Xx]+[Tt]+</trigger_pattern>
+          </item>
+          <item>
+            <action>Default-Command-Back</action>
+            <command_templates/>
+            <created>2019-07-30T16:40:47.482558Z</created>
+            <modified>2019-07-30T16:40:47.482863Z</modified>
+            <name>back</name>
+            <comment/>
+            <trigger_pattern>[Bb]+[Aa]+[Cc]+[Kk]+</trigger_pattern>
+          </item>
+          <item>
+            <action/>
+            <command_templates>
+              <item>
+                <template>template0-hrIpecpX</template>
+                <blocks>
+                  <item>
+                    <translations>
+                      <item>
+                        <frontend>SMS</frontend>
+                        <created>2019-07-30T16:40:47.477913Z</created>
+                        <modified>2019-07-30T16:40:47.478298Z</modified>
+                        <content>
+Quit: Opts-out user from Stint,
+Back: Moves hand to previous breadcrumb if possible,
+Next: Moves hand to next breadcrumb if possible,
+</content>
+                        <language>en</language>
+                      </item>
+                    </translations>
+                    <created>2019-07-30T16:40:47.475678Z</created>
+                    <modified>2019-07-30T16:40:47.476061Z</modified>
+                    <name>Content</name>
+                    <comment/>
+                  </item>
+                </blocks>
+                <created>2019-07-30T16:40:47.471555Z</created>
+                <modified>2019-07-30T16:40:47.471889Z</modified>
+              </item>
+            </command_templates>
+            <created>2019-07-30T16:40:47.470075Z</created>
+            <modified>2019-07-30T16:40:47.470471Z</modified>
+            <name>help</name>
+            <comment/>
+            <trigger_pattern>([Hh]+[Ee]+[Ll]+[Pp]+)|([?]+)</trigger_pattern>
+          </item>
+        </command_set>
+        <module_widgets>
+          <item>
+            <widget>Box-ewCfjnQt</widget>
+            <name>Box</name>
+          </item>
+          <item>
+            <widget>FormControl-iMhNwgzj</widget>
+            <name>FormControl</name>
+          </item>
+          <item>
+            <widget>FormLabel-yIXEebyu</widget>
+            <name>FormLabel</name>
+          </item>
+          <item>
+            <widget>FormGroup-LHISRLFf</widget>
+            <name>FormGroup</name>
+   		  </item>
+          <item>
+            <widget>SubmitButton-sGuVqQCu</widget>
+            <choices/>
+            <events/>
+            <variable_definition/>
+            <name>LennsBlankForwardWidget</name>
+            <comment/>
+            <required>False</required>
+            <initial_value/>
+            <random_mode>asc</random_mode>
+          </item>
+          <item>
+            <widget>BackButton-adWnIsOD</widget>
+            <choices/>
+            <events/>
+            <variable_definition/>
+            <name>LennsBlankBackWidget</name>
+            <comment/>
+            <required>False</required>
+            <initial_value/>
+            <random_mode>asc</random_mode>
+          </item>
+          <item>
+            <widget>SubmitButton-sGuVqQCu</widget>
+            <choices/>
+            <events>
+              <item>
+                <action>calc_responses</action>
+                <event>onClick</event>
+                <event_type>run_action</event_type>
+              </item>
+            </events>
+            <variable_definition/>
+            <name>ResponseCalculatorButton</name>
+            <comment/>
+            <required>False</required>
+            <initial_value/>
+            <random_mode>asc</random_mode>
+          </item>
+          <item>
+			<widget>Container-RYylgXcT</widget>
+			<created>2019-07-29T13:42:09.528278Z</created>
+			<modified>2019-07-29T13:42:09.562783Z</modified>
+			<name>Container</name>
+			<comment/>
+	      </item>
+          <item>
+            <widget>Grid-boiBQcEE</widget>
+            <choices/>
+            <events/>
+            <variable_definition/>
+            <name>Grid</name>
+            <comment/>
+            <required>False</required>
+            <initial_value/>
+            <random_mode>asc</random_mode>
+          </item>
+          <item>
+            <widget>Typography-GoPCrlLg</widget>
+            <choices/>
+            <events/>
+            <variable_definition/>
+            <name>Typography</name>
+            <comment/>
+            <required>False</required>
+            <initial_value/>
+            <random_mode>asc</random_mode>
+          </item>
+          <item>
+            <widget>InputLabel-OCnQAsBk</widget>
+            <choices/>
+            <events/>
+            <variable_definition/>
+            <name>InputLabel</name>
+            <comment/>
+            <required>False</required>
+            <initial_value/>
+            <random_mode>asc</random_mode>
+          </item>
+          <item>
+            <widget>RadioButtons-NWguxVJa</widget>
+            <choices>
+              <item>
+                <translations>
+                  <item>
+                    <created>2019-07-16T20:01:07.365566Z</created>
+                    <modified>2019-07-30T16:40:48.058072Z</modified>
+                    <caption>to get his kids a snack</caption>
+                    <language>en</language>
+                  </item>
+                </translations>
+                <value>a</value>
+                <order>0</order>
+              </item>
+              <item>
+                <translations>
+                  <item>
+                    <created>2019-07-16T20:01:18.727400Z</created>
+                    <modified>2019-07-30T16:40:48.071621Z</modified>
+                    <caption>galumphing back</caption>
+                    <language>en</language>
+                  </item>
+                </translations>
+                <value>b</value>
+                <order>1</order>
+              </item>
+              <item>
+                <translations>
+                  <item>
+                    <created>2019-07-16T20:01:33.380071Z</created>
+                    <modified>2019-07-30T16:40:48.083614Z</modified>
+                    <caption>to finish off the rest of his enemies</caption>
+                    <language>en</language>
+                  </item>
+                </translations>
+                <value>c</value>
+                <order>2</order>
+              </item>
+            </choices>
+            <events>
+              <item>
+                <action/>
+                <event>onChange</event>
+                <event_type>save_var</event_type>
+              </item>
+            </events>
+            <variable_definition>lenns_radio_variable</variable_definition>
+            <name>LennsRadioButtons</name>
+            <comment/>
+            <required>False</required>
+            <initial_value/>
+            <random_mode>asc</random_mode>
+          </item>
+          <item>
+            <widget>Dropdown-cfuhycxr</widget>
+            <choices>
+              <item>
+                <translations>
+                  <item>
+                    <created>2019-07-19T16:07:15.121967Z</created>
+                    <modified>2019-07-30T16:40:47.983783Z</modified>
+                    <caption>Red</caption>
+                    <language>en</language>
+                  </item>
+                </translations>
+                <value>a</value>
+                <order>0</order>
+              </item>
+              <item>
+                <translations>
+                  <item>
+                    <created>2019-07-19T16:07:29.184365Z</created>
+                    <modified>2019-07-30T16:40:47.996641Z</modified>
+                    <caption>Blue</caption>
+                    <language>en</language>
+                  </item>
+                </translations>
+                <value>b</value>
+                <order>1</order>
+              </item>
+              <item>
+                <translations>
+                  <item>
+                    <created>2019-07-30T02:22:35.706047Z</created>
+                    <modified>2019-07-30T16:40:48.019701Z</modified>
+                    <caption>Orange</caption>
+                    <language>en</language>
+                  </item>
+                </translations>
+                <value>c</value>
+                <order>2</order>
+              </item>
+              <item>
+                <translations>
+                  <item>
+                    <created>2019-07-30T02:26:30.216502Z</created>
+                    <modified>2019-07-30T16:40:48.032414Z</modified>
+                    <caption>Green</caption>
+                    <language>en</language>
+                  </item>
+                </translations>
+                <value>d</value>
+                <order>3</order>
+              </item>
+            </choices>
+            <events>
+              <item>
+                <action/>
+                <event>onChange</event>
+                <event_type>save_var</event_type>
+              </item>
+            </events>
+            <variable_definition>lenns_dropdown_variable</variable_definition>
+            <name>LennsDropdown</name>
+            <comment/>
+            <required>False</required>
+            <initial_value/>
+            <random_mode>asc</random_mode>
+          </item>
+          <item>
+            <widget>WebIntWidget-HOGphFYC</widget>
+            <choices/>
+            <events>
+              <item>
+                <action/>
+                <event>onChange</event>
+                <event_type>save_var</event_type>
+              </item>
+            </events>
+            <variable_definition>lenns_int_variable</variable_definition>
+            <name>LennsIntWidget</name>
+            <comment/>
+            <required>False</required>
+            <initial_value/>
+            <random_mode>asc</random_mode>
+          </item>
+          <item>
+            <widget>WebFloatWidget-ZeKeCUqm</widget>
+            <choices/>
+            <events>
+              <item>
+                <action/>
+                <event>onChange</event>
+                <event_type>save_var</event_type>
+              </item>
+            </events>
+            <variable_definition>lenns_float_variable</variable_definition>
+            <name>LennsFloatWidget</name>
+            <comment/>
+            <required>False</required>
+            <initial_value/>
+            <random_mode>asc</random_mode>
+          </item>
+          <item>
+            <widget>WebTextFieldWidget-droWZrHX</widget>
+            <choices/>
+            <events>
+              <item>
+                <action/>
+                <event>onChange</event>
+                <event_type>save_var</event_type>
+              </item>
+            </events>
+            <variable_definition>lenns_textfield_variable</variable_definition>
+            <name>LennsTextFieldWidget</name>
+            <comment/>
+            <required>False</required>
+            <initial_value/>
+            <random_mode>asc</random_mode>
+          </item>
+          <item>
+            <widget>FormControlLabel-yquWKGZO</widget>
+            <choices/>
+            <events/>
+            <variable_definition/>
+            <name>FormControlLabel</name>
+            <comment/>
+            <required>False</required>
+            <initial_value/>
+            <random_mode>asc</random_mode>
+          </item>
+          <item>
+            <widget>WebButton-xLliiNCn</widget>
+            <choices/>
+            <events/>
+            <variable_definition/>
+            <name>LennsFakeForwardWidget</name>
+            <comment/>
+            <required>False</required>
+            <initial_value/>
+            <random_mode>asc</random_mode>
+          </item>
+        </module_widgets>
+        <robots/>
+        <moduledefinitionprocedure_set/>
+        <keywords/>
+        <comment/>
+        <state>prealpha</state>
+        <published>False</published>
+        <name>TestMD</name>
+        <mxgraph_xml/>
+        <min_team_size>0</min_team_size>
+        <max_team_size>0</max_team_size>
+        <version>657</version>
+        <primary_language>en</primary_language>
+      </module_definition>
+      <order>0</order>
+    </item>
+  </stint_definition_module_definitions>
+  <comment/>
+  <state>prealpha</state>
+  <published>False</published>
+  <name>LennsProject</name>
+</stint_definition>

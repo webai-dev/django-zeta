@@ -1,0 +1,5 @@
+#! /bin/bash
+
+source $HOME/.virtualenvs/ery/bin/activate
+echo 'from scripts.lenns_demo_files.install_lenns import setup; setup()' | ./manage.py shell
+

@@ -1,0 +1,5 @@
+#! /bin/bash
+source $HOME/.virtualenvs/ery/bin/activate
+echo_str="from scripts.lenns_demo_files.start_lenns_marketplace import start; start()"
+echo $echo_str | ./manage.py shell
+

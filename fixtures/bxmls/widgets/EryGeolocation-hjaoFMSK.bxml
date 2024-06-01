@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>EryGeolocation-hjaoFMSK</slug>
+  <state>prealpha</state>
+  <frontend>Web-foKmSGxB</frontend>
+  <related_widgets/>
+  <connections>
+    <item>
+      <target>Button-yTjJiGYY</target>
+      <name>Button</name>
+      <comment/>
+    </item>
+    <item>
+      <target>BaseGeolocation-ZcJdHKQi</target>
+      <name>BaseGeolocation</name>
+      <comment/>
+    </item>
+  </connections>
+  <events>
+    <item>
+      <name>button</name>
+      <event_type>onClick</event_type>
+      <steps>
+        <item>
+          <event_action_type>run_code</event_action_type>
+          <code>if (useLocation){
+  setUseLocation(false);
+}
+else {
+  setUseLocation(true);
+}</code>
+          <order>0</order>
+        </item>
+      </steps>
+    </item>
+  </events>
+  <props/>
+  <states>
+    <item>
+      <name>useLocation</name>
+      <comment/>
+      <default_value/>
+      <from_prop>False</from_prop>
+    </item>
+  </states>
+  <name>EryGeolocation</name>
+  <comment/>
+  <published>False</published>
+  <code>{useLocation ? (() =&gt; {const RenderGeolocation = geolocated({watchPosition: true})(BaseGeolocation); return &lt;RenderGeolocation /&gt; })(): &lt;span className="geolocation-helper-text"&gt;Please click the button below to allow tracking&lt;/span&gt;}
+&lt;br/&gt;&lt;br/&gt;
+&lt;Button className="geolocation-tracking-toggle" variant="contained" color="primary" onClick={handleButtonClick}&gt;{useLocation ? "Stop Tracking" : "Allow Tracking"}&lt;/Button&gt;</code>
+  <is_multiple_choice>False</is_multiple_choice>
+  <address/>
+  <external>False</external>
+  <namespace>Widget</namespace>
+  <value_parameter>event.target.value</value_parameter>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <save_null>True</save_null>
+  <primary_language>en</primary_language>
+  <keywords/>
+</widget>

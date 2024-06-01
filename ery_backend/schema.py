@@ -1,0 +1,173 @@
+import graphene
+
+# XXX: Address in issue #503. May re-add on further dev of GQLSubscriptions
+# XXX: from rx import Observable
+
+from .mutations import (
+    ActionMutation,
+    ActionStepMutation,
+    ImageAssetMutation,
+    CommandMutation,
+    ConditionMutation,
+    DatasetMutation,
+    FileCommentMutation,
+    FileStarMutation,
+    FolderMutation,
+    LinkMutation,
+    FileTouchMutation,
+    FormMutation,
+    FormButtonMutation,
+    FormButtonListMutation,
+    FormFieldMutation,
+    FormFieldChoiceMutation,
+    FormFieldChoiceTranslationMutation,
+    FormItemMutation,
+    KeywordMutation,
+    LabMutation,
+    ModuleDefinitionProcedureMutation,
+    ModuleDefinitionWidgetMutation,
+    ModuleEventMutation,
+    ModuleEventStepMutation,
+    WidgetChoiceMutation,
+    WidgetChoiceTranslationMutation,
+    NotificationMutation,
+    NotificationContentMutation,
+    ProcedureMutation,
+    ProcedureArgumentMutation,
+    RoleMutation,
+    RobotMutation,
+    RobotRuleMutation,
+    RedirectMutation,
+    StageDefinitionMutation,
+    StageTemplateMutation,
+    StageTemplateBlockMutation,
+    StageTemplateBlockTranslationMutation,
+    StintModuleSpecificationMutation,
+    StintSpecificationAllowedLanguageFrontendMutation,
+    StintSpecificationCountryMutation,
+    StintSpecificationMutation,
+    StintSpecificationRobotMutation,
+    StintSpecificationVariableMutation,
+    StintDefinitionMutation,
+    StintMutation,
+    EraMutation,
+    TeamMutation,
+    TemplateMutation,
+    TemplateBlockMutation,
+    TemplateBlockTranslationMutation,
+    TemplateWidgetMutation,
+    ThemeMutation,
+    ThemePaletteMutation,
+    ThemeTypographyMutation,
+    UserMutation,
+    ValidatorMutation,
+    VariableDefinitionMutation,
+    ModuleVariableMutation,
+    TeamVariableMutation,
+    HandVariableMutation,
+    VendorMutation,
+    WidgetConnectionMutation,
+    WidgetEventMutation,
+    WidgetEventStepMutation,
+    WidgetMutation,
+    WidgetPropMutation,
+    WidgetStateMutation,
+    ModuleDefinitionMutation,
+)
+
+from .users.schema import ViewerQuery
+
+
+class Query(ViewerQuery, graphene.ObjectType):
+    pass
+
+
+class Mutation(
+    ActionMutation,
+    ActionStepMutation,
+    CommandMutation,
+    ConditionMutation,
+    DatasetMutation,
+    EraMutation,
+    FileCommentMutation,
+    FileStarMutation,
+    FileTouchMutation,
+    FolderMutation,
+    FormMutation,
+    FormButtonMutation,
+    FormButtonListMutation,
+    FormFieldMutation,
+    FormFieldChoiceMutation,
+    FormFieldChoiceTranslationMutation,
+    FormItemMutation,
+    HandVariableMutation,
+    ImageAssetMutation,
+    KeywordMutation,
+    LabMutation,
+    LinkMutation,
+    ModuleDefinitionMutation,
+    ModuleDefinitionProcedureMutation,
+    ModuleDefinitionWidgetMutation,
+    ModuleEventMutation,
+    ModuleEventStepMutation,
+    ModuleVariableMutation,
+    NotificationContentMutation,
+    NotificationMutation,
+    ProcedureArgumentMutation,
+    ProcedureMutation,
+    RedirectMutation,
+    RobotMutation,
+    RobotRuleMutation,
+    RoleMutation,
+    StageDefinitionMutation,
+    StageTemplateBlockMutation,
+    StageTemplateBlockTranslationMutation,
+    StageTemplateMutation,
+    StintDefinitionMutation,
+    StintMutation,
+    StintModuleSpecificationMutation,
+    StintSpecificationAllowedLanguageFrontendMutation,
+    StintSpecificationCountryMutation,
+    StintSpecificationMutation,
+    StintSpecificationRobotMutation,
+    StintSpecificationVariableMutation,
+    TeamMutation,
+    TeamVariableMutation,
+    TemplateBlockMutation,
+    TemplateBlockTranslationMutation,
+    TemplateMutation,
+    TemplateWidgetMutation,
+    ThemeMutation,
+    ThemePaletteMutation,
+    ThemeTypographyMutation,
+    UserMutation,
+    ValidatorMutation,
+    VariableDefinitionMutation,
+    VendorMutation,
+    WidgetChoiceMutation,
+    WidgetChoiceTranslationMutation,
+    WidgetConnectionMutation,
+    WidgetEventMutation,
+    WidgetEventStepMutation,
+    WidgetMutation,
+    WidgetPropMutation,
+    WidgetStateMutation,
+    graphene.ObjectType,
+):
+    """Mutations"""
+
+
+# XXX: Address in issue #503. May re-add on further dev
+# class Subscription(graphene.ObjectType):
+#     count_seconds = graphene.Int(up_to=graphene.Int())
+
+#     def resolve_count_seconds(self, info, up_to=5):
+#         return Observable.interval(1000)\
+#          .map(lambda i: "{0}".format(i))\
+#          .take_while(lambda i: int(i) <= up_to)
+
+schema = graphene.Schema(
+    query=Query,
+    mutation=Mutation
+    # subscription=Subscription
+)

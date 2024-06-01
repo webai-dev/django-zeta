@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module_definition>
+    <name>ActionMD</name>
+    <primary_frontend>Web</primary_frontend>
+    <primary_language>en</primary_language>
+    <action_set>
+        <item>
+            <comment>I have no name</comment>        
+        </item>
+    </action_set>
+</module_definition>

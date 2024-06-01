@@ -1,0 +1,6 @@
+#! /bin/bash
+source $HOME/.virtualenvs/ery/bin/activate
+counter=$1
+echo_str="from scripts.lenns_demo_files.start_lenns_lab import start; start($counter)"
+echo $echo_str | ./manage.py shell
+

@@ -1,0 +1,31 @@
+-r test.txt
+
+Werkzeug==0.16.0  # norot
+# Documentation
+# Freeze while returning app.debug() deprecated warning/Invalid type annotation on functools.partial(django.urls.resolvers.RoutePattern)
+Sphinx==3.0.2
+sphinx-rtd-theme==0.4.3
+
+# XXX: May need this
+# -e git://github.com/zd42/sphinxcontrib-django.git@3d588ff7c9f8cde2f7a44ddff543cef8b603d2ed#egg=sphinxcontrib-django
+PyEnchant==3.0.1
+sphinxcontrib-django==0.5.1
+sphinxcontrib-spelling==5.0.0
+
+django-cors-headers==3.2.1
+
+# Development tools
+django-extensions==2.2.9
+# XXX: Problem with django-graphiql-debug-toolbar==0.1.4 that uses non-ascii chars in file read by setup.py
+django-debug-toolbar==1.11  # norot
+django-graphiql-debug-toolbar==0.1.3  # norot
+django-silk==3.0.4
+
+# grpc/protobuf
+grpcio-tools==1.28.1
+
+# Required for tls
+service-identity==18.1.0
+pyopenssl==19.1.0
+
+black==19.10b0

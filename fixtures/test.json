@@ -1,0 +1,5849 @@
+[
+{
+  "model": "widgets.widgetstate",
+  "pk": 1,
+  "fields": {
+    "created": "2020-01-21T19:43:38.443Z",
+    "modified": "2020-01-21T19:43:38.446Z",
+    "name": "stateValue",
+    "comment": null,
+    "widget": 123,
+    "default_value": null,
+    "from_prop": false
+  }
+},
+{
+  "model": "widgets.widgetstate",
+  "pk": 2,
+  "fields": {
+    "created": "2020-01-22T13:54:02.982Z",
+    "modified": "2020-01-22T13:54:02.986Z",
+    "name": "value",
+    "comment": null,
+    "widget": 124,
+    "default_value": null,
+    "from_prop": false
+  }
+},
+{
+  "model": "widgets.widgetstate",
+  "pk": 3,
+  "fields": {
+    "created": "2020-02-03T22:59:57.975Z",
+    "modified": "2020-02-03T22:59:57.975Z",
+    "name": "result",
+    "comment": "",
+    "widget": 125,
+    "default_value": null,
+    "from_prop": false
+  }
+},
+{
+  "model": "widgets.widgetstate",
+  "pk": 4,
+  "fields": {
+    "created": "2020-02-03T22:59:57.991Z",
+    "modified": "2020-02-03T22:59:57.975Z",
+    "name": "useLocation",
+    "comment": null,
+    "widget": 130,
+    "default_value": null,
+    "from_prop": false
+  }
+},
+{
+  "model": "widgets.widgetstate",
+  "pk": 5,
+  "fields": {
+    "created": "2020-02-03T22:59:57.995Z",
+    "modified": "2020-02-03T22:59:57.975Z",
+    "name": "close",
+    "comment": "",
+    "widget": 131,
+    "default_value": null,
+    "from_prop": false
+  }
+},
+{
+  "model": "widgets.widgetstate",
+  "pk": 6,
+  "fields": {
+    "created": "2020-02-03T22:59:58.009Z",
+    "modified": "2020-02-03T22:59:57.975Z",
+    "name": "value",
+    "comment": "",
+    "widget": 134,
+    "default_value": null,
+    "from_prop": false
+  }
+},
+{
+  "model": "widgets.widgetstate",
+  "pk": 7,
+  "fields": {
+    "created": "2020-02-03T22:59:58.017Z",
+    "modified": "2020-02-03T22:59:57.975Z",
+    "name": "autoDisable",
+    "comment": "",
+    "widget": 136,
+    "default_value": false,
+    "from_prop": false
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 1,
+  "fields": {
+    "created": "2020-02-03T22:59:57.948Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onClick",
+    "widget": 116
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 2,
+  "fields": {
+    "created": "2020-02-03T22:59:57.949Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onClick",
+    "widget": 117
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 3,
+  "fields": {
+    "created": "2020-02-03T22:59:57.950Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onReply",
+    "widget": 118
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 4,
+  "fields": {
+    "created": "2020-02-03T22:59:57.832Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onClick",
+    "widget": 7
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 5,
+  "fields": {
+    "created": "2020-02-03T22:59:57.876Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onClick",
+    "widget": 48
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 6,
+  "fields": {
+    "created": "2020-02-03T22:59:57.876Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onChange",
+    "widget": 48
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 7,
+  "fields": {
+    "created": "2020-02-03T22:59:57.877Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onBlur",
+    "widget": 48
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 8,
+  "fields": {
+    "created": "2020-01-21T19:43:38.359Z",
+    "modified": "2020-01-21T19:43:38.379Z",
+    "name": null,
+    "event_type": "onClick",
+    "widget": 123
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 9,
+  "fields": {
+    "created": "2020-01-22T13:54:02.944Z",
+    "modified": "2020-01-22T13:54:02.948Z",
+    "name": null,
+    "event_type": "onChange",
+    "widget": 124
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 10,
+  "fields": {
+    "created": "2020-02-03T22:59:57.976Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onScan",
+    "widget": 125
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 11,
+  "fields": {
+    "created": "2020-02-03T22:59:57.983Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onFocus",
+    "widget": 128
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 12,
+  "fields": {
+    "created": "2020-02-03T22:59:57.983Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onChange",
+    "widget": 128
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 13,
+  "fields": {
+    "created": "2020-02-03T22:59:57.964Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onChange",
+    "widget": 123
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 16,
+  "fields": {
+    "created": "2020-01-27T18:33:39.021Z",
+    "modified": "2020-01-27T18:37:00.914Z",
+    "name": "button",
+    "event_type": "onClick",
+    "widget": 130
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 17,
+  "fields": {
+    "created": "2020-02-03T22:59:57.998Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onClick",
+    "widget": 132
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 18,
+  "fields": {
+    "created": "2020-02-03T22:59:57.932Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onChange",
+    "widget": 101
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 19,
+  "fields": {
+    "created": "2020-02-03T22:59:57.933Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onFocus",
+    "widget": 101
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 20,
+  "fields": {
+    "created": "2020-02-03T22:59:57.933Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onBlur",
+    "widget": 101
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 21,
+  "fields": {
+    "created": "2020-01-27T21:53:30.526Z",
+    "modified": "2020-01-27T21:53:30.544Z",
+    "name": null,
+    "event_type": "onKeyDown",
+    "widget": 133
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 22,
+  "fields": {
+    "created": "2020-01-28T01:16:46.215Z",
+    "modified": "2020-01-28T01:16:46.215Z",
+    "name": null,
+    "event_type": "onBlur",
+    "widget": 133
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 23,
+  "fields": {
+    "created": "2020-02-03T22:59:58.004Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onChange",
+    "widget": 133
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 24,
+  "fields": {
+    "created": "2020-02-03T22:59:58.005Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onFocus",
+    "widget": 133
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 25,
+  "fields": {
+    "created": "2020-02-03T22:59:58.009Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onFocus",
+    "widget": 134
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 26,
+  "fields": {
+    "created": "2020-02-03T22:59:58.009Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onBlur",
+    "widget": 134
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 27,
+  "fields": {
+    "created": "2020-02-03T22:59:58.010Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onChange",
+    "widget": 134
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 28,
+  "fields": {
+    "created": "2020-01-30T00:07:21.660Z",
+    "modified": "2020-01-30T00:07:21.663Z",
+    "name": null,
+    "event_type": "onBlur",
+    "widget": 135
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 29,
+  "fields": {
+    "created": "2020-01-30T00:07:21.666Z",
+    "modified": "2020-01-30T00:07:21.668Z",
+    "name": null,
+    "event_type": "onChange",
+    "widget": 135
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 30,
+  "fields": {
+    "created": "2020-02-03T22:59:58.018Z",
+    "modified": "2020-02-03T22:59:57.832Z",
+    "name": null,
+    "event_type": "onClick",
+    "widget": 136
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 315,
+  "fields": {
+    "created": "2020-01-27T15:09:37.936Z",
+    "modified": "2020-01-27T15:09:37.936Z",
+    "name": null,
+    "event_type": "onChange",
+    "widget": 127
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 316,
+  "fields": {
+    "created": "2020-01-27T15:09:37.936Z",
+    "modified": "2020-01-27T15:09:37.936Z",
+    "name": null,
+    "event_type": "onBlur",
+    "widget": 127
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 317,
+  "fields": {
+    "created": "2020-01-27T15:09:37.937Z",
+    "modified": "2020-01-27T15:09:37.937Z",
+    "name": null,
+    "event_type": "onKeyDown",
+    "widget": 127
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 319,
+  "fields": {
+    "created": "2020-01-31T02:23:21.209Z",
+    "modified": "2020-01-31T02:23:21.209Z",
+    "name": null,
+    "event_type": "onChange",
+    "widget": 140
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 323,
+  "fields": {
+    "created": "2020-02-03T17:50:35.372Z",
+    "modified": "2020-02-03T17:50:35.372Z",
+    "name": null,
+    "event_type": "onChange",
+    "widget": 145
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 325,
+  "fields": {
+    "created": "2020-02-03T22:16:07.913Z",
+    "modified": "2020-02-03T22:16:07.913Z",
+    "name": null,
+    "event_type": "onScan",
+    "widget": 149
+  }
+},
+{
+  "model": "widgets.widgetevent",
+  "pk": 326,
+  "fields": {
+    "created": "2020-02-03T22:59:59.259Z",
+    "modified": "2020-02-03T22:59:59.267Z",
+    "name": null,
+    "event_type": "onChange",
+    "widget": 151
+  }
+},
+{
+  "model": "widgets.widgeteventstep",
+  "pk": 1,
+  "fields": {
+    "created": "2020-02-03T22:59:57.948Z",
+    "modified": "2020-02-03T22:59:57.948Z",
+    "widget_event": 1,
+    "code": null,
+    "event_action_type": "submit",
+    "order": 0
+  }
+},
+{
+  "model": "widgets.widgeteventstep",
+  "pk": 2,
+  "fields": {
+    "created": "2020-02-03T22:59:57.949Z",
+    "modified": "2020-02-03T22:59:57.948Z",
+    "widget_event": 2,
+    "code": null,
+    "event_action_type": "back",
+    "order": 0
+  }
+},
+{
+  "model": "widgets.widgeteventstep",
+  "pk": 3,
+  "fields": {
+    "created": "2020-02-03T22:59:57.950Z",
+    "modified": "2020-02-03T22:59:57.948Z",
+    "widget_event": 3,
+    "code": null,
+    "event_action_type": "submit",
+    "order": 0
+  }
+},
+{
+  "model": "widgets.widgeteventstep",
+  "pk": 4,
+  "fields": {
+    "created": "2020-01-21T19:43:38.364Z",
+    "modified": "2020-01-21T19:48:18.760Z",
+    "widget_event": 8,
+    "code": "if (event.target.value != null){\r\n  setStateValue(event.target.value);}",
+    "event_action_type": "run_code",
+    "order": 0
+  }
+},
+{
+  "model": "widgets.widgeteventstep",
+  "pk": 5,
+  "fields": {
+    "created": "2020-02-03T22:59:57.976Z",
+    "modified": "2020-02-03T22:59:57.948Z",
+    "widget_event": 10,
+    "code": "if (data) {\r\n  setResult({\r\n    result: data\r\n  })\r\n}",
+    "event_action_type": "run_code",
+    "order": 0
+  }
+},
+{
+  "model": "widgets.widgeteventstep",
+  "pk": 6,
+  "fields": {
+    "created": "2020-01-27T18:34:38.441Z",
+    "modified": "2020-01-27T18:37:00.922Z",
+    "widget_event": 16,
+    "code": "if (useLocation){\r\n  setUseLocation(false);\r\n}\r\nelse {\r\n  setUseLocation(true);\r\n}",
+    "event_action_type": "run_code",
+    "order": 0
+  }
+},
+{
+  "model": "widgets.widgeteventstep",
+  "pk": 7,
+  "fields": {
+    "created": "2020-02-03T22:59:57.999Z",
+    "modified": "2020-02-03T22:59:57.948Z",
+    "widget_event": 17,
+    "code": "closeDialog(true)",
+    "event_action_type": "run_code",
+    "order": 0
+  }
+},
+{
+  "model": "widgets.widgeteventstep",
+  "pk": 8,
+  "fields": {
+    "created": "2020-02-03T22:59:58.004Z",
+    "modified": "2020-02-03T22:59:57.948Z",
+    "widget_event": 21,
+    "code": "const key_val = event.which;\n    if ((key_val < 48 || key_val > 57) && (!([8, 9, 13, 37, 38, 39, 40, 46].includes(key_val)))){\n      event.preventDefault();\n    }",
+    "event_action_type": "run_code",
+    "order": 0
+  }
+},
+{
+  "model": "widgets.widgeteventstep",
+  "pk": 9,
+  "fields": {
+    "created": "2020-02-03T22:59:58.019Z",
+    "modified": "2020-02-03T22:59:57.948Z",
+    "widget_event": 30,
+    "code": "setAutoDisable(true);",
+    "event_action_type": "run_code",
+    "order": 0
+  }
+},
+{
+  "model": "widgets.widgeteventstep",
+  "pk": 10,
+  "fields": {
+    "created": "2020-02-03T22:59:59.261Z",
+    "modified": "2020-02-03T22:59:59.264Z",
+    "widget_event": 326,
+    "code": "parent.setState({value: args[0]})",
+    "event_action_type": "run_code",
+    "order": 0
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 1,
+  "fields": {
+    "created": "2020-01-21T19:43:38.391Z",
+    "modified": "2020-01-21T19:43:38.398Z",
+    "name": "label",
+    "comment": null,
+    "widget": 123,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 2,
+  "fields": {
+    "created": "2020-01-21T19:43:38.404Z",
+    "modified": "2020-01-21T19:43:38.408Z",
+    "name": "defaultValue",
+    "comment": null,
+    "widget": 123,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 3,
+  "fields": {
+    "created": "2020-01-21T19:43:38.412Z",
+    "modified": "2020-01-21T19:43:38.415Z",
+    "name": "disabled",
+    "comment": null,
+    "widget": 123,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 4,
+  "fields": {
+    "created": "2020-01-21T19:43:38.419Z",
+    "modified": "2020-01-21T19:43:38.422Z",
+    "name": "labelWidth",
+    "comment": null,
+    "widget": 123,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 5,
+  "fields": {
+    "created": "2020-01-21T19:43:38.425Z",
+    "modified": "2020-01-21T19:43:38.428Z",
+    "name": "id",
+    "comment": null,
+    "widget": 123,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 6,
+  "fields": {
+    "created": "2020-01-21T19:43:38.431Z",
+    "modified": "2020-01-21T19:43:38.433Z",
+    "name": "labelId",
+    "comment": null,
+    "widget": 123,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 7,
+  "fields": {
+    "created": "2020-01-21T19:43:38.438Z",
+    "modified": "2020-01-21T19:43:38.440Z",
+    "name": "helperText",
+    "comment": null,
+    "widget": 123,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 8,
+  "fields": {
+    "created": "2020-01-22T13:54:02.952Z",
+    "modified": "2020-01-22T13:54:02.956Z",
+    "name": "label",
+    "comment": null,
+    "widget": 124,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 9,
+  "fields": {
+    "created": "2020-01-22T13:54:02.960Z",
+    "modified": "2020-01-22T13:54:02.963Z",
+    "name": "row",
+    "comment": null,
+    "widget": 124,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 10,
+  "fields": {
+    "created": "2020-01-22T13:54:02.966Z",
+    "modified": "2020-01-22T13:54:02.969Z",
+    "name": "defaultValue",
+    "comment": null,
+    "widget": 124,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 11,
+  "fields": {
+    "created": "2020-01-22T13:54:02.974Z",
+    "modified": "2020-01-22T13:54:02.977Z",
+    "name": "disabled",
+    "comment": null,
+    "widget": 124,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 12,
+  "fields": {
+    "created": "2020-02-03T22:59:57.970Z",
+    "modified": "2020-02-03T22:59:57.970Z",
+    "name": "id",
+    "comment": null,
+    "widget": 124,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 13,
+  "fields": {
+    "created": "2020-01-09T20:50:27.201Z",
+    "modified": "2020-01-09T20:50:27.201Z",
+    "name": "id",
+    "comment": null,
+    "widget": 7,
+    "default_value": "mui-button",
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 14,
+  "fields": {
+    "created": "2020-01-09T21:04:48.762Z",
+    "modified": "2020-01-09T21:04:48.762Z",
+    "name": "id",
+    "comment": null,
+    "widget": 121,
+    "default_value": "submit-button",
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 15,
+  "fields": {
+    "created": "2020-01-09T22:19:56.897Z",
+    "modified": "2020-01-09T22:19:56.897Z",
+    "name": "color",
+    "comment": null,
+    "widget": 121,
+    "default_value": "primary",
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 16,
+  "fields": {
+    "created": "2020-01-09T22:20:35.337Z",
+    "modified": "2020-01-09T22:20:35.337Z",
+    "name": "variant",
+    "comment": null,
+    "widget": 121,
+    "default_value": "contained",
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 17,
+  "fields": {
+    "created": "2020-02-03T22:59:57.973Z",
+    "modified": "2020-02-03T22:59:57.970Z",
+    "name": "id",
+    "comment": null,
+    "widget": 117,
+    "default_value": "back-button",
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 18,
+  "fields": {
+    "created": "2020-02-03T22:59:57.974Z",
+    "modified": "2020-02-03T22:59:57.970Z",
+    "name": "value",
+    "comment": null,
+    "widget": 48,
+    "default_value": "",
+    "preview_value": ""
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 19,
+  "fields": {
+    "created": "2020-01-27T15:07:51.895Z",
+    "modified": "2020-01-27T15:07:51.895Z",
+    "name": "defaultValue",
+    "comment": "",
+    "widget": 127,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 20,
+  "fields": {
+    "created": "2020-02-03T22:59:57.984Z",
+    "modified": "2020-02-03T22:59:57.970Z",
+    "name": "defaultValue",
+    "comment": "",
+    "widget": 128,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 21,
+  "fields": {
+    "created": "2020-02-03T22:59:57.989Z",
+    "modified": "2020-02-03T22:59:57.970Z",
+    "name": "isGeolocationAvailable",
+    "comment": null,
+    "widget": 129,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 22,
+  "fields": {
+    "created": "2020-02-03T22:59:57.989Z",
+    "modified": "2020-02-03T22:59:57.970Z",
+    "name": "coords",
+    "comment": null,
+    "widget": 129,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 23,
+  "fields": {
+    "created": "2020-02-03T22:59:57.995Z",
+    "modified": "2020-02-03T22:59:57.970Z",
+    "name": "open",
+    "comment": "",
+    "widget": 131,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 24,
+  "fields": {
+    "created": "2020-02-03T22:59:57.999Z",
+    "modified": "2020-02-03T22:59:57.970Z",
+    "name": "closeDialog",
+    "comment": "",
+    "widget": 132,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 25,
+  "fields": {
+    "created": "2020-02-03T22:59:57.999Z",
+    "modified": "2020-02-03T22:59:57.970Z",
+    "name": "fullWidth",
+    "comment": "",
+    "widget": 132,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 26,
+  "fields": {
+    "created": "2020-02-03T22:59:57.996Z",
+    "modified": "2020-02-03T22:59:57.970Z",
+    "name": "closeWidget",
+    "comment": "",
+    "widget": 131,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 27,
+  "fields": {
+    "created": "2020-01-28T01:15:12.332Z",
+    "modified": "2020-01-28T01:15:12.332Z",
+    "name": "label",
+    "comment": "",
+    "widget": 133,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 28,
+  "fields": {
+    "created": "2020-01-28T01:15:12.333Z",
+    "modified": "2020-01-28T01:15:12.333Z",
+    "name": "defaultValue",
+    "comment": "",
+    "widget": 133,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 29,
+  "fields": {
+    "created": "2020-01-28T01:15:12.333Z",
+    "modified": "2020-01-28T01:15:12.333Z",
+    "name": "error",
+    "comment": "",
+    "widget": 133,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 30,
+  "fields": {
+    "created": "2020-02-03T22:59:58.010Z",
+    "modified": "2020-02-03T22:59:57.970Z",
+    "name": "defaultValue",
+    "comment": "",
+    "widget": 134,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 31,
+  "fields": {
+    "created": "2020-02-03T22:59:58.011Z",
+    "modified": "2020-02-03T22:59:57.970Z",
+    "name": "maxValue",
+    "comment": "",
+    "widget": 134,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 32,
+  "fields": {
+    "created": "2020-02-03T22:59:58.011Z",
+    "modified": "2020-02-03T22:59:57.970Z",
+    "name": "minValue",
+    "comment": "",
+    "widget": 134,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 33,
+  "fields": {
+    "created": "2020-02-03T22:59:58.014Z",
+    "modified": "2020-02-03T22:59:57.970Z",
+    "name": "label",
+    "comment": null,
+    "widget": 135,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 34,
+  "fields": {
+    "created": "2020-02-03T22:59:58.015Z",
+    "modified": "2020-02-03T22:59:57.970Z",
+    "name": "defaultValue",
+    "comment": null,
+    "widget": 135,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 35,
+  "fields": {
+    "created": "2020-02-03T22:59:58.017Z",
+    "modified": "2020-02-03T22:59:57.970Z",
+    "name": "disabled",
+    "comment": "",
+    "widget": 136,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 36,
+  "fields": {
+    "created": "2020-02-03T22:59:58.018Z",
+    "modified": "2020-02-03T22:59:57.970Z",
+    "name": "variant",
+    "comment": "",
+    "widget": 136,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 37,
+  "fields": {
+    "created": "2020-02-03T22:59:58.018Z",
+    "modified": "2020-02-03T22:59:57.970Z",
+    "name": "color",
+    "comment": "",
+    "widget": 136,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 42,
+  "fields": {
+    "created": "2020-01-31T02:20:42.061Z",
+    "modified": "2020-01-31T02:20:42.061Z",
+    "name": "label",
+    "comment": "",
+    "widget": 140,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 44,
+  "fields": {
+    "created": "2020-01-31T02:20:42.062Z",
+    "modified": "2020-01-31T04:56:13.995Z",
+    "name": "value",
+    "comment": "",
+    "widget": 140,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 45,
+  "fields": {
+    "created": "2020-01-31T02:20:42.063Z",
+    "modified": "2020-01-31T02:20:42.063Z",
+    "name": "disabled",
+    "comment": "",
+    "widget": 140,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 46,
+  "fields": {
+    "created": "2020-01-31T02:20:42.063Z",
+    "modified": "2020-01-31T02:20:42.063Z",
+    "name": "id",
+    "comment": "",
+    "widget": 140,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 47,
+  "fields": {
+    "created": "2020-01-31T02:20:42.063Z",
+    "modified": "2020-01-31T02:20:42.063Z",
+    "name": "helperText",
+    "comment": "",
+    "widget": 140,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 48,
+  "fields": {
+    "created": "2020-01-31T02:51:33.968Z",
+    "modified": "2020-01-31T02:51:33.968Z",
+    "name": "imageUrl",
+    "comment": "",
+    "widget": 141,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 49,
+  "fields": {
+    "created": "2020-01-31T02:51:33.968Z",
+    "modified": "2020-01-31T02:51:33.968Z",
+    "name": "imageWidth",
+    "comment": "",
+    "widget": 141,
+    "default_value": "200",
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 50,
+  "fields": {
+    "created": "2020-01-31T02:51:33.969Z",
+    "modified": "2020-01-31T02:51:33.969Z",
+    "name": "imageHeight",
+    "comment": "",
+    "widget": 141,
+    "default_value": "250",
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 51,
+  "fields": {
+    "created": "2020-01-31T02:51:33.969Z",
+    "modified": "2020-01-31T02:51:33.969Z",
+    "name": "label",
+    "comment": "",
+    "widget": 141,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 52,
+  "fields": {
+    "created": "2020-01-31T02:51:33.969Z",
+    "modified": "2020-01-31T02:51:33.969Z",
+    "name": "defaultValue",
+    "comment": "",
+    "widget": 141,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 53,
+  "fields": {
+    "created": "2020-01-31T02:51:33.970Z",
+    "modified": "2020-01-31T02:51:33.970Z",
+    "name": "disabled",
+    "comment": "",
+    "widget": 141,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 54,
+  "fields": {
+    "created": "2020-01-31T02:51:33.970Z",
+    "modified": "2020-01-31T02:51:33.970Z",
+    "name": "id",
+    "comment": "",
+    "widget": 141,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 55,
+  "fields": {
+    "created": "2020-01-31T02:54:30.129Z",
+    "modified": "2020-01-31T02:54:30.129Z",
+    "name": "helperText",
+    "comment": "",
+    "widget": 141,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 56,
+  "fields": {
+    "created": "2020-01-31T04:56:51.683Z",
+    "modified": "2020-01-31T04:56:51.683Z",
+    "name": "gqlId",
+    "comment": "",
+    "widget": 140,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 57,
+  "fields": {
+    "created": "2020-01-31T05:16:05.461Z",
+    "modified": "2020-01-31T05:16:05.461Z",
+    "name": "name",
+    "comment": "",
+    "widget": 140,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 58,
+  "fields": {
+    "created": "2020-01-31T05:17:43.806Z",
+    "modified": "2020-01-31T05:17:43.806Z",
+    "name": "name",
+    "comment": "",
+    "widget": 124,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 59,
+  "fields": {
+    "created": "2020-02-03T22:59:57.970Z",
+    "modified": "2020-02-03T22:59:57.970Z",
+    "name": "gqlId",
+    "comment": "",
+    "widget": 124,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 62,
+  "fields": {
+    "created": "2020-02-03T16:45:52.610Z",
+    "modified": "2020-02-03T16:45:52.610Z",
+    "name": "labelId",
+    "comment": "",
+    "widget": 145,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 63,
+  "fields": {
+    "created": "2020-02-03T16:45:52.611Z",
+    "modified": "2020-02-03T16:45:52.611Z",
+    "name": "label",
+    "comment": "",
+    "widget": 145,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 64,
+  "fields": {
+    "created": "2020-02-03T16:45:52.611Z",
+    "modified": "2020-02-03T16:45:52.611Z",
+    "name": "name",
+    "comment": "",
+    "widget": 145,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 65,
+  "fields": {
+    "created": "2020-02-03T16:45:52.611Z",
+    "modified": "2020-02-03T17:12:43.840Z",
+    "name": "value",
+    "comment": "",
+    "widget": 145,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 66,
+  "fields": {
+    "created": "2020-02-03T16:45:52.612Z",
+    "modified": "2020-02-03T16:45:52.612Z",
+    "name": "disabled",
+    "comment": "",
+    "widget": 145,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 67,
+  "fields": {
+    "created": "2020-02-03T16:45:52.612Z",
+    "modified": "2020-02-03T16:45:52.612Z",
+    "name": "id",
+    "comment": "",
+    "widget": 145,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 68,
+  "fields": {
+    "created": "2020-02-03T16:48:07.810Z",
+    "modified": "2020-02-03T16:48:07.810Z",
+    "name": "helperText",
+    "comment": "",
+    "widget": 145,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 69,
+  "fields": {
+    "created": "2020-02-03T16:48:47.053Z",
+    "modified": "2020-02-03T16:48:47.053Z",
+    "name": "gqlId",
+    "comment": "",
+    "widget": 145,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 70,
+  "fields": {
+    "created": "2020-02-03T17:44:11.940Z",
+    "modified": "2020-02-03T17:44:11.940Z",
+    "name": "name",
+    "comment": "",
+    "widget": 123,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 73,
+  "fields": {
+    "created": "2020-02-03T22:05:18.249Z",
+    "modified": "2020-02-03T22:05:18.249Z",
+    "name": "helperText",
+    "comment": "",
+    "widget": 149,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 74,
+  "fields": {
+    "created": "2020-02-03T22:05:18.249Z",
+    "modified": "2020-02-03T22:14:00.222Z",
+    "name": "OptionalInput",
+    "comment": "",
+    "widget": 149,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 75,
+  "fields": {
+    "created": "2020-02-03T22:05:18.250Z",
+    "modified": "2020-02-03T22:05:18.250Z",
+    "name": "defaultValue",
+    "comment": "",
+    "widget": 149,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 76,
+  "fields": {
+    "created": "2020-02-03T22:59:59.317Z",
+    "modified": "2020-02-03T22:59:59.320Z",
+    "name": "widgetChoices",
+    "comment": null,
+    "widget": 152,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widgetprop",
+  "pk": 77,
+  "fields": {
+    "created": "2020-02-03T22:59:59.324Z",
+    "modified": "2020-02-03T22:59:59.327Z",
+    "name": "variables",
+    "comment": null,
+    "widget": 152,
+    "default_value": null,
+    "preview_value": null
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 1,
+  "fields": {
+    "created": "2019-03-19T21:33:29.717Z",
+    "modified": "2019-03-19T21:33:29.798Z",
+    "slug": "AppBar-YVrvDHnJ",
+    "name": "AppBar",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/AppBar",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 2,
+  "fields": {
+    "created": "2019-03-19T21:33:29.802Z",
+    "modified": "2019-03-19T21:33:29.804Z",
+    "slug": "Avatar-oOfuCCHw",
+    "name": "Avatar",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Avatar",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 3,
+  "fields": {
+    "created": "2019-03-19T21:33:29.809Z",
+    "modified": "2019-03-19T21:33:29.810Z",
+    "slug": "Backdrop-sOOvSzQi",
+    "name": "Backdrop",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Backdrop",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 4,
+  "fields": {
+    "created": "2019-03-19T21:33:29.813Z",
+    "modified": "2019-03-19T21:33:29.813Z",
+    "slug": "Badge-IlsCrLqZ",
+    "name": "Badge",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Badge",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 5,
+  "fields": {
+    "created": "2019-03-19T21:33:29.816Z",
+    "modified": "2019-03-19T21:33:29.817Z",
+    "slug": "BottomNavigation-lhrqZmtH",
+    "name": "BottomNavigation",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/BottomNavigation",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 6,
+  "fields": {
+    "created": "2019-03-19T21:33:29.821Z",
+    "modified": "2019-03-19T21:33:29.822Z",
+    "slug": "BottomNavigationAction-RhyvLsFh",
+    "name": "BottomNavigationAction",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/BottomNavigationAction",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 7,
+  "fields": {
+    "created": "2019-03-19T21:33:29.828Z",
+    "modified": "2019-03-19T21:33:29.828Z",
+    "slug": "Button-yTjJiGYY",
+    "name": "Button",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Button",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 8,
+  "fields": {
+    "created": "2019-03-19T21:33:29.831Z",
+    "modified": "2019-03-19T21:33:29.832Z",
+    "slug": "ButtonBase-VMCwQMSP",
+    "name": "ButtonBase",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/ButtonBase",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 9,
+  "fields": {
+    "created": "2019-03-19T21:33:29.836Z",
+    "modified": "2019-03-19T21:33:29.837Z",
+    "slug": "Card-ysbrGXGZ",
+    "name": "Card",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Card",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 10,
+  "fields": {
+    "created": "2019-03-19T21:33:29.843Z",
+    "modified": "2019-03-19T21:33:29.844Z",
+    "slug": "CardActionArea-AaSctUQG",
+    "name": "CardActionArea",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/CardActionArea",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 11,
+  "fields": {
+    "created": "2019-03-19T21:33:29.847Z",
+    "modified": "2019-03-19T21:33:29.848Z",
+    "slug": "CardActions-mwbdinWu",
+    "name": "CardActions",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/CardActions",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 12,
+  "fields": {
+    "created": "2019-03-19T21:33:29.851Z",
+    "modified": "2019-03-19T21:33:29.852Z",
+    "slug": "CardContent-ElLzvPww",
+    "name": "CardContent",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/CardContent",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 13,
+  "fields": {
+    "created": "2019-03-19T21:33:29.855Z",
+    "modified": "2019-03-19T21:33:29.857Z",
+    "slug": "CardHeader-gqUEjNvA",
+    "name": "CardHeader",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/CardHeader",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 14,
+  "fields": {
+    "created": "2019-03-19T21:33:29.860Z",
+    "modified": "2019-03-19T21:33:29.861Z",
+    "slug": "CardMedia-mEQlVYyr",
+    "name": "CardMedia",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/CardMedia",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 15,
+  "fields": {
+    "created": "2019-03-19T21:33:29.864Z",
+    "modified": "2019-03-19T21:33:29.864Z",
+    "slug": "Checkbox-imgZoIve",
+    "name": "Checkbox",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Checkbox",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 16,
+  "fields": {
+    "created": "2019-03-19T21:33:29.871Z",
+    "modified": "2019-03-19T21:33:29.873Z",
+    "slug": "Chip-qLyMsUOI",
+    "name": "Chip",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Chip",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 17,
+  "fields": {
+    "created": "2019-03-19T21:33:29.879Z",
+    "modified": "2019-03-19T21:33:29.881Z",
+    "slug": "CircularProgress-VWxzdAHX",
+    "name": "CircularProgress",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/CircularProgress",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 18,
+  "fields": {
+    "created": "2019-03-19T21:33:29.884Z",
+    "modified": "2019-03-19T21:33:29.886Z",
+    "slug": "ClickAwayListener-LcSTpUDx",
+    "name": "ClickAwayListener",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/ClickAwayListener",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 19,
+  "fields": {
+    "created": "2019-03-19T21:33:29.890Z",
+    "modified": "2019-03-19T21:33:29.891Z",
+    "slug": "Collapse-fdWcualE",
+    "name": "Collapse",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Collapse",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 20,
+  "fields": {
+    "created": "2019-03-19T21:33:29.894Z",
+    "modified": "2019-03-19T21:33:29.895Z",
+    "slug": "CssBaseline-TarJZbne",
+    "name": "CssBaseline",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/CssBaseline",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 21,
+  "fields": {
+    "created": "2019-03-19T21:33:29.898Z",
+    "modified": "2019-03-19T21:33:29.899Z",
+    "slug": "Dialog-AYKChlIC",
+    "name": "Dialog",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Dialog",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 22,
+  "fields": {
+    "created": "2019-03-19T21:33:29.902Z",
+    "modified": "2019-03-19T21:33:29.902Z",
+    "slug": "DialogActions-TBvzferC",
+    "name": "DialogActions",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/DialogActions",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 23,
+  "fields": {
+    "created": "2019-03-19T21:33:29.906Z",
+    "modified": "2019-03-19T21:33:29.907Z",
+    "slug": "DialogContent-qkjEChGn",
+    "name": "DialogContent",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/DialogContent",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 24,
+  "fields": {
+    "created": "2019-03-19T21:33:29.910Z",
+    "modified": "2019-03-19T21:33:29.911Z",
+    "slug": "DialogContentText-eeYZTNmr",
+    "name": "DialogContentText",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/DialogContentText",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 25,
+  "fields": {
+    "created": "2019-03-19T21:33:29.914Z",
+    "modified": "2019-03-19T21:33:29.915Z",
+    "slug": "DialogTitle-nqyjyQpp",
+    "name": "DialogTitle",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/DialogTitle",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 26,
+  "fields": {
+    "created": "2019-03-19T21:33:29.917Z",
+    "modified": "2019-03-19T21:33:29.918Z",
+    "slug": "Divider-tOHtiNmr",
+    "name": "Divider",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Divider",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 27,
+  "fields": {
+    "created": "2019-03-19T21:33:29.922Z",
+    "modified": "2019-03-19T21:33:29.923Z",
+    "slug": "Drawer-ZpSbEPpz",
+    "name": "Drawer",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Drawer",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 28,
+  "fields": {
+    "created": "2019-03-19T21:33:29.926Z",
+    "modified": "2019-03-19T21:33:29.927Z",
+    "slug": "ExpansionPanel-hOCfCpdb",
+    "name": "ExpansionPanel",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/ExpansionPanel",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 29,
+  "fields": {
+    "created": "2019-03-19T21:33:29.931Z",
+    "modified": "2019-03-19T21:33:29.932Z",
+    "slug": "ExpansionPanelActions-pygqoTHX",
+    "name": "ExpansionPanelActions",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/ExpansionPanelActions",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 30,
+  "fields": {
+    "created": "2019-03-19T21:33:29.936Z",
+    "modified": "2019-03-19T21:33:29.937Z",
+    "slug": "ExpansionPanelDetails-CtrxPPgG",
+    "name": "ExpansionPanelDetails",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/ExpansionPanelDetails",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 31,
+  "fields": {
+    "created": "2019-03-19T21:33:29.940Z",
+    "modified": "2019-03-19T21:33:29.942Z",
+    "slug": "ExpansionPanelSummary-tCCISDCU",
+    "name": "ExpansionPanelSummary",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/ExpansionPanelSummary",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 32,
+  "fields": {
+    "created": "2019-03-19T21:33:29.947Z",
+    "modified": "2019-03-19T21:33:29.949Z",
+    "slug": "Fab-HIOjvACw",
+    "name": "Fab",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Fab",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 33,
+  "fields": {
+    "created": "2019-03-19T21:33:29.952Z",
+    "modified": "2019-03-19T21:33:29.953Z",
+    "slug": "Fade-zULlBhtc",
+    "name": "Fade",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Fade",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 34,
+  "fields": {
+    "created": "2019-03-19T21:33:29.957Z",
+    "modified": "2019-03-19T21:33:29.958Z",
+    "slug": "FilledInput-aipSvocn",
+    "name": "FilledInput",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/FilledInput",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 35,
+  "fields": {
+    "created": "2019-03-19T21:33:29.961Z",
+    "modified": "2019-03-19T21:33:29.962Z",
+    "slug": "FormControl-iMhNwgzj",
+    "name": "FormControl",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/FormControl",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 36,
+  "fields": {
+    "created": "2019-03-19T21:33:29.966Z",
+    "modified": "2019-03-19T21:33:29.967Z",
+    "slug": "FormControlLabel-yquWKGZO",
+    "name": "FormControlLabel",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/FormControlLabel",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 37,
+  "fields": {
+    "created": "2019-03-19T21:33:29.970Z",
+    "modified": "2019-03-19T21:33:29.971Z",
+    "slug": "FormGroup-LHISRLFf",
+    "name": "FormGroup",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/FormGroup",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 38,
+  "fields": {
+    "created": "2019-03-19T21:33:29.974Z",
+    "modified": "2019-03-19T21:33:29.975Z",
+    "slug": "FormHelperText-KzhuSMjL",
+    "name": "FormHelperText",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/FormHelperText",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 39,
+  "fields": {
+    "created": "2019-03-19T21:33:29.978Z",
+    "modified": "2019-03-19T21:33:29.979Z",
+    "slug": "FormLabel-yIXEebyu",
+    "name": "FormLabel",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/FormLabel",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 40,
+  "fields": {
+    "created": "2019-03-19T21:33:29.982Z",
+    "modified": "2019-03-19T21:33:29.983Z",
+    "slug": "Grid-boiBQcEE",
+    "name": "Grid",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Grid",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 41,
+  "fields": {
+    "created": "2019-03-19T21:33:29.986Z",
+    "modified": "2019-03-19T21:33:29.986Z",
+    "slug": "GridList-lqjMddGe",
+    "name": "GridList",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/GridList",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 42,
+  "fields": {
+    "created": "2019-03-19T21:33:29.989Z",
+    "modified": "2019-03-19T21:33:29.990Z",
+    "slug": "GridListTile-XCzjwKWB",
+    "name": "GridListTile",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/GridListTile",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 43,
+  "fields": {
+    "created": "2019-03-19T21:33:29.993Z",
+    "modified": "2019-03-19T21:33:29.994Z",
+    "slug": "GridListTileBar-sIyjRzTB",
+    "name": "GridListTileBar",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/GridListTileBar",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 44,
+  "fields": {
+    "created": "2019-03-19T21:33:29.997Z",
+    "modified": "2019-03-19T21:33:29.997Z",
+    "slug": "Grow-DcxmVTfL",
+    "name": "Grow",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Grow",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 45,
+  "fields": {
+    "created": "2019-03-19T21:33:30.001Z",
+    "modified": "2019-03-19T21:33:30.002Z",
+    "slug": "Hidden-fZhqRuRp",
+    "name": "Hidden",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Hidden",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 46,
+  "fields": {
+    "created": "2019-03-19T21:33:30.005Z",
+    "modified": "2019-03-19T21:33:30.006Z",
+    "slug": "Icon-LZXnJaRj",
+    "name": "Icon",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Icon",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 47,
+  "fields": {
+    "created": "2019-03-19T21:33:30.009Z",
+    "modified": "2019-03-19T21:33:30.009Z",
+    "slug": "IconButton-IHsfeHzn",
+    "name": "IconButton",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/IconButton",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 48,
+  "fields": {
+    "created": "2019-03-19T21:33:30.012Z",
+    "modified": "2019-03-19T21:33:30.013Z",
+    "slug": "Input-brYhZQKc",
+    "name": "Input",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Input",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 49,
+  "fields": {
+    "created": "2019-03-19T21:33:30.016Z",
+    "modified": "2019-03-19T21:33:30.017Z",
+    "slug": "InputAdornment-JgamHseZ",
+    "name": "InputAdornment",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/InputAdornment",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 50,
+  "fields": {
+    "created": "2019-03-19T21:33:30.020Z",
+    "modified": "2019-03-19T21:33:30.021Z",
+    "slug": "InputBase-sCinGjbZ",
+    "name": "InputBase",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/InputBase",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 51,
+  "fields": {
+    "created": "2019-03-19T21:33:30.024Z",
+    "modified": "2019-03-19T21:33:30.025Z",
+    "slug": "InputLabel-OCnQAsBk",
+    "name": "InputLabel",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/InputLabel",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 52,
+  "fields": {
+    "created": "2019-03-19T21:33:30.028Z",
+    "modified": "2019-03-19T21:33:30.029Z",
+    "slug": "LinearProgress-XHxcjQcA",
+    "name": "LinearProgress",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/LinearProgress",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 53,
+  "fields": {
+    "created": "2019-03-19T21:33:30.036Z",
+    "modified": "2019-03-19T21:33:30.039Z",
+    "slug": "Link-pdNuxcqb",
+    "name": "Link",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Link",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 54,
+  "fields": {
+    "created": "2019-03-19T21:33:30.048Z",
+    "modified": "2019-03-19T21:33:30.051Z",
+    "slug": "List-bpbLOwGS",
+    "name": "List",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/List",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 55,
+  "fields": {
+    "created": "2019-03-19T21:33:30.060Z",
+    "modified": "2019-03-19T21:33:30.062Z",
+    "slug": "ListItem-ONLpXGFe",
+    "name": "ListItem",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/ListItem",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 56,
+  "fields": {
+    "created": "2019-03-19T21:33:30.068Z",
+    "modified": "2019-03-19T21:33:30.069Z",
+    "slug": "ListItemAvatar-EfscAxrY",
+    "name": "ListItemAvatar",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/ListItemAvatar",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 57,
+  "fields": {
+    "created": "2019-03-19T21:33:30.073Z",
+    "modified": "2019-03-19T21:33:30.075Z",
+    "slug": "ListItemIcon-FtjXYGqn",
+    "name": "ListItemIcon",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/ListItemIcon",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 58,
+  "fields": {
+    "created": "2019-03-19T21:33:30.078Z",
+    "modified": "2019-03-19T21:33:30.080Z",
+    "slug": "ListItemSecondaryAction-XhRCObsx",
+    "name": "ListItemSecondaryAction",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/ListItemSecondaryAction",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 59,
+  "fields": {
+    "created": "2019-03-19T21:33:30.083Z",
+    "modified": "2019-03-19T21:33:30.084Z",
+    "slug": "ListItemText-AdnWajKM",
+    "name": "ListItemText",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/ListItemText",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 60,
+  "fields": {
+    "created": "2019-03-19T21:33:30.087Z",
+    "modified": "2019-03-19T21:33:30.088Z",
+    "slug": "ListSubheader-oPcbZAGl",
+    "name": "ListSubheader",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/ListSubheader",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 61,
+  "fields": {
+    "created": "2019-03-19T21:33:30.092Z",
+    "modified": "2019-03-19T21:33:30.093Z",
+    "slug": "Menu-LuVqQbNz",
+    "name": "Menu",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Menu",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 62,
+  "fields": {
+    "created": "2019-03-19T21:33:30.096Z",
+    "modified": "2019-03-19T21:33:30.097Z",
+    "slug": "MenuItem-AeUdAzIc",
+    "name": "MenuItem",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/MenuItem",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 63,
+  "fields": {
+    "created": "2019-03-19T21:33:30.100Z",
+    "modified": "2019-03-19T21:33:30.101Z",
+    "slug": "MenuList-LqDlYeTA",
+    "name": "MenuList",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/MenuList",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 64,
+  "fields": {
+    "created": "2019-03-19T21:33:30.105Z",
+    "modified": "2019-03-19T21:33:30.106Z",
+    "slug": "MobileStepper-xDxfCSNg",
+    "name": "MobileStepper",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/MobileStepper",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 65,
+  "fields": {
+    "created": "2019-03-19T21:33:30.109Z",
+    "modified": "2019-03-19T21:33:30.110Z",
+    "slug": "Modal-QXgyxNZL",
+    "name": "Modal",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Modal",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 66,
+  "fields": {
+    "created": "2019-03-19T21:33:30.113Z",
+    "modified": "2019-03-19T21:33:30.114Z",
+    "slug": "MuiThemeProvider-OJqtnHjU",
+    "name": "MuiThemeProvider",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/styles/MuiThemeProvider",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 67,
+  "fields": {
+    "created": "2019-03-19T21:33:30.118Z",
+    "modified": "2019-03-19T21:33:30.119Z",
+    "slug": "NativeSelect-liQxgFHq",
+    "name": "NativeSelect",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/NativeSelect",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 68,
+  "fields": {
+    "created": "2019-03-19T21:33:30.122Z",
+    "modified": "2019-03-19T21:33:30.123Z",
+    "slug": "NoSsr-ToVKxfYl",
+    "name": "NoSsr",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/NoSsr",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 69,
+  "fields": {
+    "created": "2019-03-19T21:33:30.126Z",
+    "modified": "2019-03-19T21:33:30.127Z",
+    "slug": "OutlinedInput-gvISJQaN",
+    "name": "OutlinedInput",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/OutlinedInput",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 70,
+  "fields": {
+    "created": "2019-03-19T21:33:30.131Z",
+    "modified": "2019-03-19T21:33:30.132Z",
+    "slug": "Paper-TThdEqct",
+    "name": "Paper",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Paper",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 71,
+  "fields": {
+    "created": "2019-03-19T21:33:30.135Z",
+    "modified": "2019-03-19T21:33:30.136Z",
+    "slug": "Popover-wuyrZrMA",
+    "name": "Popover",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Popover",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 72,
+  "fields": {
+    "created": "2019-03-19T21:33:30.139Z",
+    "modified": "2019-03-19T21:33:30.140Z",
+    "slug": "Popper-EqOYqSAv",
+    "name": "Popper",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Popper",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 73,
+  "fields": {
+    "created": "2019-03-19T21:33:30.143Z",
+    "modified": "2019-03-19T21:33:30.144Z",
+    "slug": "Portal-lsGhmhnw",
+    "name": "Portal",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Portal",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 74,
+  "fields": {
+    "created": "2019-03-19T21:33:30.148Z",
+    "modified": "2019-03-19T21:33:30.149Z",
+    "slug": "Radio-CqNIyweI",
+    "name": "Radio",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Radio",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 75,
+  "fields": {
+    "created": "2019-03-19T21:33:30.152Z",
+    "modified": "2019-03-19T21:33:30.153Z",
+    "slug": "RadioGroup-LbVMARYb",
+    "name": "RadioGroup",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/RadioGroup",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 76,
+  "fields": {
+    "created": "2019-03-19T21:33:30.156Z",
+    "modified": "2019-03-19T21:33:30.157Z",
+    "slug": "RootRef-GsoYhSiH",
+    "name": "RootRef",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/RootRef",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 77,
+  "fields": {
+    "created": "2019-03-19T21:33:30.161Z",
+    "modified": "2019-03-19T21:33:30.162Z",
+    "slug": "Select-DPFMSlRt",
+    "name": "Select",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Select",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 78,
+  "fields": {
+    "created": "2019-03-19T21:33:30.165Z",
+    "modified": "2019-03-19T21:33:30.166Z",
+    "slug": "Slide-dLbFMofB",
+    "name": "Slide",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Slide",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 79,
+  "fields": {
+    "created": "2019-03-19T21:33:30.169Z",
+    "modified": "2019-03-19T21:33:30.170Z",
+    "slug": "Snackbar-vFWtUgpW",
+    "name": "Snackbar",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Snackbar",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 80,
+  "fields": {
+    "created": "2019-03-19T21:33:30.174Z",
+    "modified": "2019-03-19T21:33:30.174Z",
+    "slug": "SnackbarContent-KUZOZcyC",
+    "name": "SnackbarContent",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/SnackbarContent",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 81,
+  "fields": {
+    "created": "2019-03-19T21:33:30.178Z",
+    "modified": "2019-03-19T21:33:30.179Z",
+    "slug": "Step-mcLVFxju",
+    "name": "Step",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Step",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 82,
+  "fields": {
+    "created": "2019-03-19T21:33:30.182Z",
+    "modified": "2019-03-19T21:33:30.183Z",
+    "slug": "StepButton-jYYJMbsw",
+    "name": "StepButton",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/StepButton",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 83,
+  "fields": {
+    "created": "2019-03-19T21:33:30.186Z",
+    "modified": "2019-03-19T21:33:30.187Z",
+    "slug": "StepConnector-KBxtYxDx",
+    "name": "StepConnector",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/StepConnector",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 84,
+  "fields": {
+    "created": "2019-03-19T21:33:30.191Z",
+    "modified": "2019-03-19T21:33:30.192Z",
+    "slug": "StepContent-VgEvFnqt",
+    "name": "StepContent",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/StepContent",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 85,
+  "fields": {
+    "created": "2019-03-19T21:33:30.195Z",
+    "modified": "2019-03-19T21:33:30.196Z",
+    "slug": "StepIcon-nKErJcpe",
+    "name": "StepIcon",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/StepIcon",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 86,
+  "fields": {
+    "created": "2019-03-19T21:33:30.199Z",
+    "modified": "2019-03-19T21:33:30.200Z",
+    "slug": "StepLabel-CCzVGwGG",
+    "name": "StepLabel",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/StepLabel",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 87,
+  "fields": {
+    "created": "2019-03-19T21:33:30.204Z",
+    "modified": "2019-03-19T21:33:30.205Z",
+    "slug": "Stepper-BMvPrZgH",
+    "name": "Stepper",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Stepper",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 88,
+  "fields": {
+    "created": "2019-03-19T21:33:30.208Z",
+    "modified": "2019-03-19T21:33:30.209Z",
+    "slug": "SvgIcon-vBLDaeHn",
+    "name": "SvgIcon",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/SvgIcon",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 89,
+  "fields": {
+    "created": "2019-03-19T21:33:30.212Z",
+    "modified": "2019-03-19T21:33:30.213Z",
+    "slug": "SwipeableDrawer-PScUyGDx",
+    "name": "SwipeableDrawer",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/SwipeableDrawer",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 90,
+  "fields": {
+    "created": "2019-03-19T21:33:30.216Z",
+    "modified": "2019-03-19T21:33:30.217Z",
+    "slug": "Switch-QCCHPBVZ",
+    "name": "Switch",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Switch",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 91,
+  "fields": {
+    "created": "2019-03-19T21:33:30.220Z",
+    "modified": "2019-03-19T21:33:30.221Z",
+    "slug": "Tab-trEJVImg",
+    "name": "Tab",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Tab",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 92,
+  "fields": {
+    "created": "2019-03-19T21:33:30.224Z",
+    "modified": "2019-03-19T21:33:30.225Z",
+    "slug": "Table-PhfDJSvJ",
+    "name": "Table",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Table",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 93,
+  "fields": {
+    "created": "2019-03-19T21:33:30.228Z",
+    "modified": "2019-03-19T21:33:30.229Z",
+    "slug": "TableBody-CuaPwPtW",
+    "name": "TableBody",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/TableBody",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 94,
+  "fields": {
+    "created": "2019-03-19T21:33:30.233Z",
+    "modified": "2019-03-19T21:33:30.234Z",
+    "slug": "TableCell-KWCxxBXv",
+    "name": "TableCell",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/TableCell",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 95,
+  "fields": {
+    "created": "2019-03-19T21:33:30.237Z",
+    "modified": "2019-03-19T21:33:30.238Z",
+    "slug": "TableFooter-eCKsTNmz",
+    "name": "TableFooter",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/TableFooter",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 96,
+  "fields": {
+    "created": "2019-03-19T21:33:30.241Z",
+    "modified": "2019-03-19T21:33:30.242Z",
+    "slug": "TableHead-umcWgRvP",
+    "name": "TableHead",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/TableHead",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 97,
+  "fields": {
+    "created": "2019-03-19T21:33:30.245Z",
+    "modified": "2019-03-19T21:33:30.246Z",
+    "slug": "TablePagination-yVLEOTUi",
+    "name": "TablePagination",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/TablePagination",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 98,
+  "fields": {
+    "created": "2019-03-19T21:33:30.250Z",
+    "modified": "2019-03-19T21:33:30.251Z",
+    "slug": "TableRow-FhrhgDLc",
+    "name": "TableRow",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/TableRow",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 99,
+  "fields": {
+    "created": "2019-03-19T21:33:30.254Z",
+    "modified": "2019-03-19T21:33:30.255Z",
+    "slug": "TableSortLabel-EkcUaVip",
+    "name": "TableSortLabel",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/TableSortLabel",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 100,
+  "fields": {
+    "created": "2019-03-19T21:33:30.258Z",
+    "modified": "2019-03-19T21:33:30.259Z",
+    "slug": "Tabs-RXTirKHd",
+    "name": "Tabs",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Tabs",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 101,
+  "fields": {
+    "created": "2019-03-19T21:33:30.266Z",
+    "modified": "2019-03-19T21:33:30.269Z",
+    "slug": "TextField-mKSlkfLR",
+    "name": "TextField",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/TextField",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 102,
+  "fields": {
+    "created": "2019-03-19T21:33:30.277Z",
+    "modified": "2019-03-19T21:33:30.280Z",
+    "slug": "Toolbar-eXZsLwYm",
+    "name": "Toolbar",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Toolbar",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 103,
+  "fields": {
+    "created": "2019-03-19T21:33:30.285Z",
+    "modified": "2019-03-19T21:33:30.287Z",
+    "slug": "Tooltip-nonFsjnl",
+    "name": "Tooltip",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Tooltip",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 104,
+  "fields": {
+    "created": "2019-03-19T21:33:30.291Z",
+    "modified": "2019-03-19T21:33:30.292Z",
+    "slug": "TouchRipple-bcdRBGZo",
+    "name": "TouchRipple",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/ButtonBase/TouchRipple",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 105,
+  "fields": {
+    "created": "2019-03-19T21:33:30.296Z",
+    "modified": "2019-03-19T21:33:30.297Z",
+    "slug": "Typography-GoPCrlLg",
+    "name": "Typography",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Typography",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 106,
+  "fields": {
+    "created": "2019-03-19T21:33:30.300Z",
+    "modified": "2019-03-19T21:33:30.301Z",
+    "slug": "Zoom-VmdsBHOS",
+    "name": "Zoom",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Zoom",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 107,
+  "fields": {
+    "created": "2019-03-19T21:33:30.304Z",
+    "modified": "2019-03-19T21:33:30.305Z",
+    "slug": "Blog-aSbRtAhu",
+    "name": "Blog",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Blog",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 108,
+  "fields": {
+    "created": "2020-02-03T22:59:57.940Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "smsemptywidget-ujjIkXxBk",
+    "name": "SMSEmptyWidget",
+    "comment": "Equivalent to null empty Widget.",
+    "state": "prealpha",
+    "published": false,
+    "code": "String('')",
+    "address": null,
+    "frontend": 1,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 109,
+  "fields": {
+    "created": "2020-02-03T22:59:57.940Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "webemptywidget-uJIkXXbk",
+    "name": "WebEmptyWidget",
+    "comment": "Equivalent to null empty Widget.",
+    "state": "prealpha",
+    "published": false,
+    "code": "<div>This is an empty widget</div>",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 110,
+  "fields": {
+    "created": "2020-02-03T22:59:57.941Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "smsnumberwidget-ujIkXxBK",
+    "name": "SMSNumberWidget",
+    "comment": "Default widget for SMS Input which require int/float responses",
+    "state": "prealpha",
+    "published": false,
+    "code": "String('Reply with a number to send your response. \\n')",
+    "address": null,
+    "frontend": 1,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 111,
+  "fields": {
+    "created": "2020-02-03T22:59:57.941Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "smstextwidget-ujIkXxBK",
+    "name": "SMSTextWidget",
+    "comment": "Default widget for SMS Input which require str responses",
+    "state": "prealpha",
+    "published": false,
+    "code": "String('Reply with text to send your response. \\n')",
+    "address": null,
+    "frontend": 1,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 112,
+  "fields": {
+    "created": "2020-02-03T22:59:57.942Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "smsnullwidget-ujIkXxBK",
+    "name": "SMSNullWidget",
+    "comment": "Default widget for SMS Input which don't require a typed response",
+    "state": "prealpha",
+    "published": false,
+    "code": "String('Reply to send your response. \\n')",
+    "address": null,
+    "frontend": 1,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 113,
+  "fields": {
+    "created": "2020-02-03T22:59:57.942Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "smsmultiplechoicecaptionvaluewidget-ujIkXxBK",
+    "name": "SMSMultipleChoiceCaptionValueWidget",
+    "comment": "Displays value: caption pairs for SMS Inputs with multiple choice options",
+    "state": "prealpha",
+    "published": false,
+    "code": "var output='Reply with one of the following to send your response: \\n'; for (i=0; i<choices.length; i++){output = output + choices[i]['value'] + ' for ' + choices[i]['caption'] + '\\n'} output",
+    "address": null,
+    "frontend": 1,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 114,
+  "fields": {
+    "created": "2020-02-03T22:59:57.942Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "smsmultiplechoicevaluewidget-ujIkXxBK",
+    "name": "SMSMultipleChoiceValueWidget",
+    "comment": "Displays values for SMS Inputs with multiple choice options",
+    "state": "prealpha",
+    "published": false,
+    "code": "var output='Reply with one of the following to send your response: \\n'; for (i=0; i<choices.length; i++){output = output + choices[i]['value'] + '\\n'} output",
+    "address": null,
+    "frontend": 1,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 115,
+  "fields": {
+    "created": "2020-02-03T22:59:57.943Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "webmultiplechoicewidget-ujIkXxBK",
+    "name": "DefaultWebMultipleChoiceWidget",
+    "comment": "Displays values for Web Inputs with multiple choice options",
+    "state": "prealpha",
+    "published": false,
+    "code": "{choices ? choices.map((choice, index) => <React.Fragment key={index}><Button id={'button-' + index}>{choice.caption || choice.value}</Button><Divider /></React.Fragment>) : 'WebMultipleChoiceWidget needs choices in order to render.'}",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 116,
+  "fields": {
+    "created": "2020-02-03T22:59:57.944Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "SubmitButton-sGuVqQCu",
+    "name": "SubmitButton",
+    "comment": "Allows forward stage progression.",
+    "state": "prealpha",
+    "published": false,
+    "code": "<Button variant=\"contained\" id={props.id} color={props.color} disabled={props.disabled} {...props} onClick={ handleClick }>{props.children || \"Next\"}</Button>",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 117,
+  "fields": {
+    "created": "2019-07-29T13:40:43.258Z",
+    "modified": "2019-07-29T23:17:26.991Z",
+    "slug": "BackButton-adWnIsOD",
+    "name": "BackButton",
+    "comment": "Allows backward stage progression.",
+    "state": "prealpha",
+    "published": false,
+    "code": "<Button id={id} variant=\"contained\" color={props.color || \"secondary\"} disabled={props.disabled} onClick={handleClick}>{children || \"Back\"}</Button>",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 118,
+  "fields": {
+    "created": "2020-02-03T22:59:57.949Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "SMSSubmitButton-sGuVqQCu",
+    "name": "SMSSubmitButton",
+    "comment": "Allows forward stage progression.",
+    "state": "prealpha",
+    "published": false,
+    "code": "''",
+    "address": null,
+    "frontend": 1,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 119,
+  "fields": {
+    "created": "2020-02-03T22:59:57.951Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "Container-RYylgXcT",
+    "name": "Container",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Container",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 120,
+  "fields": {
+    "created": "2020-02-03T22:59:57.952Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "Box-ewCfjnQt",
+    "name": "Box",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Box",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 121,
+  "fields": {
+    "created": "2020-01-09T16:24:34.966Z",
+    "modified": "2020-01-09T22:20:58.734Z",
+    "slug": "FormSubmitButton-cvbxEHZZ",
+    "name": "FormSubmitButton",
+    "comment": "Submit button for forms",
+    "state": "prealpha",
+    "published": false,
+    "code": "<Button id={id} color={color} variant={variant} type=\"submit\">{children || \"Save & Continue\"}</Button>",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 122,
+  "fields": {
+    "created": "2020-01-21T19:43:06.804Z",
+    "modified": "2020-01-21T19:43:06.818Z",
+    "slug": "CustomMenuItem-WdYnIWkm",
+    "name": "CustomMenuItem",
+    "comment": null,
+    "state": "prealpha",
+    "published": false,
+    "code": "<MenuItem innerRef={ref} {...props} />",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 123,
+  "fields": {
+    "created": "2020-01-21T19:43:38.254Z",
+    "modified": "2020-01-21T19:43:38.450Z",
+    "slug": "Dropdown-cfuhycxr",
+    "name": "Dropdown",
+    "comment": "Must be wrapped in a ModuleDefinitionWidget with WidgetChoices",
+    "state": "prealpha",
+    "published": false,
+    "code": "{choices ?\r\n<FormControl>\r\n  <InputLabel id={labelId}>{label}</InputLabel>\r\n  <Select \r\n    displayEmpty\r\n    value= {\r\n    stateValue == null ? \r\n        defaultValue != null  ?\r\n        defaultValue :\r\n        \"\":\r\n    stateValue} \r\n    disabled={disabled}\r\n    labelWidth={labelWidth}\r\n    id={id}\r\n    labelId={labelId}\r\n    onChange={handleChange}\r\n    onClick={handleClick}\r\n    name={name}\r\n  \r\n  >\r\n    <CustomMenuItem value=\"\">\r\n      <em>Click to Select</em>\r\n    </CustomMenuItem>\r\n    {choices.map((choice, index) => <CustomMenuItem className=\"dropdown-choice\" key={index} value={choice.value} id={index} > \r\n      {choice.caption}\r\n    </CustomMenuItem>)}\r\n  </Select>\r\n  <FormHelperText>{helperText}</FormHelperText>\r\n</FormControl>:  <div>Warning: Dropdown widget needs choices</div>}",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 124,
+  "fields": {
+    "created": "2020-01-22T13:54:02.879Z",
+    "modified": "2020-01-31T05:21:01.705Z",
+    "slug": "RadioButtons-NWguxVJa",
+    "name": "RadioButtons",
+    "comment": "Must be wrapped in a ModuleDefinitionWidget with WidgetChoices",
+    "state": "prealpha",
+    "published": false,
+    "code": "{choices ? <FormControl component=\"fieldset\">\r\n    <RadioGroup\r\n   \r\n        row={row}\r\n       onChange={handleChange}       \r\n       id={id}\r\n>\r\n        {choices.map((choice, index) => \r\n            <FormControlLabel\r\n                key={index}\r\n                control={\r\n                    <Radio\r\n     name={name}  id={gqlId + '-radio' + String(index)}\r\n                       name={name}\r\n                       value={choice.value}\r\n                        checked={\r\n                            (value == null) ? \r\n                                (defaultValue != null) ?\r\n                                    defaultValue == choice.value :\r\n                                false :\r\n                              value == choice.value }\r\n                              onClick = {(e) => {setValue(e.target.value)}}\r\n                        disabled={disabled} /> }\r\n                label=<span className=\"widget-choice\">{choice.caption}</span>\r\n            />)}\r\n    </RadioGroup>\r\n  </FormControl> : <div>Warning: RadioButtons widget needs choices</div>}",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 125,
+  "fields": {
+    "created": "2020-02-03T22:59:57.974Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "QR-cpwpXWXg",
+    "name": "QR",
+    "comment": "",
+    "state": "prealpha",
+    "published": false,
+    "code": "<QrReader\r\n  style={{ maxWidth: \"300\", width: \"100%\" }}\r\n  onScan={handleScan}\r\n  onError={(err) => {console.error(err)}}\r\n/>",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "data"
+    ],
+    "value_parameter": "data",
+    "save_null": false,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 126,
+  "fields": {
+    "created": "2020-02-03T22:59:57.977Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "QrReader-yqrIwFhz",
+    "name": "QrReader",
+    "comment": "",
+    "state": "prealpha",
+    "published": false,
+    "code": "",
+    "address": "react-qr-reader",
+    "frontend": 3,
+    "namespace": "react-qr-reader",
+    "external": true,
+    "parameters": [
+      "data"
+    ],
+    "value_parameter": "data",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 127,
+  "fields": {
+    "created": "2020-02-03T22:59:57.978Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "EryInput-vOcGUNdR",
+    "name": "EryInput",
+    "comment": "",
+    "state": "prealpha",
+    "published": false,
+    "code": "<Input defaultValue={defaultValue} onChange={handleChange} onBlur={handleBlur} onKeyDown={handleKeyDown} />",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 128,
+  "fields": {
+    "created": "2020-02-03T22:59:57.981Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "AlphanumericField-bcsrHChi",
+    "name": "AlphanumericField",
+    "comment": "Allows input of alphanumerical characters, and nothing else.",
+    "state": "prealpha",
+    "published": false,
+    "code": "<Input {...props} />",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 129,
+  "fields": {
+    "created": "2020-02-03T22:59:57.984Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "BaseGeolocation-ZcJdHKQi",
+    "name": "BaseGeolocation",
+    "comment": "",
+    "state": "prealpha",
+    "published": false,
+    "code": "{(!isGeolocationAvailable) ?\r\n<Typography variant=\"body1\">Your browser does not support Geolocation</Typography> : coords ? \r\n<Table >\r\n    <TableHead>\r\n        <TableRow>\r\n            <TableCell align=\"left\"><b>Name</b></TableCell>\r\n            <TableCell align=\"left\"><b>Value</b></TableCell>\r\n        </TableRow>\r\n    </TableHead>\r\n    <TableBody>\r\n        <TableRow>\r\n            <TableCell align=\"left\">Latitude</TableCell>\r\n            <TableCell align=\"left\">{coords.latitude}</TableCell>\r\n        </TableRow>\r\n        <TableRow>\r\n            <TableCell align=\"left\">Longitude</TableCell>\r\n            <TableCell align=\"left\">{coords.longitude}</TableCell>\r\n        </TableRow>\r\n        <TableRow>\r\n            <TableCell align=\"left\">Altitude</TableCell>\r\n            <TableCell align=\"left\">{coords.altitude ? coords.altitude : \"N/A\"}</TableCell>\r\n        </TableRow>\r\n        <TableRow>\r\n            <TableCell align=\"left\">Heading</TableCell>\r\n            <TableCell align=\"left\">{coords.heading ? coords.heading : \"N/A\"}</TableCell>\r\n        </TableRow>\r\n        <TableRow>\r\n            <TableCell align=\"left\">Speed</TableCell>\r\n            <TableCell align=\"left\">{coords.speed ? coords.speed : \"N/A\"}</TableCell>\r\n        </TableRow>\r\n    </TableBody>\r\n</Table> :\r\n<Typography variant='body1'>{location.protocol == 'https' ? \"Getting the location data&hellip;\" : \"GPS tracking can only be used on  secured connections\"} </Typography> }",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 130,
+  "fields": {
+    "created": "2020-01-24T20:03:28.612Z",
+    "modified": "2020-01-24T20:03:28.622Z",
+    "slug": "EryGeolocation-hjaoFMSK",
+    "name": "EryGeolocation",
+    "comment": "",
+    "state": "prealpha",
+    "published": false,
+    "code": "{useLocation ? (() => {const RenderGeolocation = geolocated({watchPosition: true})(BaseGeolocation); return <RenderGeolocation /> })(): <span className=\"geolocation-helper-text\">Please click the button below to allow tracking</span>}\r\n<br/><br/>\r\n<Button className=\"geolocation-tracking-toggle\" variant=\"contained\" color=\"primary\" onClick={handleButtonClick}>{useLocation ? \"Stop Tracking\" : \"Allow Tracking\"}</Button>",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 131,
+  "fields": {
+    "created": "2020-02-03T22:59:57.993Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "EryDialog-FYasWVKM",
+    "name": "EryDialog",
+    "comment": "",
+    "state": "prealpha",
+    "published": false,
+    "code": "<Dialog open={close ? false : open}>\r\n{children||null}\r\n{\r\n    (() => {\r\n        if (closeWidget){\r\n            const CloseWidget = closeWidget;\r\n            return <CloseWidget\r\n                        closeDialog={() => {setClose(true)}}\r\n                    />\r\n        }\r\n        else {\r\n            return <DialogCloser closeDialog={() => {setClose(true)}}\r\n            />\r\n        }\r\n    })()\r\n}\r\n<br/>\r\n</Dialog>",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 132,
+  "fields": {
+    "created": "2020-02-03T22:59:57.996Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "DialogCloser-qjkPVrwP",
+    "name": "DialogCloser",
+    "comment": "",
+    "state": "prealpha",
+    "published": false,
+    "code": "<Button className=\"close-dialog\" color='primary' variant='contained' onClick={handleClick} fullWidth={fullWidth} >{children != null ? children : \"Continue\"}</Button>",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 133,
+  "fields": {
+    "created": "2020-02-03T22:59:58.000Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "WebIntWidget-HOGphFYC",
+    "name": "WebIntWidget",
+    "comment": "",
+    "state": "prealpha",
+    "published": false,
+    "code": "<TextField label={label} defaultValue={defaultValue} onChange={handleChange} onFocus={handleFocus} onBlur={handleBlur} type=\"number\" error={error}/>",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 134,
+  "fields": {
+    "created": "2020-02-03T22:59:58.006Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "LimitIntWidget-WIzjHqDr",
+    "name": "LimitIntWidget",
+    "comment": "",
+    "state": "prealpha",
+    "published": false,
+    "code": "<WebIntWidget defaultValue={defaultValue} onChange={handleChange} onBlur={handleBlur} onFocus={handleFocus} />",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 135,
+  "fields": {
+    "created": "2020-02-03T22:59:58.011Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "WebTextFieldWidget-droWZrHX",
+    "name": "WebTextFieldWidget",
+    "comment": null,
+    "state": "prealpha",
+    "published": false,
+    "code": "<Box py={2}>\n<TextField variant='outlined' fullWidth multiline rows={3} rowsMax={6} label={label} defaultValue={defaultValue} onChange={handleChange} onBlur={handleBlur}/>\n</Box>",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 136,
+  "fields": {
+    "created": "2020-02-03T22:59:58.015Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "LoadingButton-onVUBnJz",
+    "name": "LoadingButton",
+    "comment": "Disables and shows \"Loading\" as child onClick",
+    "state": "prealpha",
+    "published": false,
+    "code": "<Button disabled={autoDisable || disabled} onClick={handleClick} variant={variant || \"contained\"} color={color}>{autoDisable ? \"Loading\" : children}\r\n</Button>",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 140,
+  "fields": {
+    "created": "2020-02-03T22:59:58.020Z",
+    "modified": "2020-02-03T22:59:57.940Z",
+    "slug": "FormHorizontalRadioButtons-EtwUVqwU",
+    "name": "FormHorizontalRadioButtons",
+    "comment": "",
+    "state": "prealpha",
+    "published": false,
+    "code": "{choices ? \r\n  <React.Fragment>\r\n    <Typography>{helperText}</Typography>\r\n    <RadioButtons\r\n      \r\n      name={name}\r\n      row={true}\r\n      onChange={handleChange}\r\n      id={id}\r\n      choices={JSON.stringify(choices)}\r\n      defaultValue={value}\r\n      gqlId={gqlId}\r\n      />\r\n  </React.Fragment> :\r\n  <div>Warning: RadioButtons widget needs choices</div>\r\n}",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 141,
+  "fields": {
+    "created": "2020-01-31T02:51:33.957Z",
+    "modified": "2020-01-31T02:54:30.144Z",
+    "slug": "FormImageRadioButtons-SFmwQLDb",
+    "name": "FormImageRadioButtons",
+    "comment": "",
+    "state": "prealpha",
+    "published": false,
+    "code": "<Grid container>\r\n  <Grid item xs={12} md={6}>\r\n    <FormHorizontalRadioButtons helperText={helperText} name={name} id={id} choices={JSON.stringify(choices)} />\r\n  </Grid>\r\n  <Grid item xs={12} md={6}>\r\n    <img src={imageUrl} height={imageHeight} width={imageWidth} />\r\n  </Grid>\r\n</Grid>",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 145,
+  "fields": {
+    "created": "2020-02-03T16:45:52.597Z",
+    "modified": "2020-02-03T17:50:35.382Z",
+    "slug": "FormDropdown-augPCNxQ",
+    "name": "FormDropdown",
+    "comment": "",
+    "state": "prealpha",
+    "published": false,
+    "code": "{choices ? \r\n  <React.Fragment>\r\n    <Typography>{helperText}</Typography>\r\n    <Dropdown\r\n      \r\n      name={name}\r\n      id={id}\r\n      choices={JSON.stringify(choices)}\r\n      defaultValue={value}\r\n      disabled={disabled}\r\n      onChange={handleChange}\r\n      gqlId={gqlId}\r\n      />\r\n  </React.Fragment> :\r\n  <div>Warning: RadioButtons widget needs choices</div>\r\n}",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 149,
+  "fields": {
+    "created": "2020-02-03T22:05:18.240Z",
+    "modified": "2020-02-03T22:39:22.070Z",
+    "slug": "EryQR-CRmPILwn",
+    "name": "EryQR",
+    "comment": "",
+    "state": "prealpha",
+    "published": false,
+    "code": "<Container maxWidth=\"lg\">\r\n  <Box mx=\"auto\" width=\"50%\">\r\n    <Typography>\r\n      {helperText}\r\n    </Typography>\r\n    <QR maxWidth=\"4000\" width=\"100%\" onScan={handleScan} />\r\n    {OptionalInput ? <OptionalInput defaultValue={defaultValue} /> : \"\" }\r\n  </Box>\r\n</Container>",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "data"
+    ],
+    "value_parameter": "data",
+    "save_null": false,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 150,
+  "fields": {
+    "created": "2020-02-03T22:59:59.221Z",
+    "modified": "2020-02-03T22:59:59.244Z",
+    "slug": "Slider-FzsoiCsy",
+    "name": "Slider",
+    "comment": "Wrapper for Material Design Component",
+    "state": "prealpha",
+    "published": false,
+    "code": null,
+    "address": "@material-ui/core/Slider",
+    "frontend": 3,
+    "namespace": "mui",
+    "external": true,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 151,
+  "fields": {
+    "created": "2020-02-03T22:59:59.249Z",
+    "modified": "2020-02-03T22:59:59.272Z",
+    "slug": "ErySlider-DWMSEOgi",
+    "name": "ErySlider",
+    "comment": null,
+    "state": "prealpha",
+    "published": false,
+    "code": "<Slider {...props}/>",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event",
+      "value"
+    ],
+    "value_parameter": "value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widget",
+  "pk": 152,
+  "fields": {
+    "created": "2020-02-03T22:59:59.277Z",
+    "modified": "2020-02-03T22:59:59.331Z",
+    "slug": "SummaryTable-AQQbJkad",
+    "name": "SummaryTable",
+    "comment": null,
+    "state": "prealpha",
+    "published": false,
+    "code": "<Typography variant=\"body2\">Summary</Typography>\n<Table>\n  <TableHead>\n    <TableRow>\n      <TableCell>id</TableCell>\n      <TableCell>hh_relation</TableCell>\n      <TableCell>sex</TableCell>\n      <TableCell>age</TableCell>\n      <TableCell>report_type</TableCell>\n    </TableRow>\n  </TableHead>\n  <TableBody>\n  { \n      (\n          () => {\n              const full_summary_vals = [];\n              const rel_to_head_choices = {};\n              widgetChoices.forEach(element => rel_to_head_choices[element.value] = element.caption);\n              let summary_vals = {};\n              for (let i=1; i <= variables.hh_size; i++){\n                  summary_vals = {};\n                  summary_vals[\"id\"] = i;\n                  summary_vals[\"hh_relation\"] = rel_to_head_choices[variables.rels_to_head[i]];\n                  summary_vals[\"sex\"] = variables.sexes[i];\n                  summary_vals[\"age\"] = variables.ages[i];\n                  summary_vals[\"report_type\"] = i != 1 ? variables.sources[i] : \"N/A\";\n                  full_summary_vals.push(summary_vals);\n\n              }\n              return full_summary_vals\n          }\n      )().map(\n              (summary_vals) => \n                <TableRow key={summary_vals.id}>\n                    <TableCell>{summary_vals.id}</TableCell>\n                    <TableCell>{summary_vals.hh_relation}</TableCell>\n                    <TableCell>{summary_vals.sex == 1 ? \"Female\" : summary_vals.sex == 2 ? \"Male\" : \"\" }</TableCell>\n                    <TableCell>{summary_vals.age}</TableCell>\n                    <TableCell>{summary_vals.report_type == 1 ? \"Proxy\" : summary_vals.report_type != null ? \"Direct\" : \"\"}</TableCell>\n                  </TableRow>\n          )\n  }\n\n\n  </TableBody>\n</Table>",
+    "address": null,
+    "frontend": 3,
+    "namespace": "Widget",
+    "external": false,
+    "parameters": [
+      "event"
+    ],
+    "value_parameter": "event.target.value",
+    "save_null": true,
+    "primary_language": "en",
+    "keywords": [],
+    "related_widgets": []
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 1,
+  "fields": {
+    "created": "2020-02-03T22:59:57.943Z",
+    "modified": "2020-02-03T22:59:57.943Z",
+    "name": "Button",
+    "comment": null,
+    "originator": 115,
+    "target": 7
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 2,
+  "fields": {
+    "created": "2020-02-03T22:59:57.944Z",
+    "modified": "2020-02-03T22:59:57.943Z",
+    "name": "Divider",
+    "comment": null,
+    "originator": 115,
+    "target": 26
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 3,
+  "fields": {
+    "created": "2020-02-03T22:59:57.946Z",
+    "modified": "2020-02-03T22:59:57.943Z",
+    "name": "Button",
+    "comment": null,
+    "originator": 116,
+    "target": 136
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 4,
+  "fields": {
+    "created": "2020-02-03T22:59:57.948Z",
+    "modified": "2020-02-03T22:59:57.943Z",
+    "name": "Button",
+    "comment": null,
+    "originator": 117,
+    "target": 136
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 5,
+  "fields": {
+    "created": "2020-01-21T19:43:06.809Z",
+    "modified": "2020-01-21T19:43:06.812Z",
+    "name": "MenuItem",
+    "comment": null,
+    "originator": 122,
+    "target": 62
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 6,
+  "fields": {
+    "created": "2020-01-21T19:43:38.301Z",
+    "modified": "2020-01-21T19:43:38.306Z",
+    "name": "FormControl",
+    "comment": null,
+    "originator": 123,
+    "target": 35
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 7,
+  "fields": {
+    "created": "2020-01-21T19:43:38.313Z",
+    "modified": "2020-01-21T19:43:38.318Z",
+    "name": "Select",
+    "comment": null,
+    "originator": 123,
+    "target": 77
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 8,
+  "fields": {
+    "created": "2020-01-21T19:43:38.325Z",
+    "modified": "2020-01-21T19:43:38.330Z",
+    "name": "FormHelperText",
+    "comment": null,
+    "originator": 123,
+    "target": 38
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 9,
+  "fields": {
+    "created": "2020-01-21T19:43:38.337Z",
+    "modified": "2020-01-21T19:43:38.342Z",
+    "name": "CustomMenuItem",
+    "comment": null,
+    "originator": 123,
+    "target": 122
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 10,
+  "fields": {
+    "created": "2020-01-21T19:43:38.349Z",
+    "modified": "2020-01-21T19:43:38.353Z",
+    "name": "InputLabel",
+    "comment": null,
+    "originator": 123,
+    "target": 51
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 11,
+  "fields": {
+    "created": "2020-01-22T13:54:02.913Z",
+    "modified": "2020-01-22T13:54:02.917Z",
+    "name": "FormControl",
+    "comment": null,
+    "originator": 124,
+    "target": 35
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 12,
+  "fields": {
+    "created": "2020-01-22T13:54:02.922Z",
+    "modified": "2020-01-22T13:54:02.925Z",
+    "name": "RadioGroup",
+    "comment": null,
+    "originator": 124,
+    "target": 75
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 13,
+  "fields": {
+    "created": "2020-01-22T13:54:02.929Z",
+    "modified": "2020-01-22T13:54:02.932Z",
+    "name": "FormControlLabel",
+    "comment": null,
+    "originator": 124,
+    "target": 36
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 14,
+  "fields": {
+    "created": "2020-01-22T13:54:02.937Z",
+    "modified": "2020-01-22T13:54:02.940Z",
+    "name": "Radio",
+    "comment": null,
+    "originator": 124,
+    "target": 74
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 15,
+  "fields": {
+    "created": "2020-01-09T16:25:52.526Z",
+    "modified": "2020-01-09T16:25:52.526Z",
+    "name": "Button",
+    "comment": null,
+    "originator": 121,
+    "target": 7
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 16,
+  "fields": {
+    "created": "2020-02-03T22:59:57.976Z",
+    "modified": "2020-02-03T22:59:57.943Z",
+    "name": "QrReader",
+    "comment": "",
+    "originator": 125,
+    "target": 126
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 17,
+  "fields": {
+    "created": "2020-01-24T20:03:27.844Z",
+    "modified": "2020-01-24T20:03:27.847Z",
+    "name": "Input",
+    "comment": null,
+    "originator": 127,
+    "target": 48
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 18,
+  "fields": {
+    "created": "2020-02-03T22:59:57.984Z",
+    "modified": "2020-02-03T22:59:57.943Z",
+    "name": "Input",
+    "comment": null,
+    "originator": 128,
+    "target": 127
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 19,
+  "fields": {
+    "created": "2020-01-24T20:03:28.564Z",
+    "modified": "2020-01-24T20:03:28.566Z",
+    "name": "Table",
+    "comment": null,
+    "originator": 129,
+    "target": 92
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 20,
+  "fields": {
+    "created": "2020-01-24T20:03:28.569Z",
+    "modified": "2020-01-24T20:03:28.572Z",
+    "name": "TableCell",
+    "comment": null,
+    "originator": 129,
+    "target": 94
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 21,
+  "fields": {
+    "created": "2020-01-24T20:03:28.575Z",
+    "modified": "2020-01-24T20:03:28.578Z",
+    "name": "TableHead",
+    "comment": null,
+    "originator": 129,
+    "target": 96
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 22,
+  "fields": {
+    "created": "2020-01-24T20:03:28.581Z",
+    "modified": "2020-01-24T20:03:28.584Z",
+    "name": "TableRow",
+    "comment": null,
+    "originator": 129,
+    "target": 98
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 23,
+  "fields": {
+    "created": "2020-01-24T20:03:28.587Z",
+    "modified": "2020-01-24T20:03:28.589Z",
+    "name": "TableBody",
+    "comment": null,
+    "originator": 129,
+    "target": 93
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 24,
+  "fields": {
+    "created": "2020-01-24T20:03:28.616Z",
+    "modified": "2020-01-24T20:03:28.618Z",
+    "name": "BaseGeolocation",
+    "comment": null,
+    "originator": 130,
+    "target": 129
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 25,
+  "fields": {
+    "created": "2020-01-27T18:31:39.003Z",
+    "modified": "2020-01-27T18:32:00.917Z",
+    "name": "Button",
+    "comment": "",
+    "originator": 130,
+    "target": 7
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 26,
+  "fields": {
+    "created": "2020-02-03T22:59:57.994Z",
+    "modified": "2020-02-03T22:59:57.943Z",
+    "name": "Dialog",
+    "comment": null,
+    "originator": 131,
+    "target": 21
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 27,
+  "fields": {
+    "created": "2020-02-03T22:59:57.995Z",
+    "modified": "2020-02-03T22:59:57.943Z",
+    "name": "Button",
+    "comment": null,
+    "originator": 131,
+    "target": 7
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 28,
+  "fields": {
+    "created": "2020-02-03T22:59:57.998Z",
+    "modified": "2020-02-03T22:59:57.943Z",
+    "name": "Button",
+    "comment": null,
+    "originator": 132,
+    "target": 7
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 29,
+  "fields": {
+    "created": "2020-02-03T22:59:57.998Z",
+    "modified": "2020-02-03T22:59:57.943Z",
+    "name": "DialogCloser",
+    "comment": "",
+    "originator": 131,
+    "target": 132
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 30,
+  "fields": {
+    "created": "2020-01-27T21:53:30.425Z",
+    "modified": "2020-01-27T21:53:30.436Z",
+    "name": "FormControlLabel",
+    "comment": null,
+    "originator": 133,
+    "target": 36
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 31,
+  "fields": {
+    "created": "2020-01-27T21:53:30.452Z",
+    "modified": "2020-01-27T21:53:30.463Z",
+    "name": "FormControl",
+    "comment": null,
+    "originator": 133,
+    "target": 35
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 32,
+  "fields": {
+    "created": "2020-01-27T21:53:30.478Z",
+    "modified": "2020-01-27T21:53:30.488Z",
+    "name": "TextField",
+    "comment": null,
+    "originator": 133,
+    "target": 101
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 33,
+  "fields": {
+    "created": "2020-01-27T21:53:30.504Z",
+    "modified": "2020-01-27T21:53:30.514Z",
+    "name": "Typography",
+    "comment": null,
+    "originator": 129,
+    "target": 105
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 34,
+  "fields": {
+    "created": "2020-02-03T22:59:58.008Z",
+    "modified": "2020-02-03T22:59:57.943Z",
+    "name": "WebIntWidget",
+    "comment": null,
+    "originator": 134,
+    "target": 133
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 35,
+  "fields": {
+    "created": "2020-01-30T00:07:21.647Z",
+    "modified": "2020-01-30T00:07:21.650Z",
+    "name": "TextField",
+    "comment": null,
+    "originator": 135,
+    "target": 101
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 36,
+  "fields": {
+    "created": "2020-01-30T00:07:21.654Z",
+    "modified": "2020-01-30T00:07:21.657Z",
+    "name": "Box",
+    "comment": null,
+    "originator": 135,
+    "target": 120
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 37,
+  "fields": {
+    "created": "2020-02-03T22:59:58.016Z",
+    "modified": "2020-02-03T22:59:57.943Z",
+    "name": "Button",
+    "comment": "",
+    "originator": 136,
+    "target": 7
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 47,
+  "fields": {
+    "created": "2020-02-03T22:59:58.021Z",
+    "modified": "2020-02-03T22:59:57.943Z",
+    "name": "RadioButtons",
+    "comment": "",
+    "originator": 140,
+    "target": 124
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 48,
+  "fields": {
+    "created": "2020-02-03T22:59:58.021Z",
+    "modified": "2020-02-03T22:59:57.943Z",
+    "name": "Typography",
+    "comment": "",
+    "originator": 140,
+    "target": 105
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 50,
+  "fields": {
+    "created": "2020-01-31T02:53:56.099Z",
+    "modified": "2020-01-31T02:53:56.099Z",
+    "name": "Grid",
+    "comment": "",
+    "originator": 141,
+    "target": 40
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 51,
+  "fields": {
+    "created": "2020-01-31T02:53:56.099Z",
+    "modified": "2020-01-31T02:53:56.099Z",
+    "name": "FormHorizontalRadioButtons",
+    "comment": "",
+    "originator": 141,
+    "target": 140
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 59,
+  "fields": {
+    "created": "2020-02-03T16:45:52.616Z",
+    "modified": "2020-02-03T16:45:52.616Z",
+    "name": "Dropdown",
+    "comment": "",
+    "originator": 145,
+    "target": 123
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 60,
+  "fields": {
+    "created": "2020-02-03T16:45:52.617Z",
+    "modified": "2020-02-03T16:45:52.617Z",
+    "name": "Typography",
+    "comment": "",
+    "originator": 145,
+    "target": 105
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 68,
+  "fields": {
+    "created": "2020-02-03T22:05:18.252Z",
+    "modified": "2020-02-03T22:05:18.252Z",
+    "name": "Typography",
+    "comment": "",
+    "originator": 149,
+    "target": 105
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 69,
+  "fields": {
+    "created": "2020-02-03T22:05:18.252Z",
+    "modified": "2020-02-03T22:05:18.252Z",
+    "name": "Container",
+    "comment": "",
+    "originator": 149,
+    "target": 119
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 70,
+  "fields": {
+    "created": "2020-02-03T22:05:18.252Z",
+    "modified": "2020-02-03T22:05:18.252Z",
+    "name": "Box",
+    "comment": "",
+    "originator": 149,
+    "target": 120
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 71,
+  "fields": {
+    "created": "2020-02-03T22:05:18.252Z",
+    "modified": "2020-02-03T22:05:18.252Z",
+    "name": "QR",
+    "comment": "",
+    "originator": 149,
+    "target": 125
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 72,
+  "fields": {
+    "created": "2020-02-03T22:59:59.252Z",
+    "modified": "2020-02-03T22:59:59.255Z",
+    "name": "Slider",
+    "comment": null,
+    "originator": 151,
+    "target": 150
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 73,
+  "fields": {
+    "created": "2020-02-03T22:59:59.280Z",
+    "modified": "2020-02-03T22:59:59.282Z",
+    "name": "Typography",
+    "comment": null,
+    "originator": 152,
+    "target": 105
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 74,
+  "fields": {
+    "created": "2020-02-03T22:59:59.285Z",
+    "modified": "2020-02-03T22:59:59.288Z",
+    "name": "Table",
+    "comment": null,
+    "originator": 152,
+    "target": 92
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 75,
+  "fields": {
+    "created": "2020-02-03T22:59:59.292Z",
+    "modified": "2020-02-03T22:59:59.294Z",
+    "name": "TableHead",
+    "comment": null,
+    "originator": 152,
+    "target": 96
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 76,
+  "fields": {
+    "created": "2020-02-03T22:59:59.298Z",
+    "modified": "2020-02-03T22:59:59.300Z",
+    "name": "TableRow",
+    "comment": null,
+    "originator": 152,
+    "target": 98
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 77,
+  "fields": {
+    "created": "2020-02-03T22:59:59.305Z",
+    "modified": "2020-02-03T22:59:59.308Z",
+    "name": "TableBody",
+    "comment": null,
+    "originator": 152,
+    "target": 93
+  }
+},
+{
+  "model": "widgets.widgetconnection",
+  "pk": 78,
+  "fields": {
+    "created": "2020-02-03T22:59:59.311Z",
+    "modified": "2020-02-03T22:59:59.314Z",
+    "name": "TableCell",
+    "comment": null,
+    "originator": 152,
+    "target": 94
+  }
+}
+]

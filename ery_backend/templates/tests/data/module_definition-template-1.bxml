@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <keywords/>
+  <frontend>Web</frontend>
+  <parental_template>moduledefinitiontemplate2-mXsMkPUQ</parental_template>
+  <template_widgets>
+    <item>
+      <name>TestTemplateWidget</name>
+      <comment>That IS what it IS</comment>
+      <widget>testwidget-abc123</widget>
+    </item>
+    <item>
+      <name>REALTemplateWidget</name>
+      <comment>It's not though...</comment>
+      <widget>testwidget-abc456</widget>
+    </item>
+  </template_widgets>
+  <blocks>
+    <item>
+      <translations>
+        <item>
+          <content>csPeqsTfRcsSOpXKJWNkbFXBmisxzeMMrTskfOWxCkXXyeDwrq</content>
+          <language>en</language>
+        </item>
+      </translations>
+      <name>ModuleDefinitionTc</name>
+    </item>
+    <item>
+      <translations>
+        <item>
+          <content>ePQTAlsawzUtxUMaJtDlTVHgNETFIcopGtuqEHYZnNsFQPCrKF</content>
+          <language>en</language>
+        </item>
+        <item>
+          <content>csPeqsTfRcsSOpXKJWNkbFXBmisxzeMMrTskfOWxCkXXyeDwrq</content>
+          <language>aa</language>
+        </item>
+      </translations>
+      <name>ModuleDefinitionTb</name>
+    </item>
+  </blocks>
+  <slug>moduledefinitiontemplate1-smzEnmHy</slug>
+  <name>InstanceNew</name>
+  <comment>gPMfumIgsdtCcZyxehZodgiWXwebAPjwACquEihPuzSFYPSIJfNqFOFaMIprMTuwsrEZorSKtDaIVDgFenedckutklbEbOhCxjFP</comment>
+  <primary_language>en</primary_language>
+</template>

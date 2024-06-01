@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <slug>Root-OlVDlcGI</slug>
+  <state>prealpha</state>
+  <parental_template/>
+  <frontend>Email</frontend>
+  <template_widgets/>
+  <blocks>
+    <item>
+      <translations/>
+      <name>Root</name>
+    </item>
+  </blocks>
+  <primary_language>en</primary_language>
+  <comment>Default sms template for stages.</comment>
+  <name>Root</name>
+  <published>False</published>
+  <keywords/>
+</template>

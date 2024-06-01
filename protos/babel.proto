@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package babel;
+
+service Babel {
+  rpc ConvertBundle (ES6CodeBundle) returns (ES5Code) {}
+  rpc ConvertCodeSplitBundle (ES6CodeBundle) returns (ES5CodeBundle) {}
+  rpc Convert (ES6Code) returns (ES5Code) {}
+}
+
+message ES6CodeBundle {
+  repeated ES6Code bundle = 1;
+}
+
+message ES5CodeBundle {
+  repeated ES5Code bundle = 1;
+}
+
+message ES6Code {
+  string name = 1;
+  string code = 2;
+}
+
+message ErrorLocation {
+  int32 line = 1;
+  int32 column = 2;
+}
+
+message ES5Code {
+  string code = 1;
+  string error = 2;
+  ErrorLocation error_loc = 3;
+}

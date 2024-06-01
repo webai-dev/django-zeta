@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <slug>moduledefinitiontemplate1-smzEnmHy</slug>
+  <state>prealpha</state>
+  <parental_template>Root-ezEAGdkx</parental_template>
+  <frontend>SMS</frontend>
+  <template_widgets/>
+  <blocks>
+    <item>
+      <translations>
+        <item>
+          <frontend>SMS</frontend>
+          <language>aa</language>
+          <content>nqldaFhlMNobTQFtNWMuUratV</content>
+        </item>
+      </translations>
+      <name>ModuleDefinitionTbTwo</name>
+    </item>
+    <item>
+      <translations>
+        <item>
+          <frontend>SMS</frontend>
+          <language>ab</language>
+          <content>dYpYUuvlVgNbhTiagOkSHmvrr</content>
+        </item>
+      </translations>
+      <name>ModuleDefinitionTbOne</name>
+    </item>
+  </blocks>
+  <primary_language>en</primary_language>
+  <name>module_definition-template-1</name>
+  <comment>gPMfumIgsdtCcZyxehZodgiWXwebAPjwACquEihPuzSFYPSIJfNqFOFaMIprMTuwsrEZorSKtDaIVDgFenedckutklbEbOhCxjFP</comment>
+  <published>False</published>
+  <keywords/>
+</template>

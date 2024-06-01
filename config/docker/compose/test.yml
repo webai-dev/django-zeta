@@ -1,0 +1,67 @@
+version: '2'
+
+volumes:
+  postgres_data: {}
+  postgres_backup: {}
+
+
+services:
+  sh:
+    image: gcr.io/eryservices-176219/ery_backend:test-${CI_COMMIT_SHA}
+    build:
+      context: ../../..
+      dockerfile: ./config/docker/Dockerfile-test
+    command: sh
+    depends_on:
+      - datastore
+    env_file: env.test
+
+  lint:
+    image: gcr.io/eryservices-176219/ery_backend:test-${CI_COMMIT_SHA}
+    build:
+      context: ../../..
+      dockerfile: ./config/docker/Dockerfile-test
+    depends_on:
+      - postgres
+      - redis
+      - datastore
+    command: pylint ery_backend
+    env_file: env.test
+
+  test:
+    image: gcr.io/eryservices-176219/ery_backend:test-${CI_COMMIT_SHA}
+    build:
+      context: ../../..
+      dockerfile: ./config/docker/Dockerfile-test
+    command: /start-test.sh
+    depends_on:
+      - postgres
+      - redis
+      - datastore
+    env_file: env.test
+
+  postgres:
+    build: ../postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data-test
+      - postgres_backup:/backups-test
+    env_file: env.test
+
+  redis:
+    image: redis:3.0
+
+  pubsub:
+    image: singularities/pubsub-emulator
+    environment:
+      - PUBSUB_PROJECT_ID=eryservices-176219
+      - PUBSUB_LISTEN_ADDRESS=0.0.0.0:8432
+    ports:
+      - "8432:8432"
+
+  datastore:
+    image: singularities/datastore-emulator
+    environment:
+      - DATASTORE_PROJECT_ID=eryservices-176219
+      - DATASTORE_LISTEN_ADDRESS=0.0.0.0:8081
+    ports:
+      - "8081:8081"

@@ -1,0 +1,50 @@
+version: '2'
+
+volumes:
+  postgres_data: {}
+  postgres_backup: {}
+
+services:
+  postgres:
+    build: ../postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - postgres_backup:/backups
+    env_file: env.dev
+
+  ery_backend:
+    build:
+      context: ../../..
+      dockerfile: ./config/docker/Dockerfile-dev
+    depends_on:
+      - postgres
+      - redis
+    command: /gunicorn.sh
+    env_file: env.dev
+    image: "registry.zd.ee/ery/ery_backend:dev"
+
+  redis:
+    image: redis:3.0
+
+  celeryworker:
+    build:
+      context: .
+      dockerfile: ./compose/ery_backend/Dockerfile-dev
+    env_file: env.dev
+    depends_on:
+     - postgres
+     - redis
+    command: celery -A ery_backend.taskapp worker -l INFO
+    image: "registry.zd.ee/ery/ery_backend_celeryworker:dev"
+
+  celerybeat:
+    build:
+      context: .
+      dockerfile: ./compose/ery_backend/Dockerfile-dev
+    env_file: env.dev
+    depends_on:
+      - postgres
+      - redis
+    command: celery -A ery_backend.taskapp beat -l INFO
+    image: "registry.zd.ee/ery/ery_backend_celerybeat:dev"
+

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>inputwidget0-PXXEjwGd</slug>
+  <state>prealpha</state>
+  <frontend>SMS-NOhjZDUD</frontend>
+  <related_widgets/>
+  <connections/>
+  <events/>
+  <props/>
+  <states/>
+  <comment>uUAlfDdwOBLbaeGgonMAgSBAjADPzMNZLDQbFbrvYZjoAHGcciqaiAXtFyBvZoiXLwiNOqQSVCSFSxjqyYfeIXFQMAJZOBqkrcgR</comment>
+  <name>Inputwidget0</name>
+  <published>False</published>
+  <code>var output='Here are all choices: \n'; for (i=0; i&lt;choices.length; i++){output = output + choices[i]['caption'] + '\n'}</code>
+  <is_multiple_choice>False</is_multiple_choice>
+  <address/>
+  <external>False</external>
+  <namespace>Widget</namespace>
+  <value_parameter>event.target.value</value_parameter>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <save_null>True</save_null>
+  <primary_language>en</primary_language>
+  <keywords/>
+</widget>

@@ -1,0 +1,36 @@
+[
+{
+  "model": "stint_specifications.stintspecificationallowedlanguagefrontend",
+  "pk": 1,
+  "fields": {
+    "created": "2019-09-17T02:19:19.422Z",
+    "modified": "2019-09-17T02:19:19.422Z",
+    "language": "ab",
+    "frontend": 4
+  }
+},
+{
+  "model": "stint_specifications.stintspecification",
+  "pk": 1,
+  "fields": {
+    "created": "2019-09-17T02:19:19.416Z",
+    "modified": "2019-09-17T02:19:19.429Z",
+    "name": "stint-specification-0",
+    "comment": "TbPUXjXzwpXGbhFpGxsJcaxmkZrugXCvVtGfNFdqODUvfnkSvzPCxAZgGuCKuoshPZPiDXKxbdnMZZKERlKbOcJaDYGkJXqpNclo",
+    "stint_definition": 1,
+    "where_to_run": "",
+    "team_size": 8,
+    "min_team_size": 3,
+    "max_team_size": 14,
+    "min_earnings": 124.032734123379,
+    "max_earnings": 197.796086738104,
+    "backup_stint_specification": null,
+    "late_arrival": false,
+    "opt_in_code": null,
+    "immediate_payment_method": "PHONE_RECHARGE",
+    "allowed_frontend_language_combinations": [
+      1
+    ]
+  }
+}
+]

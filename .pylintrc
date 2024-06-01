@@ -1,0 +1,14 @@
+[MASTER]
+load-plugins=pylint_django
+extension-pkg-whitelist=lxml
+ignore-patterns=.*_pb2.*\.py
+ignore=migrations
+
+[FORMAT]
+max-line-length=127
+
+[MESSAGES CONTROL]
+disable=missing-docstring,invalid-name,too-few-public-methods,arguments-differ,too-many-instance-attributes,too-many-statements,cyclic-import,too-many-ancestors,fixme,too-many-arguments,too-many-return-statements,no-member,unused-argument,too-many-locals,duplicate-code,import-outside-toplevel,bad-continuation
+
+[TYPECHECK]
+ignored-modules=fastnumbers 

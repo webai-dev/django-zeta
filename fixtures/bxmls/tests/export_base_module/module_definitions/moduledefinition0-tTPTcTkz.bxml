@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module_definition>
+  <start_era/>
+  <start_stage/>
+  <warden_stage/>
+  <primary_frontend>SMS</primary_frontend>
+  <primary_language>en</primary_language>
+  <default_template>Root-egEAZdKg</default_template>
+  <default_theme>DefaultTheme-GGGlqICG</default_theme>
+  <slug>moduledefinition0-tTPTcTkz</slug>
+  <state>prealpha</state>
+  <action_set/>
+  <command_set/>
+  <condition_set/>
+  <era_set/>
+  <forms/>
+  <moduledefinitionprocedure_set/>
+  <module_widgets/>
+  <robots/>
+  <stage_definitions/>
+  <variabledefinition_set/>
+  <keywords/>
+  <comment>OcKySpOyhkodFjTEoWuaATaxrlNzKogvzyIWxemKDqVjrfUqhnINqJPGsmgKhUiTMulETlASMZOiABXuVbEpxuirKqpOpRDTfJuS</comment>
+  <published>False</published>
+  <name>ModuleDefinition0</name>
+  <mxgraph_xml/>
+  <min_team_size>0</min_team_size>
+  <max_team_size>9</max_team_size>
+</module_definition>

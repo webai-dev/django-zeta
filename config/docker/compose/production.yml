@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  ery_backend:
+    build:
+      context: ../../..
+      dockerfile: ./config/docker/Dockerfile
+    command: /usr/local/bin/gunicorn config.wsgi
+    image: "${BACKEND_IMAGE}"

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>FormSubmitButton-cvbxEHZZ</slug>
+  <state>prealpha</state>
+  <frontend>Web-foKmSGxB</frontend>
+  <related_widgets/>
+  <connections>
+    <item>
+      <target>Button-yTjJiGYY</target>
+      <name>Button</name>
+      <comment/>
+    </item>
+  </connections>
+  <events/>
+  <props>
+    <item>
+      <name>id</name>
+      <comment/>
+      <default_value>submit-button</default_value>
+      <preview_value/>
+    </item>
+    <item>
+      <name>color</name>
+      <comment/>
+      <default_value>primary</default_value>
+      <preview_value/>
+    </item>
+    <item>
+      <name>variant</name>
+      <comment/>
+      <default_value>contained</default_value>
+      <preview_value/>
+    </item>
+  </props>
+  <states/>
+  <name>FormSubmitButton</name>
+  <comment>Submit button for forms</comment>
+  <published>False</published>
+  <code>&lt;Button id={id} color={color} variant={variant} type="submit"&gt;{children || "Save &amp; Continue"}&lt;/Button&gt;</code>
+  <is_multiple_choice>False</is_multiple_choice>
+  <address/>
+  <external>False</external>
+  <namespace>Widget</namespace>
+  <value_parameter>event.target.value</value_parameter>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <save_null>True</save_null>
+  <primary_language>en</primary_language>
+  <keywords/>
+</widget>

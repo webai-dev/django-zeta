@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block extrastyle %}{% endblock %}
+{% block bodyclass %}menu{% endblock %}
+
+{% block head %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+<h1>Import Widget from file</h1>
+<p>
+<form id="widgetForm" action="/import/widget?connect=0" method="post" enctype="multipart/form-data">
+{% csrf_token %}
+<h3>Upload file in .bxml format</h3>
+{% if error_msg %}
+<p style="color: red">{{ error_msg }}</p>
+{% endif %}
+<div style="margin-top: 20px; width: 200px;">
+Widget name:
+<input type="value" name="name" id="name"><p>
+BXML file:
+<input type="file" name="file_to_import" id="file_to_import" value="hej">
+<div>
+	Connect widgets (if you're feeling lucky)!
+	<input type="checkbox" id="connectbox">
+</div>
+<div style="text-align: right;"><input type="submit" value="Upload" name="submit" id="submit_button"></div>
+</div>
+
+<script>
+	$('#connectbox').click(function(){
+		if ($('#connectbox')[0].checked){
+			$('#widgetForm').attr('action', '/import/widget?connect=1')
+		}
+	})
+</script>
+</form>
+
+{% endblock %}

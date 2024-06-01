@@ -1,0 +1,1612 @@
+﻿<!--Saved by Quest 5.7.6606.27193-->
+<asl version="550">
+  <template name="NothingToUndo">Nothing to undo!</template>
+  <game name="FAST FOOD ADVENTURE">
+    <gameid>7c936acb-a690-4829-ae30-cf647a610720</gameid>
+    <version>1.0</version>
+    <firstpublished>2016</firstpublished>
+    <subtitle>the quest for mcdonalds.</subtitle>
+    <author>by Michael Hooper</author>
+    <showtitle />
+    <clearlastpage />
+    <customwidth type="int">800</customwidth>
+    <cover>intro.png</cover>
+    <description><![CDATA[your goal is to get into mcdonalds and get out with food.<br/>but you don't have money.]]></description>
+    <category>Mystery</category>
+    <defaultlinkforeground>Black</defaultlinkforeground>
+    <defaultfontsize type="int">15</defaultfontsize>
+  </game>
+  <object name="Page1">
+    <inherit name="picture" />
+    <description><![CDATA[WELCOME TO FAST FOOD ADVENTURE!<br/>Your main goal for this game is to get inside Mcdonalds and get out with some food.<br/>]]></description>
+    <options type="stringdictionary">
+      <item>
+        <key>Page2</key>
+        <value>Get Started!</value>
+      </item>
+      <item>
+        <key>Page3</key>
+        <value>Credits.</value>
+      </item>
+    </options>
+    <picture>intro.png</picture>
+    <object name="player">
+      <inherit name="defaultplayer" />
+    </object>
+  </object>
+  <object name="Page2">
+    <inherit name="picture" />
+    <description><![CDATA[There it is.<br/>You can't wait to finally get your hands on that delicious taste of mcdonalds food.<br/>The weather is nice.<br/>Well, what are you waiting for?]]></description>
+    <picture>intro.png</picture>
+    <options type="stringdictionary">
+      <item>
+        <key>go</key>
+        <value>Go inside.</value>
+      </item>
+    </options>
+    <object name="go">
+      <inherit name="picture" />
+      <options type="stringdictionary">
+        <item>
+          <key>wait</key>
+          <value>wait patiently.</value>
+        </item>
+        <item>
+          <key>cut</key>
+          <value>cut through the line.</value>
+        </item>
+      </options>
+      <description><![CDATA[You go inside.<br/>The aroma of the pre-mentioned restaraunt fills the area.<br/>You walk up to the queue line.<br/>The line is long.<br/>What to do...]]></description>
+      <picture>queue.png</picture>
+      <object name="wait">
+        <inherit name="picture" />
+        <description><![CDATA[you wait patiently...<br/>still waiting...<br/>still...waiting...]]></description>
+        <picture>wait.png</picture>
+        <options type="stringdictionary">
+          <item>
+            <key>waitmore</key>
+            <value>wait more...</value>
+          </item>
+          <item>
+            <key>cut</key>
+            <value>attempt to cut through</value>
+          </item>
+        </options>
+        <object name="waitmore">
+          <inherit name="picture" />
+          <description><![CDATA[After being a patient person for about five minutes, you finally approach the counter.<br/><br/>You ask for a box of nuggets, and fries.<br/><br/>"That will be $9.98," replies the mcdonalds lady.<br/><br/>A cold flash courses through your body as you realize you don't have money.<br/><br/>What can you do?]]></description>
+          <picture>patient.png</picture>
+          <options type="stringdictionary">
+            <item>
+              <key>fake</key>
+              <value>draw out fake money.</value>
+            </item>
+            <item>
+              <key>out</key>
+              <value>go outside and look for money</value>
+            </item>
+          </options>
+          <object name="fake">
+            <inherit name="picture" />
+            <description><![CDATA[you try to give the lady a fake $100 dollar bill drawn with crayon.<br/><br/>the lady laughs and asks, "Honey, this is a joke right?"<br/><br/>You tell her the truth and management kicks you out.<br/><br/>Welp. Looks like you need money.]]></description>
+            <picture>fake.png</picture>
+            <options type="stringdictionary">
+              <item>
+                <key>out</key>
+                <value>accept defeat</value>
+              </item>
+            </options>
+          </object>
+          <object name="out">
+            <inherit name="picture" />
+            <description><![CDATA[You leave.<br/>You need to find money somewhere.<br/>Where to start?]]></description>
+            <picture>out.png</picture>
+            <options type="stringdictionary">
+              <item>
+                <key>car</key>
+                <value>car wash!</value>
+              </item>
+              <item>
+                <key>quest</key>
+                <value>try to get a job.</value>
+              </item>
+            </options>
+            <object name="car">
+              <inherit name="picture" />
+              <options type="stringdictionary">
+                <item>
+                  <key>out</key>
+                  <value>go back</value>
+                </item>
+              </options>
+              <description><![CDATA[You go to a car wash.<br/>You accidentally spray someone in the face with water.<br/>You're fired.<br/>GAME OVER!]]></description>
+              <picture>car.png</picture>
+            </object>
+            <object name="quest">
+              <inherit name="picture" />
+              <options type="stringdictionary">
+                <item>
+                  <key>apply</key>
+                  <value>Apply for the job.</value>
+                </item>
+                <item>
+                  <key>Forget</key>
+                  <value>There is no way that I will be in a play.</value>
+                </item>
+              </options>
+              <description><![CDATA[you try to get a job.<br/>since you have no references or anything that counts towards a resume, you are unable to get a REAL job.<br/>however, you overhear a director talk to an actor saying that they were fired.<br/>you smell an opportunity here...]]></description>
+              <picture>job.png</picture>
+              <object name="apply">
+                <inherit name="picture" />
+                <options type="stringdictionary">
+                  <item>
+                    <key>start</key>
+                    <value>Practice!</value>
+                  </item>
+                </options>
+                <description><![CDATA[you ask the director for a job.<br/><br/>"Oh yes!" the director agrees, "I would love to have you work for me."<br/><br/>you ask him how much you get paid.<br/><br/>"Oh, RIGHT! I will pay you $10 an hour." he replies<br/><br/>You realize that $10 dollars is more than you need and ask him to lower it.<br/><br/>"Umm, okay. You want $9.98?" he asks, "then it shall be so!"<br/><br/>You start practice.]]></description>
+                <picture>yesjob.png</picture>
+                <object name="start">
+                  <inherit name="picture" />
+                  <options type="stringdictionary">
+                    <item>
+                      <key>steal</key>
+                      <value>Steal her lemonade</value>
+                    </item>
+                    <item>
+                      <key>make</key>
+                      <value>Make your own lemonade.</value>
+                    </item>
+                  </options>
+                  <description><![CDATA[you practice...<br/>but you're terrible...<br/>the director still has faith in you...<br/>you trip over your own legs and collapse onto the floor...<br/>the director calls you up to his office...<br/>he fires you...<br/><br/><br/>well darn, looks like acting isn't your thing.<br/>You have to look for another way to make money.<br/><br/>You look around...<br/>you see a young girl selling lemonade at the corner of the street.<br/>Hmm...]]></description>
+                  <picture>fired.png</picture>
+                  <object name="steal">
+                    <inherit name="picture" />
+                    <options type="stringdictionary">
+                      <item>
+                        <key>start</key>
+                        <value>go back</value>
+                      </item>
+                    </options>
+                    <description><![CDATA[you steal the girls lemonade.<br/>she starts to cry.<br/>her father comes out.<br/>her father beats you up.<br/>you now have to pay for a hospital bill.<br/>you have no money.<br/>GAME OVER!]]></description>
+                    <picture>stolen.png</picture>
+                  </object>
+                  <object name="make">
+                    <inherit name="picture" />
+                    <options type="stringdictionary">
+                      <item>
+                        <key>low</key>
+                        <value>lower price</value>
+                      </item>
+                      <item>
+                        <key>sellmore</key>
+                        <value>sell other stuff</value>
+                      </item>
+                    </options>
+                    <description><![CDATA[you make your own lemonade. you charge $9.98 a glass.<br/>it's a hot day...<br/>but that little girl is taking all of your business away.<br/><br/>you need to find a way to get rid of the girl.]]></description>
+                    <picture>make.png</picture>
+                    <object name="low">
+                      <inherit name="picture" />
+                      <description><![CDATA[you lower the price to $9.97<br/><br/>still no one.<br/><br/>]]></description>
+                      <options type="stringdictionary">
+                        <item>
+                          <key>make</key>
+                          <value>go back</value>
+                        </item>
+                      </options>
+                      <picture>math.png</picture>
+                    </object>
+                    <object name="sellmore">
+                      <inherit name="picture" />
+                      <description><![CDATA[you decide to become an all out shop.<br/><br/>the only problem is that you don't have anything to sell...<br/><br/>people start to notice you though...<br/><br/>someone requests that you make him a shirt and he will buy it.<br/><br/>you make the shirt.<br/><br/>you get paid $10.]]></description>
+                      <picture>money.png</picture>
+                      <options type="stringdictionary">
+                        <item>
+                          <key>YAY</key>
+                          <value>YAY! TO THE MCDONALDS!</value>
+                        </item>
+                      </options>
+                      <object name="YAY">
+                        <inherit name="picture" />
+                        <options type="stringdictionary">
+                          <item>
+                            <key>goin</key>
+                            <value>go inside</value>
+                          </item>
+                        </options>
+                        <description><![CDATA[you gleefully walk to the restaraunt and look through the window.<br/>your eyes tear up as you realize you actually worked for this food.]]></description>
+                        <picture>out.png</picture>
+                        <object name="goin">
+                          <inherit name="picture" />
+                          <options type="stringdictionary">
+                            <item>
+                              <key>take</key>
+                              <value>take the food he offers</value>
+                            </item>
+                            <item>
+                              <key>no</key>
+                              <value>no thanks.</value>
+                            </item>
+                          </options>
+                          <description><![CDATA[as you walk to the door, a man opens the door and it hits you in the face, making you drop the money...<br/><br/>The man apoligizes and offers you some of his food.<br/>]]></description>
+                          <picture>LOSE.png</picture>
+                          <object name="take">
+                            <inherit name="picture" />
+                            <description><![CDATA[you take the food...<br/>you feel good about the food...<br/>but you're still angry about losing the money...<br/><br/><br/>THE END (bad end)]]></description>
+                            <picture>badend.png</picture>
+                            <options type="stringdictionary">
+                              <item>
+                                <key>Page3</key>
+                                <value>credits</value>
+                              </item>
+                            </options>
+                          </object>
+                          <object name="no">
+                            <inherit name="picture" />
+                            <description><![CDATA[you tell the man off...<br/>you need to find money...and fast, mcdonalds is closing in 2 hours!<br/><br/>quickly!<br/>what to do?]]></description>
+                            <options type="stringdictionary">
+                              <item>
+                                <key>mdds</key>
+                                <value>apply for mcdonalds</value>
+                              </item>
+                              <item>
+                                <key>beg</key>
+                                <value>beg for food.</value>
+                              </item>
+                              <item>
+                                <key>search</key>
+                                <value>search for the money.</value>
+                              </item>
+                              <item>
+                                <key>sneak</key>
+                                <value>sneak in and try to steal food</value>
+                              </item>
+                            </options>
+                            <picture>nope.png</picture>
+                            <object name="mdds">
+                              <inherit name="picture" />
+                              <options type="stringdictionary">
+                                <item>
+                                  <key>no</key>
+                                  <value>go back</value>
+                                </item>
+                              </options>
+                              <description><![CDATA[as mentioned earlier, you have no resume...<br/>no job...]]></description>
+                              <picture>nojobforyou.png</picture>
+                            </object>
+                            <object name="beg">
+                              <inherit name="picture" />
+                              <description><![CDATA[you go in and beg for food.<br/>management kicks you out again...]]></description>
+                              <picture>nojobforyou.png</picture>
+                              <options type="stringdictionary">
+                                <item>
+                                  <key>no</key>
+                                  <value>go back</value>
+                                </item>
+                              </options>
+                            </object>
+                            <object name="search">
+                              <inherit name="picture" />
+                              <description><![CDATA[you search for the money...<br/>you find it!<br/>but someone else found it first.<br/>you ask them for it back.<br/>they give you half.<br/><br/>]]></description>
+                              <picture>half.png</picture>
+                              <options type="stringdictionary">
+                                <item>
+                                  <key>burg</key>
+                                  <value>go get a burger</value>
+                                </item>
+                              </options>
+                              <object name="burg">
+                                <options type="stringdictionary">
+                                  <item>
+                                    <key>keep</key>
+                                    <value>keep the change</value>
+                                  </item>
+                                  <item>
+                                    <key>give</key>
+                                    <value>give it to the mcdonalds</value>
+                                  </item>
+                                  <item>
+                                    <key>give it to the lemonade girl</key>
+                                    <value>give it to the lemonade girl</value>
+                                  </item>
+                                  <item>
+                                    <key>giveto</key>
+                                    <value>flip coin</value>
+                                  </item>
+                                </options>
+                                <description><![CDATA[you order a burger.<br/><br/>you eat the burger and a smile comes across your face.<br/><br/>but wait...<br/>you have one cent left...<br/>what should you do with it?]]></description>
+                                <object name="keep">
+                                  <inherit name="picture" />
+                                  <options type="stringdictionary">
+                                    <item>
+                                      <key>Page3</key>
+                                      <value>credits.</value>
+                                    </item>
+                                  </options>
+                                  <description><![CDATA[you keep the change.<br/>Greedy man...<br/><br/>THE END (greed end.)]]></description>
+                                  <picture>greed.png</picture>
+                                </object>
+                                <object name="give">
+                                  <inherit name="picture" />
+                                  <options type="stringdictionary">
+                                    <item>
+                                      <key>Page3</key>
+                                      <value>credits.</value>
+                                    </item>
+                                  </options>
+                                  <description><![CDATA[the lady at the counter thanks you for the extra penny!<br/><br/>THE END (Thanks End)]]></description>
+                                  <picture>thanks.png</picture>
+                                </object>
+                                <object name="give it to the lemonade girl">
+                                  <inherit name="picture" />
+                                  <options type="stringdictionary">
+                                    <item>
+                                      <key>Page3</key>
+                                      <value>credits.</value>
+                                    </item>
+                                  </options>
+                                  <description><![CDATA[you go back to the lemonade girl.<br/>you give her the penny.<br/>she thanks you and gives you a glass of lemonade ON THE HOUSE.<br/><br/>THE END (proud end.)]]></description>
+                                  <picture>thanksgirl.png</picture>
+                                </object>
+                                <object name="giveto">
+                                  <inherit name="picture" />
+                                  <options type="stringdictionary">
+                                    <item>
+                                      <key>burg</key>
+                                      <value>go back</value>
+                                    </item>
+                                  </options>
+                                  <description><![CDATA[you flip the coin.<br/><br/>HEADS!<br/><br/>What now?]]></description>
+                                  <picture>heads.png</picture>
+                                </object>
+                              </object>
+                            </object>
+                            <object name="sneak">
+                              <inherit name="picture" />
+                              <options type="stringdictionary">
+                                <item>
+                                  <key>Page3</key>
+                                  <value>credits.</value>
+                                </item>
+                              </options>
+                              <description><![CDATA[you sneak through the back room and grab some nuggets.<br/>you are caught though.<br/><br/>you and your beloved tastebuds are going to jail.<br/><br/>THE END (BUSTED END)]]></description>
+                              <picture>sneak.png</picture>
+                            </object>
+                          </object>
+                        </object>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object name="Forget">
+                <inherit name="picture" />
+                <options type="stringdictionary">
+                  <item>
+                    <key>quest</key>
+                    <value>go back</value>
+                  </item>
+                </options>
+                <description><![CDATA[you forget about the job.<br/>welp.<br/>no money for you...<br/><br/>GAME OVER!]]></description>
+                <picture>nojob.png</picture>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object name="cut">
+        <inherit name="picture" />
+        <picture>cut.png</picture>
+        <options type="stringdictionary">
+          <item>
+            <key>go</key>
+            <value>go back</value>
+          </item>
+        </options>
+        <description><![CDATA[you cut through the line and knocked out a few people in your way.<br/>Unfortunately, the management does not like people like that.<br/>You were thrown out...and will never have McDonalds again...<br/>GAME OVER!]]></description>
+      </object>
+    </object>
+  </object>
+  <object name="Page3">
+    <description><![CDATA[Credits:<br/>Michael Hooper - everything.<br/>I made mcdonalds famous.]]></description>
+    <options type="stringdictionary">
+      <item>
+        <key>Page1</key>
+        <value>back to title</value>
+      </item>
+    </options>
+  </object>
+  <type name="defaultgame">
+    <attr name="_editorstyle">gamebook</attr>
+    <defaultfont>Georgia, serif</defaultfont>
+    <defaultfontsize type="int">12</defaultfontsize>
+    <defaultbackground>White</defaultbackground>
+    <defaultforeground>Black</defaultforeground>
+    <defaultlinkforeground>Blue</defaultlinkforeground>
+    <menufont>Arial</menufont>
+    <menufontsize type="int">9</menufontsize>
+    <menubackground>White</menubackground>
+    <menuforeground>Black</menuforeground>
+    <menuhoverbackground>LightGrey</menuhoverbackground>
+    <menuhoverforeground>Black</menuhoverforeground>
+    <description type="string"></description>
+    <setcustomwidth />
+    <customwidth type="int">700</customwidth>
+    <setcustompadding type="boolean">false</setcustompadding>
+    <custompaddingtop type="int">30</custompaddingtop>
+    <custompaddingbottom type="int">0</custompaddingbottom>
+    <custompaddingleft type="int">20</custompaddingleft>
+    <custompaddingright type="int">20</custompaddingright>
+    <showborder type="boolean">false</showborder>
+    <showtitle />
+    <noclear type="boolean">false</noclear>
+    <clearlastpage type="boolean">false</clearlastpage>
+    <deactivatecommandlinks type="boolean">false</deactivatecommandlinks>
+  </type>
+  <type name="defaultobject">
+    <description type="string"></description>
+  </type>
+  <type name="defaultplayer">
+    <changedparent type="script">
+      DoPage (player.parent)
+    </changedparent>
+  </type>
+  <type name="picture" />
+  <type name="youtube" />
+  <type name="link">
+    <address>http://</address>
+  </type>
+  <type name="script">
+    <runscriptonly />
+  </type>
+  <type name="scripttext">
+    <runscript />
+  </type>
+  <function name="OutputText" parameters="text">
+    OutputTextRaw (ProcessText(text))
+  </function>
+  <function name="OutputTextRaw" parameters="text"><![CDATA[
+    format = GetCurrentTextFormat("")
+    JS.addText ("<span style=\"" + format + "\">" + text + "</span><br/>")
+    if (GetString(game, "commandbarformat") <> format) {
+      ResetCommandBarFormat
+    }
+    request (Speak, text)
+  ]]></function>
+  <function name="ResetCommandBarFormat">
+    format = GetCurrentTextFormat("") + ";background:" + game.defaultbackground
+    game.commandbarformat = format
+    JS.setCommandBarStyle (format)
+  </function>
+  <function name="OutputTextNoBr" parameters="text">
+    OutputTextRawNoBr (ProcessText(text))
+  </function>
+  <function name="OutputTextRawNoBr" parameters="text"><![CDATA[
+    JS.addText ("<span style=\"" + GetCurrentTextFormat("") + "\">" + text + "</span>")
+    request (Speak, text)
+  ]]></function>
+  <function name="GetCurrentTextFormat" parameters="colour" type="string"><![CDATA[
+    style = ""
+    if (UIOptionUseGameFont()) {
+      font = GetCurrentFontFamily()
+    }
+    else {
+      font = GetUIOption("OverrideFontName")
+    }
+    if (LengthOf(font) > 0) {
+      style = style + "font-family:" + font + ";"
+    }
+    if (LengthOf(colour) = 0) {
+      if (UIOptionUseGameColours()) {
+        colour = game.defaultforeground
+      }
+      else {
+        colour = GetUIOption("OverrideForeground")
+      }
+    }
+    if (LengthOf(colour) > 0) {
+      style = style + "color:" + colour + ";"
+    }
+    if (UIOptionUseGameFont()) {
+      size = game.defaultfontsize
+    }
+    else {
+      size = ToDouble(GetUIOption("OverrideFontSize"))
+    }
+    if (size > 0) {
+      style = style + "font-size:" + ToString(size) + "pt;"
+    }
+    return (style)
+  ]]></function>
+  <function name="GetCurrentLinkTextFormat" type="string">
+    return (GetCurrentTextFormat(GetLinkTextColour()))
+  </function>
+  <function name="UIOptionUseGameFont" type="boolean">
+    value = GetUIOption("UseGameFont")
+    if (value = null or value = "true") {
+      return (true)
+    }
+    else {
+      return (false)
+    }
+  </function>
+  <function name="UIOptionUseGameColours" type="boolean">
+    value = GetUIOption("UseGameColours")
+    if (value = null or value = "true") {
+      return (true)
+    }
+    else {
+      return (false)
+    }
+  </function>
+  <function name="GetLinkTextColour" type="string">
+    if (UIOptionUseGameColours()) {
+      return (game.defaultlinkforeground)
+    }
+    else {
+      return (GetUIOption("OverrideLinkForeground"))
+    }
+  </function>
+  <function name="ProcessText" parameters="text" type="string">
+    data = NewDictionary()
+    dictionary add (data, "fulltext", text)
+    text = ProcessTextSection(text, data)
+    return (Replace(Replace(text, "@@@open@@@", "{"), "@@@close@@@", "}"))
+  </function>
+  <function name="ProcessTextSection" parameters="text, data" type="string"><![CDATA[
+    containsUnprocessedSection = false
+    open = Instr(text, "{")
+      if (open > 0) {
+        nestCount = 1
+        searchStart = open + 1
+        finished = false
+        while (not finished) {
+          nextOpen = Instr(searchStart, text, "{")
+            nextClose = Instr(searchStart, text, "}")
+          if (nextClose > 0) {
+            if (nextOpen > 0 and nextOpen < nextClose) {
+              nestCount = nestCount + 1
+              searchStart = nextOpen + 1
+            }
+            else {
+              nestCount = nestCount - 1
+              searchStart = nextClose + 1
+              if (nestCount = 0) {
+                close = nextClose
+                containsUnprocessedSection = true
+                finished = true
+              }
+            }
+          }
+          else {
+            finished = true
+          }
+        }
+      }
+      if (containsUnprocessedSection) {
+        section = Mid(text, open + 1, close - open - 1)
+        value = ProcessTextCommand(section, data)
+        value = ProcessTextSection(value, data)
+        text = Left(text, open - 1) + value + ProcessTextSection(Mid(text, close + 1), data)
+      }
+      return (text)
+  ]]></function>
+  <function name="ProcessTextCommand" parameters="section, data" type="string">
+    if (StartsWith(section, "if ")) {
+      return (ProcessTextCommand_If(section, data))
+    }
+    else if (StartsWith(section, "either ")) {
+      return (ProcessTextCommand_Either(section, data))
+    }
+    else if (StartsWith(section, "here ")) {
+      return (ProcessTextCommand_Here(section, data, true))
+    }
+    else if (StartsWith(section, "nothere ")) {
+      return (ProcessTextCommand_Here(section, data, false))
+    }
+    else if (StartsWith(section, "popup:")) {
+      return (ProcessTextCommand_Popup(Mid(section, 7), data))
+    }
+    else if (StartsWith(section, "i:")) {
+      return (ProcessTextCommand_Format(Mid(section, 3), data, "i"))
+    }
+    else if (StartsWith(section, "u:")) {
+      return (ProcessTextCommand_Format(Mid(section, 3), data, "u"))
+    }
+    else if (StartsWith(section, "b:")) {
+      return (ProcessTextCommand_Format(Mid(section, 3), data, "b"))
+    }
+    else if (StartsWith(section, "s:")) {
+      return (ProcessTextCommand_Format(Mid(section, 3), data, "s"))
+    }
+    else if (StartsWith(section, "color:")) {
+      return (ProcessTextCommand_Colour(Mid(section, 7), data))
+    }
+    else if (StartsWith(section, "colour:")) {
+      return (ProcessTextCommand_Colour(Mid(section, 8), data))
+    }
+    else if (StartsWith(section, "back:")) {
+      return (ProcessTextCommand_Background(Mid(section, 6), data))
+    }
+    else if (StartsWith(section, "object:")) {
+      return (ProcessTextCommand_Object(section, data))
+    }
+    else if (StartsWith(section, "command:")) {
+      return (ProcessTextCommand_Command(Mid(section, 9), data))
+    }
+    else if (StartsWith(section, "page:")) {
+      return (ProcessTextCommand_Command(Mid(section, 6), data))
+    }
+    else if (StartsWith(section, "exit:")) {
+      return (ProcessTextCommand_Exit(section, data))
+    }
+    else if (StartsWith(section, "once:")) {
+      return (ProcessTextCommand_Once(section, data))
+    }
+    else if (StartsWith(section, "notfirst:")) {
+      return (ProcessTextCommand_NotFirst(section, data))
+    }
+    else if (StartsWith(section, "random:")) {
+      return (ProcessTextCommand_Random(section, data))
+    }
+    else if (StartsWith(section, "rndalt:")) {
+      return (ProcessTextCommand_RandomAlias(section, data))
+    }
+    else if (StartsWith(section, "img:")) {
+      return (ProcessTextCommand_Img(section, data))
+    }
+    else if (StartsWith(section, "counter:")) {
+      return (ProcessTextCommand_Counter(Mid(section, 9), data))
+    }
+    else if (StartsWith(section, "select:")) {
+      return (ProcessTextCommand_Select(section, data))
+    }
+    else if (StartsWith(section, "eval:")) {
+      return (ProcessTextCommand_Eval(Mid(section, 6), data))
+    }
+    else if (StartsWith(section, "=")) {
+      return (ProcessTextCommand_Eval(Mid(section, 2), data))
+    }
+    else {
+      dot = Instr(section, ".")
+      if (dot = 0) {
+        return ("@@@open@@@" + ProcessTextSection(section, data) + "@@@close@@@")
+      }
+      else {
+        objectname = Left(section, dot - 1)
+        attributename = Mid(section, dot + 1)
+        if (objectname = "this") {
+          object = game.text_processor_this
+        }
+        else {
+          object = GetObject(objectname)
+        }
+        if (object = null) {
+          return ("@@@open@@@" + ProcessTextSection(section, data) + "@@@close@@@")
+        }
+        else {
+          if (HasAttribute(object, attributename)) {
+            type = TypeOf(object, attributename)
+            switch (type) {
+              case ("string", "int", "double") {
+                return (ToString(GetAttribute(object, attributename)))
+              }
+              case ("boolean") {
+                result = GetAttribute(object, attributename)
+                if (result) {
+                  return ("true")
+                }
+                else {
+                  return ("false")
+                }
+              }
+              default {
+                return ("(" + type + ")")
+              }
+            }
+          }
+          else {
+            return ("")
+          }
+        }
+      }
+    }
+  </function>
+  <function name="ProcessTextCommand_Eval" parameters="section, data" type="string">
+    if (not IsRegexMatch("[^\\w\\s]", section, "tp_punctuation_check")) {
+      section = section + "()"
+    }
+    return (ToString(eval(section)))
+  </function>
+  <function name="ProcessTextCommand_Either" parameters="section, data" type="string">
+    command = Mid(section, 8)
+    colon = Instr(command, ":")
+    if (colon = 0) {
+      return ("@@@open@@@either " + command + "@@@close@@@")
+    }
+    text = Mid(command, colon + 1)
+    colon2 = Instr(colon + 1, command, "|")
+    if (colon2 = 0) {
+      text2 = ""
+    }
+    else {
+      text2 = Mid(command, colon2 + 1)
+      text = Replace(text, "|" + text2, "")
+    }
+    condition = Left(command, colon - 1)
+    if (not game.text_processor_this = null) {
+      condition = Replace(condition, "this", game.text_processor_this.name)
+    }
+    result = eval(condition)
+    if (result) {
+      return (ProcessTextSection(text, data))
+    }
+    else {
+      if (text2 = "") {
+        return ("")
+      }
+      else {
+        return (ProcessTextSection(text2, data))
+      }
+    }
+  </function>
+  <function name="ProcessTextCommand_Here" parameters="section, data, flag" type="string">
+    len = 9
+    if (flag) {
+      len = 6
+    }
+    command = Mid(section, len)
+    colon = Instr(command, ":")
+    if (colon = 0) {
+      return ("@@@open@@@" + section + "@@@close@@@")
+    }
+    else {
+      text = Mid(command, colon + 1)
+      condition = Left(command, colon - 1)
+      if (not game.text_processor_this = null) {
+        condition = Replace(condition, "this", game.text_processor_this.name)
+      }
+      object = Eval(condition)
+      if (object = null) {
+        return ("@@@open@@@" + section + "@@@close@@@")
+      }
+      if (object.parent = game.pov.parent and flag) {
+        return (ProcessTextSection(text, data))
+      }
+      else if (not object.parent = game.pov.parent and not flag) {
+        return (ProcessTextSection(text, data))
+      }
+      else {
+        return ("")
+      }
+    }
+  </function>
+  <function name="ProcessTextCommand_If" parameters="section, data" type="string"><![CDATA[
+    command = Mid(section, 4)
+    colon = Instr(command, ":")
+    if (colon = 0) {
+      return ("@@@open@@@if " + command + "@@@close@@@")
+    }
+    else {
+      text = Mid(command, colon + 1)
+      condition = Left(command, colon - 1)
+      if (not game.text_processor_this = null) {
+        condition = Replace(condition, "this", game.text_processor_this.name)
+      }
+      operator = Instr(condition, "<=")
+      if (operator <> 0) {
+        operatorlength = 2
+      }
+      if (operator = 0) {
+        operator = Instr(condition, ">=")
+        if (operator <> 0) {
+          operatorlength = 2
+        }
+      }
+      if (operator = 0) {
+        operator = Instr(condition, "<>")
+        if (operator <> 0) {
+          operatorlength = 2
+        }
+      }
+      if (operator = 0) {
+        operator = Instr(condition, "<")
+        if (operator <> 0) {
+          operatorlength = 1
+        }
+      }
+      if (operator = 0) {
+        operator = Instr(condition, ">")
+        if (operator <> 0) {
+          operatorlength = 1
+        }
+      }
+      if (operator = 0) {
+        operator = Instr(condition, "=")
+        if (operator <> 0) {
+          operatorlength = 1
+        }
+      }
+      if (operator = 0) {
+        checkfor = true
+        if (StartsWith(condition, "not ")) {
+          checkfor = false
+          condition = Mid(condition, 5)
+        }
+        dot = Instr(condition, ".")
+        if (dot = 0) {
+          result = GetBoolean(game, condition)
+        }
+        else {
+          objectname = Left(condition, dot - 1)
+          attributename = Mid(condition, dot + 1)
+          object = GetObject(objectname)
+          if (object = null) {
+            result = false
+          }
+          else {
+            result = GetBoolean(object, attributename)
+          }
+        }
+        if (result = checkfor) {
+          return (ProcessTextSection(text, data))
+        }
+        else {
+          return ("")
+        }
+      }
+      else {
+        lhs = Left(condition, operator - 1)
+        rhs = Mid(condition, operator + operatorlength)
+        op = Mid(condition, operator, operatorlength)
+        dot = Instr(lhs, ".")
+        if (dot = 0) {
+          objectname = ""
+          attributename = ""
+          if (HasInt(game, lhs)) {
+            objectname = "game"
+            attributename = lhs
+          }
+          else {
+            return ("@@@open@@@if " + command + "@@@close@@@")
+          }
+        }
+        else {
+          objectname = Left(lhs, dot - 1)
+          attributename = Mid(lhs, dot + 1)
+        }
+        object = GetObject(objectname)
+        if (object = null) {
+          return ("@@@open@@@if " + command + "@@@close@@@")
+        }
+        else if (not HasAttribute(object, attributename)) {
+          return ("@@@open@@@if " + command + "@@@close@@@")
+        }
+        else {
+          value = GetAttribute(object, attributename)
+          if (TypeOf(value) = "object") {
+            value = value.name
+          }
+          if (op = "=") {
+            if (ToString(value) = rhs) {
+              return (ProcessTextSection(text, data))
+            }
+            else {
+              return ("")
+            }
+          }
+          else if (op = "<>") {
+            if (not ToString(value) = rhs) {
+              return (ProcessTextSection(text, data))
+            }
+            else {
+              return ("")
+            }
+          }
+          else if (op = ">") {
+            if (ToDouble(ToString(value)) > ToDouble(rhs)) {
+              return (ProcessTextSection(text, data))
+            }
+            else {
+              return ("")
+            }
+          }
+          else if (op = "<") {
+            if (ToDouble(ToString(value)) < ToDouble(rhs)) {
+              return (ProcessTextSection(text, data))
+            }
+            else {
+              return ("")
+            }
+          }
+          else if (op = ">=") {
+            if (ToDouble(ToString(value)) >= ToDouble(rhs)) {
+              return (ProcessTextSection(text, data))
+            }
+            else {
+              return ("")
+            }
+          }
+          else if (op = "<=") {
+            if (ToDouble(ToString(value)) <= ToDouble(rhs)) {
+              return (ProcessTextSection(text, data))
+            }
+            else {
+              return ("")
+            }
+          }
+        }
+      }
+    }
+  ]]></function>
+  <function name="ProcessTextCommand_Format" parameters="section, data, html" type="string"><![CDATA[
+    return (ProcessTextSection("<" + html + ">" + section + "</" + html + ">", data))
+  ]]></function>
+  <function name="ProcessTextCommand_Colour" parameters="section, data" type="string"><![CDATA[
+    ary = Split(section, ":")
+    c = StringListItem(ary, 0)
+    list remove (ary, c)
+    s = Join (ary, ":")
+    return (ProcessTextSection("<span style=\"color:" + c + ";\">" + s + "</span>", data))
+  ]]></function>
+  <function name="ProcessTextCommand_Background" parameters="section, data" type="string"><![CDATA[
+    ary = Split(section, ":")
+    c = StringListItem(ary, 0)
+    list remove (ary, c)
+    s = Join (ary, ":")
+    return (ProcessTextSection("<span style=\"background-color:" + c + ";\">" + s + "</span>", data))
+  ]]></function>
+  <function name="ProcessTextCommand_Popup" parameters="section, data" type="string"><![CDATA[
+    ary = Split(section, ":")
+    s1 = StringListItem(ary, 0)
+    list remove (ary, s1)
+    s2 = Join (ary, ":")
+    id = JSSafe(s1) + GetRandomInt(0, 999999999)
+    link = game.defaultlinkforeground
+    if (HasString(game, "altlinkforeground")) {
+      link = game.altlinkforeground
+    }
+    s = "<span  style=\"cursor:pointer;color:" + link + ";\" onclick=\"$('#" + id + "').css('display', 'block');\">" + s1 + "</span><div id=\"" + id + "\" class=\"w3-theme-border\" style=\"position:fixed;z-index:9999;display:none;cursor:pointer;left:50px;top:40%;width:40%;background-color:" + game.defaultbackground + ";border:2px solid " + game.defaultforeground + ";color:" + link + ";border-radius:5px;padding:5px;\" onclick=\"$('#" + id + "').css('display', 'none');\"><p>"
+    s = s + s2 + "</p></div>"
+    return (ProcessTextSection(s, data))
+  ]]></function>
+  <function name="ProcessTextCommand_Object" parameters="section, data" type="string"><![CDATA[
+    objectname = Mid(section, 8)
+    text = ""
+    colon = Instr(objectname, ":")
+    if (colon > 0) {
+      text = Mid(objectname, colon + 1)
+      objectname = Left(objectname, colon - 1)
+    }
+    if (not game.text_processor_this = null) {
+      objectname = Replace(objectname, "this", game.text_processor_this.name)
+    }
+    object = GetObject(objectname)
+    if (object = null) {
+      return ("@@@open@@@" + ProcessTextSection(section, data) + "@@@close@@@")
+    }
+    else {
+      if (LengthOf(text) = 0) {
+        text = SafeXML(GetDisplayAlias(object))
+      }
+      if (game.enablehyperlinks) {
+        linkid = ProcessTextCommand_GetNextLinkId()
+        colour = ""
+        if (HasString(object, "linkcolour") and GetUIOption("UseGameColours") = "true") {
+          colour = object.linkcolour
+        }
+        else {
+          colour = GetLinkTextColour()
+        }
+        style = GetCurrentTextFormat(colour)
+        return ("<a id=\"" + linkid + "\" style=\"" + style + "\" class=\"cmdlink elementmenu\" data-elementid=\"" + object.name + "\">" + text + "</a>")
+      }
+      else {
+        return (text)
+      }
+    }
+  ]]></function>
+  <function name="ProcessTextCommand_GetNextLinkId" type="string">
+    if (not HasInt(game, "lastlinkid")) {
+      game.lastlinkid = 0
+    }
+    game.lastlinkid = game.lastlinkid + 1
+    return ("verblink" + game.lastlinkid)
+  </function>
+  <function name="ProcessTextCommand_Command" parameters="command, data" type="string"><![CDATA[
+    text = command
+    colon = Instr(command, ":")
+    if (colon > 0) {
+      text = Mid(command, colon + 1)
+      command = Left(command, colon - 1)
+    }
+    style = GetCurrentLinkTextFormat()
+    candidates = NewObjectList()
+    foreach (cmd, ScopeCommands()) {
+      if (IsRegexMatch(cmd.pattern, command, cmd.name)) {
+        list add (candidates, cmd)
+      }
+    }
+    elementid = ""
+    if (ListCount(candidates) = 1) {
+      cmd = ObjectListItem(candidates, 0)
+      elementid = cmd.name
+    }
+    linkid = ProcessTextCommand_GetNextLinkId()
+    dataattrs = ""
+    if (game.deactivatecommandlinks) {
+      dataattrs = dataattrs + "data-deactivateonclick=\"true\" "
+    }
+    dataattrs = dataattrs + "data-command=\"" + command + "\""
+    return ("<a id=\"" + linkid + "\" style=\"" + style + "\" class=\"cmdlink commandlink\" data-elementid=\"" + elementid + "\" " + dataattrs + ">" + ProcessTextSection(text, data) + "</a>")
+  ]]></function>
+  <function name="ProcessTextCommand_Exit" parameters="section, data" type="string"><![CDATA[
+    exitname = Mid(section, 6)
+    exit = GetObject(exitname)
+    if (exit = null) {
+      return ("@@@open@@@" + ProcessTextSection(section, data) + "@@@close@@@")
+    }
+    else {
+      verbs = GetDisplayVerbs(exit)
+      alias = GetDisplayAlias(exit)
+      command = LCase(StringListItem(verbs, 0)) + " " + alias
+      style = GetCurrentLinkTextFormat()
+      return ("<a style=\"" + style + "\" class=\"cmdlink exitlink\" data-elementid=\"" + exit.name + "\" data-command=\"" + command + "\">" + alias + "</a>")
+    }
+  ]]></function>
+  <function name="ProcessTextCommand_Once" parameters="section, data" type="string">
+    if (not HasAttribute(game, "textprocessor_seen")) {
+      game.textprocessor_seen = NewDictionary()
+    }
+    fulltext = StringDictionaryItem(data, "fulltext")
+    if (not DictionaryContains(game.textprocessor_seen, fulltext)) {
+      onceSectionsInThisText = NewList()
+      dictionary add (game.textprocessor_seen, fulltext, onceSectionsInThisText)
+    }
+    else {
+      onceSectionsInThisText = DictionaryItem(game.textprocessor_seen, fulltext)
+    }
+    if (not ListContains(onceSectionsInThisText, section)) {
+      list add (onceSectionsInThisText, section)
+      return (ProcessTextSection(Mid(section, 6), data))
+    }
+    else {
+      return ("")
+    }
+  </function>
+  <function name="ProcessTextCommand_NotFirst" parameters="section, data" type="string">
+    if (not HasAttribute(game, "textprocessor_seen")) {
+      game.textprocessor_seen = NewDictionary()
+    }
+    fulltext = StringDictionaryItem(data, "fulltext")
+    if (not DictionaryContains(game.textprocessor_seen, fulltext)) {
+      onceSectionsInThisText = NewList()
+      dictionary add (game.textprocessor_seen, fulltext, onceSectionsInThisText)
+    }
+    else {
+      onceSectionsInThisText = DictionaryItem(game.textprocessor_seen, fulltext)
+    }
+    if (not ListContains(onceSectionsInThisText, section)) {
+      list add (onceSectionsInThisText, section)
+      return ("")
+    }
+    else {
+      return (ProcessTextSection(Mid(section, 10), data))
+    }
+  </function>
+  <function name="ProcessTextCommand_Random" parameters="section, data" type="string">
+    elements = Mid(section, 8)
+    elementslist = Tsplit(elements)
+    index = GetRandomInt(0, ListCount(elementslist) - 1)
+    return (ProcessTextSection(ListItem(elementslist, index), data))
+  </function>
+  <function name="Tsplit" parameters="splittext" type="stringlist"><![CDATA[
+    itemlist = NewStringList()
+    sections = 0
+    startpos = 1
+    for (i, 1, LengthOf(splittext)) {
+      if (Mid(splittext, i, 1) = "{") {
+          sections = sections + 1
+        }
+        if (Mid(splittext, i, 1) = "}") {
+        sections = sections - 1
+      }
+      if (Mid(splittext, i, 1) = ":" and 0 >= sections) {
+        item = Mid(splittext, startpos, i - startpos)
+        list add (itemlist, item)
+        startpos = i + 1
+      }
+    }
+    item = Mid(splittext, startpos)
+    list add (itemlist, item)
+    return (itemlist)
+  ]]></function>
+  <function name="ProcessTextCommand_RandomAlias" parameters="section, data" type="string"><![CDATA[
+    objectname = Mid(section, 8)
+    if (not game.text_processor_this = null) {
+      objectname = Replace(objectname, "this", game.text_processor_this.name)
+    }
+    object = GetObject(objectname)
+    if (object = null) {
+      return ("@@@open@@@" + ProcessTextSection(section, data) + "@@@close@@@")
+    }
+    else {
+      count = ListCount(object.alt)
+      if (count > 0) {
+        return (ListItem(object.alt, GetRandomInt(0, count - 1)))
+      }
+      else {
+        return ("")
+      }
+    }
+  ]]></function>
+  <function name="ProcessTextCommand_Img" parameters="section, data" type="string"><![CDATA[
+    filename = Mid(section, 5)
+    return ("<img src=\"" + GetFileURL(filename) + "\" />")
+  ]]></function>
+  <function name="ProcessTextCommand_Counter" parameters="section, data" type="string">
+    if (HasAttribute(game, section)) {
+      return (ToString(GetAttribute(game, section)))
+    }
+    else {
+      return ("0")
+    }
+  </function>
+  <function name="ProcessTextCommand_Select" parameters="section, data" type="string"><![CDATA[
+    elements = Mid(section, 8)
+    elementslist = Split(elements, ":")
+    objectandatt = StringListItem (elementslist, 0)
+    list remove (elementslist, objectandatt)
+    objectandattlist = Split(objectandatt, ".")
+    if (not ListCount (objectandattlist) = 2) {
+      return ("@@@open@@@" + ProcessTextSection(section, data) + "@@@close@@@")
+    }
+    else {
+      objectname = StringListItem(objectandattlist, 0)
+      if (not game.text_processor_this = null) {
+        objectname = Replace(objectname, "this", game.text_processor_this.name)
+      }
+      object = GetObject(objectname)
+      if (object = null) {
+        return ("@@@open@@@" + ProcessTextSection(section, data) + "@@@close@@@")
+      }
+      else if (not HasInt (object, StringListItem(objectandattlist, 1))) {
+        return ("@@@open@@@" + ProcessTextSection(section, data) + "@@@close@@@")
+      }
+      else {
+        if (Instr(elements, "|") > 0) {
+          elementslist = Split(Join(elementslist, ":"), "|")
+        }
+        index = GetInt(object, StringListItem(objectandattlist, 1))
+        if ((0 > index) or (index >= Listcount(elementslist))) {
+          return ("@@@open@@@" + ProcessTextSection(section, data) + "@@@close@@@")
+        }
+        else {
+          return (ProcessTextSection(ListItem(elementslist, index), data))
+        }
+      }
+    }
+  ]]></function>
+  <function name="SetFramePicture" parameters="filename"><![CDATA[
+    request (SetPanelContents, "<img src=\"" + GetFileURL(filename) + "\" onload=\"setPanelHeight()\"/>")
+    game.panelcontents = filename
+  ]]></function>
+  <function name="ClearFramePicture">
+    request (SetPanelContents, "")
+    game.panelcontents = null
+  </function>
+  <function name="ClearScreen">
+    request (ClearScreen, "")
+  </function>
+  <function name="SetForegroundColour" parameters="colour">
+    request (Foreground, colour)
+    game.defaultforeground = colour
+  </function>
+  <function name="SetBackgroundColour" parameters="colour">
+    request (Background, colour)
+    game.defaultbackground = colour
+  </function>
+  <function name="SetLinkForegroundColour" parameters="colour">
+    request (LinkForeground, colour)
+    game.defaultlinkforeground = colour
+  </function>
+  <function name="SetFontName" parameters="font">
+    game.defaultfont = font
+    game.defaultwebfont = ""
+  </function>
+  <function name="SetWebFontName" parameters="font">
+    AddExternalStylesheet ("https://fonts.googleapis.com/css?family=" + Replace(font, " ", "+"))
+    game.defaultwebfont = font
+  </function>
+  <function name="AddExternalStylesheet" parameters="stylesheet">
+    if (game.externalstylesheets = null) {
+      game.externalstylesheets = NewStringList()
+    }
+    if (not ListContains(game.externalstylesheets, stylesheet)) {
+      list add (game.externalstylesheets, stylesheet)
+      JS.addExternalStylesheet (stylesheet)
+    }
+  </function>
+  <function name="SetFontSize" parameters="size">
+    game.defaultfontsize = size
+  </function>
+  <function name="PrintCentered" parameters="text">
+    SetAlignment ("center")
+    msg (text)
+    SetAlignment ("left")
+  </function>
+  <function name="ShowYouTube" parameters="id">
+    JS.AddYouTube (id)
+  </function>
+  <function name="ShowVimeo" parameters="id">
+    JS.AddVimeo (id)
+  </function>
+  <function name="WaitForKeyPress">
+    request (Wait, "")
+  </function>
+  <function name="DisplayHttpLink" parameters="text, url, https"><![CDATA[
+    pos = Instr(url, "://")
+    if (pos > 0) {
+      url = Mid(url, pos + 3)
+    }
+    if (https) {
+      url = "https://" + url
+    }
+    else {
+      url = "http://" + url
+    }
+    msg ("<a style=\"" + GetCurrentLinkTextFormat() + "\" href=\"" + url + "\">" + text + "</a>")
+  ]]></function>
+  <function name="DisplayMailtoLink" parameters="text, url"><![CDATA[
+    if (Instr(url, "mailto:") = 0) {
+      url = "mailto:" + url
+    }
+    msg ("<a style=\"" + GetCurrentLinkTextFormat() + "\" href=\"" + url + "\">" + text + "</a>")
+  ]]></function>
+  <function name="CommandLink" parameters="cmd, text" type="string">
+    return ("{command:" + cmd + ":" + text + "}")
+  </function>
+  <function name="Log" parameters="text">
+    request (Log, text)
+  </function>
+  <function name="SetBackgroundImage" parameters="filename">
+    JS.SetBackgroundImage (GetFileURL(filename))
+    game.backgroundimage = filename
+  </function>
+  <function name="SetBackgroundOpacity" parameters="opacity">
+    JS.SetBackgroundOpacity (opacity)
+    game.backgroundopacity = opacity
+    game.setbackgroundopacity = true
+  </function>
+  <function name="DisplayList" parameters="list, numbers"><![CDATA[
+    if (numbers) {
+      result = "<ol>"
+    }
+    else {
+      result = "<ul>"
+    }
+    foreach (item, list) {
+      result = result + "<li>" + item + "</li>"
+    }
+    if (numbers) {
+      result = result + "</ol>"
+    }
+    else {
+      result = result + "</ul>"
+    }
+    msg (result)
+  ]]></function>
+  <function name="SetAlignment" parameters="align">
+    JS.createNewDiv (align)
+  </function>
+  <function name="GetCurrentFontFamily" type="string">
+    if (game.defaultwebfont = null) {
+      return (game.defaultfont)
+    }
+    else {
+      if (game.defaultwebfont = "") {
+        return (game.defaultfont)
+      }
+      else {
+        return ("'" + game.defaultwebfont + "', " + game.defaultfont)
+      }
+    }
+  </function>
+  <function name="FormatList" parameters="list, joiner, lastjoiner, nothing" type="string"><![CDATA[
+    if (ListCount (list) = 0) {
+      return (nothing)
+    }
+    else {
+      result = ""
+      count = 0
+      listLength = ListCount(list)
+      foreach (item, list) {
+        if (TypeOf(item) = "object") {
+          result = result + GetDisplayName(item)
+        }
+        else {
+          result = result + item
+        }
+        count = count + 1
+        if (count = listLength - 1) {
+          if (not IsRegexMatch("^\\W", lastjoiner)) {
+            result = result + " "
+          }
+          result = result + lastjoiner + " "
+        }
+        else if (count < listLength) {
+          result = result + joiner + " "
+        }
+      }
+      return (Trim (result))
+    }
+  ]]></function>
+  <function name="Spaces" parameters="number" type="string"><![CDATA[
+    game.command_successful = True
+    text = ""
+    for (x, 1, number) {
+      text = text+ "&nbsp;"
+    }
+    return (text)
+  ]]></function>
+  <function name="ToRoman" parameters="n" type="string"><![CDATA[
+    if (not TypeOf(n) = "int") {
+      error ("ToRoman can only handle ints")
+    }
+    arabic = Split("1000;900;500;400;100;90;50;40;10;9;5;4;1", ";")
+    roman = Split("M;CM;D;CD;C;XC;L;XL;X;IX;V;IV;I", ";")
+    result = ""
+    for (i, 0, 12) {
+      a = ToInt(StringListItem(arabic, i))
+      r = StringListItem(roman, i)
+      while (n >= a) {
+        result = result + r
+        n = n - a
+      }
+    }
+    return (result)
+  ]]></function>
+  <function name="TextFX_Typewriter" parameters="text, speed">
+    TextFX_Typewriter_Internal (text, speed, GetCurrentFontFamily(), game.defaultforeground, game.defaultfontsize)
+  </function>
+  <function name="TextFX_Typewriter_Internal" parameters="text, speed, font, color, size">
+    JS.TextFX.Typewriter (text, speed, font, color, size)
+  </function>
+  <function name="TextFX_Unscramble" parameters="text, speed, reveal">
+    TextFX_Unscramble_Internal (text, speed, reveal, GetCurrentFontFamily(), game.defaultforeground, game.defaultfontsize)
+  </function>
+  <function name="TextFX_Unscramble_Internal" parameters="text, speed, reveal, font, color, size">
+    JS.TextFX.Unscramble (text, speed, reveal, font, color, size)
+  </function>
+  <function name="InitInterface">
+    if (game.setcustomwidth) {
+      JS.setGameWidth (game.customwidth)
+    }
+    if (not game.showborder) {
+      JS.hideBorder ()
+    }
+    if (game.setcustompadding) {
+      JS.setGamePadding (game.custompaddingtop, game.custompaddingbottom, game.custompaddingleft, game.custompaddingright)
+    }
+    request (Background, game.defaultbackground)
+    request (Foreground, game.defaultforeground)
+    request (LinkForeground, game.defaultlinkforeground)
+    JS.SetMenuBackground (game.menubackground)
+    JS.SetMenuForeground (game.menuforeground)
+    JS.SetMenuHoverBackground (game.menuhoverbackground)
+    JS.SetMenuHoverForeground (game.menuhoverforeground)
+    JS.SetMenuFontName (game.menufont)
+    JS.SetMenuFontSize (game.menufontsize + "pt")
+    request (Hide, "Panes")
+    request (Hide, "Command")
+    request (Hide, "Location")
+  </function>
+  <function name="StartGame"><![CDATA[
+    if (game.showtitle) {
+      PrintCentered ("<span style=\"font-size:260%\">" + game.gamename + "</span>")
+      if (game.subtitle <> null) {
+        if (LengthOf(game.subtitle) > 0) {
+          PrintCentered ("<span style=\"font-size:130%\">" + game.subtitle + "</span>")
+        }
+      }
+      if (game.author <> null) {
+        if (LengthOf(game.author) > 0) {
+          PrintCentered ("<br/><span style=\"font-size:140%\">" + game.author + "</span>")
+        }
+      }
+      msg ("<div style=\"margin-top:20px\"></div>")
+    }
+    game.noclear = true
+    DoPage (player.parent)
+    game.noclear = false
+  ]]></function>
+  <function name="ScopeInventory" type="objectlist">
+    result = NewObjectList()
+    return (result)
+  </function>
+  <function name="GetPlacesObjectsList" type="objectlist">
+    result = NewObjectList()
+    return (result)
+  </function>
+  <function name="ScopeExits" type="objectlist">
+    result = NewObjectList()
+    return (result)
+  </function>
+  <function name="ScopeCommands" type="objectlist">
+    result = NewObjectList()
+    foreach (command, AllCommands()) {
+      if (command.parent = game.pov.parent) {
+        list add (result, command)
+      }
+    }
+    return (result)
+  </function>
+  <function name="HandleCommand" parameters="command"><![CDATA[
+    if (command = "undo") {
+      // ignore
+    }
+    else {
+      newpage = GetObject(command)
+      if (newpage = null) {
+        msg ("Error - no page named '" + command + "'")
+      }
+      else {
+        if (not game.clearlastpage and HasAttribute(player.parent, "options")) {
+          if (DictionaryContains(player.parent.options, command)) {
+            optiontext = StringDictionaryItem(player.parent.options, command)
+            msg ("<b>" + optiontext + "</b>")
+            msg ("")
+          }
+          JS.disableAllCommandLinks ()
+        }
+        player.parent = GetObject(command)
+      }
+    }
+  ]]></function>
+  <function name="DoPage" parameters="page"><![CDATA[
+    parent = player.parent
+    if (game.clearlastpage) {
+      if (not game.noclear) {
+        request (ClearScreen, "")
+      }
+    }
+    else {
+      if (HasString(game, "optionsoutputsection")) {
+        HideOutputSection (game.optionsoutputsection)
+      }
+    }
+    if (not GetBoolean(game, "continuesound")) {
+      stop sound
+    }
+    if (HasScript( game, "roomenter")) {
+      do (game, "roomenter")
+    }
+    on ready {
+      if (GetBoolean(player.parent, "runscript") or GetBoolean(player.parent, "runscriptonly")) {
+        if (HasScript(player.parent, "script")) {
+          do (player.parent, "script")
+        }
+        else {
+          msg ("No script has been created for this page.")
+        }
+      }
+      // script may have moved the player, so finish DoPage if parent has changed
+      if (parent = player.parent and not GetBoolean(player.parent, "runscriptonly")) {
+        if (HasString(player.parent, "sound")) {
+          if (LengthOf(player.parent.sound) > 0) {
+            play sound (player.parent.sound, false, false)
+            game.continuesound = GetBoolean(player.parent, "continuesound")
+          }
+        }
+        if (HasString(player.parent, "picture")) {
+          if (LengthOf(player.parent.picture) > 0) {
+            picture (player.parent.picture)
+            msg ("")
+          }
+        }
+        if (HasString(player.parent, "youtube")) {
+          if (LengthOf(player.parent.youtube) > 0) {
+            JS.AddYouTube (player.parent.youtube)
+            msg ("")
+            msg ("")
+          }
+        }
+        msg (player.parent.description)
+        msg ("")
+        msg ("")
+        game.optionsoutputsection = StartNewOutputSection()
+        if (TypeOf(player.parent, "options") = "stringdictionary") {
+          foreach (key, player.parent.options) {
+            destination = GetObject(key)
+            if (destination = null) {
+              msg (StringDictionaryItem(player.parent.options, key) + " (broken link)")
+            }
+            else {
+              if (DoesInherit(destination, "link")) {
+                msg ("<a href=\"" + destination.address + "\">" + StringDictionaryItem(player.parent.options, key) + "</a>")
+              }
+              else {
+                msg (CommandLink(key, StringDictionaryItem(player.parent.options, key)))
+              }
+            }
+            msg ("")
+          }
+        }
+        EndOutputSection (game.optionsoutputsection)
+      }
+    }
+    set (player.parent, "visited", true)
+  ]]></function>
+  <function name="StartNewOutputSection" type="string">
+    if (not HasInt(game, "lastoutputsection")) {
+      game.lastoutputsection = 0
+    }
+    game.lastoutputsection = game.lastoutputsection + 1
+    name = "section" + game.lastoutputsection
+    JS.StartOutputSection (name)
+    return (name)
+  </function>
+  <function name="EndOutputSection" parameters="name">
+    JS.EndOutputSection (name)
+  </function>
+  <function name="HideOutputSection" parameters="name">
+    JS.HideOutputSection (name)
+  </function>
+  <function name="RandomChance" parameters="percentile" type="boolean"><![CDATA[
+    return (GetRandomInt(1,100) <= percentile)
+  ]]></function>
+  <function name="HasSeenPage" parameters="page" type="boolean">
+    return (GetBoolean(page, "visited"))
+  </function>
+  <function name="SetFlagOn" parameters="flag">
+    set (game, flag, true)
+  </function>
+  <function name="SetFlagOff" parameters="flag">
+    set (game, flag, false)
+  </function>
+  <function name="SetCounter" parameters="counter, value">
+    set (game, counter, value)
+  </function>
+  <function name="ChangeCounter" parameters="counter, value">
+    if (not HasInt(game, counter)) {
+      set (game, counter, 0)
+    }
+    set (game, counter, GetInt(game, counter) + value)
+  </function>
+  <function name="IncreaseCounter" parameters="counter">
+    if (not HasInt(game, counter)) {
+      set (game, counter, 0)
+    }
+    set (game, counter, GetInt(game, counter) + 1)
+  </function>
+  <function name="DecreaseCounter" parameters="counter">
+    if (not HasInt(game, counter)) {
+      set (game, counter, 0)
+    }
+    set (game, counter, GetInt(game, counter) - 1)
+  </function>
+  <function name="GetInput" parameters="callback">
+    request (Show, "Command")
+    get input {
+      request (Hide, "Command")
+      parameters = NewStringDictionary()
+      dictionary add (parameters, "result", result)
+      invoke (callback, parameters)
+    }
+  </function>
+  <function name="AddPageLink" parameters="source, destination, text">
+    RemovePageLink (source, destination)
+    dictionary add (source.options, destination.name, text)
+  </function>
+  <function name="RemovePageLink" parameters="source, destination">
+    if (source.options = null) {
+      source.options = NewStringDictionary()
+    }
+    if (DictionaryContains(source.options, destination.name)) {
+      dictionary remove (source.options, destination.name)
+    }
+  </function>
+  <function name="MovePlayer" parameters="destination">
+    player.parent = destination
+  </function>
+</asl>

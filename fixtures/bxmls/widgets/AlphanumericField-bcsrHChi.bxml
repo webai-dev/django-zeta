@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>AlphanumericField-bcsrHChi</slug>
+  <state>prealpha</state>
+  <frontend>Web-foKmSGxB</frontend>
+  <related_widgets/>
+  <connections>
+    <item>
+      <target>EryInput-vOcGUNdR</target>
+      <name>Input</name>
+      <comment/>
+    </item>
+  </connections>
+  <events>
+    <item>
+      <name/>
+      <event_type>onFocus</event_type>
+      <steps/>
+    </item>
+    <item>
+      <name/>
+      <event_type>onChange</event_type>
+      <steps/>
+    </item>
+  </events>
+  <props>
+    <item>
+      <name>defaultValue</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+  </props>
+  <states/>
+  <name>AlphanumericField</name>
+  <comment>Allows input of alphanumerical characters, and nothing else.</comment>
+  <published>False</published>
+  <code>&lt;Input {...props} /&gt;</code>
+  <is_multiple_choice>False</is_multiple_choice>
+  <address/>
+  <external>False</external>
+  <namespace>Widget</namespace>
+  <value_parameter>event.target.value</value_parameter>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <save_null>True</save_null>
+  <primary_language>en</primary_language>
+  <keywords/>
+</widget>

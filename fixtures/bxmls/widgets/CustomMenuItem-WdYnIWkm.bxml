@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>CustomMenuItem-WdYnIWkm</slug>
+  <state>prealpha</state>
+  <frontend>Web-foKmSGxB</frontend>
+  <related_widgets/>
+  <connections>
+    <item>
+      <target>MenuItem-AeUdAzIc</target>
+      <name>MenuItem</name>
+      <comment/>
+    </item>
+  </connections>
+  <events/>
+  <props/>
+  <states/>
+  <name>CustomMenuItem</name>
+  <comment/>
+  <published>False</published>
+  <code>&lt;MenuItem innerRef={ref} {...props} /&gt;</code>
+  <is_multiple_choice>False</is_multiple_choice>
+  <address/>
+  <external>False</external>
+  <namespace>Widget</namespace>
+  <value_parameter>event.target.value</value_parameter>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <save_null>True</save_null>
+  <primary_language>en</primary_language>
+  <keywords/>
+</widget>

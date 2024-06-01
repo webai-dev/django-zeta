@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <slug>Root-egEAZdKg</slug>
+  <state>prealpha</state>
+  <parental_template/>
+  <frontend>SMS</frontend>
+  <template_widgets/>
+  <blocks>
+    <item>
+      <translations>
+        <item>
+          <language>en</language>
+          <content>&lt;Content/&gt;</content>
+        </item>
+      </translations>
+      <name>Root</name>
+    </item>
+  </blocks>
+  <primary_language>en</primary_language>
+  <name>Root</name>
+  <comment>Default email template for stages.</comment>
+  <published>True</published>
+  <keywords/>
+</template>

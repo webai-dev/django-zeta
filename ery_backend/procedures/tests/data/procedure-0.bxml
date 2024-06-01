@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<procedure>
+  <arguments>
+    <item>
+      <name>arg_one</name>
+      <comment>WoormyHmUo</comment>
+      <order>0</order>
+      <default/>
+    </item>
+    <item>
+      <name>arg_two</name>
+      <comment>fsKidRSGzB</comment>
+      <order>1</order>
+      <default>2</default>
+    </item>
+  </arguments>
+  <name>duplicate_procedure</name>
+  <comment>rlSDRVrWSG</comment>
+  <code>LNjmPLjrhMPnSCVhonWUnIuHK</code>
+</procedure>

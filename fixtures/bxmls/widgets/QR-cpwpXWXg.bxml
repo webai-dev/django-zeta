@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>QR-cpwpXWXg</slug>
+  <state>prealpha</state>
+  <frontend>Web-foKmSGxB</frontend>
+  <related_widgets/>
+  <connections>
+    <item>
+      <target>QrReader-yqrIwFhz</target>
+      <name>QrReader</name>
+      <comment/>
+    </item>
+  </connections>
+  <events>
+    <item>
+      <name/>
+      <event_type>onScan</event_type>
+      <steps>
+        <item>
+          <event_action_type>run_code</event_action_type>
+          <code>if (data) {
+  setResult({
+    result: data
+  })
+}</code>
+          <order>0</order>
+        </item>
+      </steps>
+    </item>
+  </events>
+  <props/>
+  <states>
+    <item>
+      <name>result</name>
+      <comment/>
+      <default_value/>
+      <from_prop>False</from_prop>
+    </item>
+  </states>
+  <name>QR</name>
+  <comment/>
+  <published>False</published>
+  <code>&lt;QrReader
+  style={{ maxWidth: "300", width: "100%" }}
+  onScan={handleScan}
+  onError={(err) =&gt; {console.error(err)}}
+/&gt;</code>
+  <is_multiple_choice>False</is_multiple_choice>
+  <address/>
+  <external>False</external>
+  <namespace>Widget</namespace>
+  <value_parameter>data</value_parameter>
+  <parameters>
+    <item>data</item>
+  </parameters>
+  <save_null>False</save_null>
+  <primary_language>en</primary_language>
+  <keywords/>
+</widget>

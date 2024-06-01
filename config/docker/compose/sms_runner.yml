@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  ery_runner:
+    build:
+      context: ../../..
+      dockerfile: ./config/docker/Dockerfile-sms-runner
+    command: /ery_backend/sms_runner.py
+    image: "${SMS_RUNNER_IMAGE}"

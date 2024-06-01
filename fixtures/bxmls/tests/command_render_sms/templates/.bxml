@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <slug/>
+  <state>prealpha</state>
+  <parental_template/>
+  <frontend>Email</frontend>
+  <template_widgets/>
+  <blocks>
+    <item>
+      <translations/>
+      <name>Root</name>
+    </item>
+  </blocks>
+  <primary_language>en</primary_language>
+  <name>Root</name>
+  <comment>Default sms template for stages.</comment>
+  <published>False</published>
+  <keywords/>
+</template>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <slug>template1-ftHaWiUT</slug>
+  <state>prealpha</state>
+  <parental_template>template0-JcSnAevQ</parental_template>
+  <frontend>frontend-1</frontend>
+  <template_widgets/>
+  <blocks>
+    <item>
+      <translations>
+        <item>
+          <frontend>SMS</frontend>
+          <language>en</language>
+          <content>Body: &lt;ul&gt;&lt;li&gt;Fun&lt;/li&gt;&lt;li&gt;Drums&lt;/li&gt;&lt;li&gt;Plums&lt;/li&gt;&lt;/ul&gt;</content>
+        </item>
+      </translations>
+      <name>Footer</name>
+    </item>
+    <item>
+      <translations>
+        <item>
+          <frontend>SMS</frontend>
+          <language>en</language>
+          <content>&lt;div&gt;Content: We've got&lt;/div&gt;</content>
+        </item>
+      </translations>
+      <name>Content</name>
+    </item>
+    <item>
+      <translations>
+        <item>
+          <frontend>SMS</frontend>
+          <language>en</language>
+          <content>&lt;div&gt;Title: Welcome to the Experiment&lt;/div&gt;</content>
+        </item>
+      </translations>
+      <name>Title</name>
+    </item>
+  </blocks>
+  <primary_language>en</primary_language>
+  <name>template-1</name>
+  <comment>hogTrhLjNwnjCFyjXhExBaWgKVtANZtXvgbSDSMgxnOJKLWTlzLFzxnqcQvybtheBFSHDvSpzcwyquvnbznppSzdLeehXygtvUoh</comment>
+  <published>False</published>
+  <keywords/>
+</template>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <frontend>Web-foKmSGxB</frontend>
+  <primary_language>en</primary_language>
+  <slug>WebIntWidget-HOGphFYC</slug>
+  <events>
+    <item>
+      <event_type>onKeyDown</event_type>
+      <steps>
+        <item>
+          <code>const key_val = event.which;
+    if ((key_val &lt; 48 || key_val &gt; 57) &amp;&amp; (!([8, 9, 13, 37, 38, 39, 40, 46].includes(key_val)))){
+      event.preventDefault();
+    }</code>
+          <event_action_type>run_code</event_action_type>
+        </item>
+      </steps>
+    </item>
+  </events>
+  <related_widgets/>
+  <keywords/>
+  <connections>
+    <item>
+      <target>FormControlLabel-yquWKGZO</target>
+      <name>FormControlLabel</name>
+      <comment/>
+    </item>
+    <item>
+      <target>FormControl-iMhNwgzj</target>
+      <name>FormControl</name>
+      <comment/>
+    </item>
+    <item>
+      <target>TextField-mKSlkfLR</target>
+      <name>TextField</name>
+      <comment/>
+    </item>
+    <item>
+      <target>Typography-GoPCrlLg</target>
+      <name>Typography</name>
+      <comment/>
+    </item>
+  </connections>
+  <name>WebIntWidget</name>
+  <comment/>
+  <state>prealpha</state>
+  <published>False</published>
+  <code>&lt;TextField label={label} defaultValue={defaultValue || null} onChange={onChange} onFocus={onFocus} onBlur={onBlur} type="number" error={state != null ? state.error : false}/&gt;</code>
+  <address/>
+  <namespace>Widget</namespace>
+  <external>False</external>
+</widget>

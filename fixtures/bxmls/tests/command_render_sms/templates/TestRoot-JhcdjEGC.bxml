@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <slug>TestRoot-JhcdjEGC</slug>
+  <state>prealpha</state>
+  <parental_template/>
+  <frontend>SMS</frontend>
+  <template_widgets/>
+  <blocks>
+    <item>
+      <translations>
+        <item>
+          <frontend>SMS</frontend>
+          <language>en</language>
+          <content>&lt;Title/&gt;
+&lt;Content/&gt;
+&lt;Footer/&gt;
+&lt;Inputs/&gt;</content>
+        </item>
+      </translations>
+      <name>Root</name>
+    </item>
+  </blocks>
+  <primary_language>en</primary_language>
+  <comment>HnWOGjeotRJvGKIBsNHvjjEpKOKSYrlBpYImmsXCcadLABRmTuYQmYIGCEQJnFhoVDZgibIxSIrjVpQkUXJRUZeGxYvaGWAwlyJT</comment>
+  <name>TestRoot</name>
+  <published>False</published>
+  <keywords/>
+</template>

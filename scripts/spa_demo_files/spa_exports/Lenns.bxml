@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <slug>Lenns-NmIiDRpa</slug>
+  <parental_template>HCF-isyeDhqK</parental_template>
+  <blocks>
+    <item>
+      <translations>
+        <item>
+          <frontend>Web</frontend>
+          <created>2020-01-11T13:21:20.905136Z</created>
+          <modified>2020-01-11T13:22:02.322159Z</modified>
+          <content>My footer</content>
+          <language>en</language>
+        </item>
+      </translations>
+      <name>Footer</name>
+    </item>
+    <item>
+      <translations>
+        <item>
+          <frontend>Web</frontend>
+          <created>2020-01-11T13:21:20.905136Z</created>
+          <modified>2020-01-11T13:22:02.322159Z</modified>
+          <content>Lenns DNM Tool</content>
+          <language>en</language>
+        </item>
+      </translations>
+      <name>Header</name>
+    </item>
+    <item>
+      <translations>
+        <item>
+          <frontend>Web</frontend>
+          <created>2020-01-11T13:22:49.541502Z</created>
+          <modified>2020-01-11T13:22:49.541502Z</modified>
+          <content>&lt;Title /&gt;</content>
+          <language>en</language>
+        </item>
+      </translations>
+      <name>Subheader</name>
+    </item>
+    <item>
+      <translations>
+        <item>
+          <frontend>Web</frontend>
+          <created>2020-01-11T13:25:29.781160Z</created>
+          <modified>2020-01-11T13:28:25.756122Z</modified>
+          <content>&lt;Grid container direction="column"&gt;
+      &lt;Grid item&gt;
+        &lt;Paper&gt;
+          &lt;Box p={4} maxWidth={800}&gt;
+            &lt;Canvas /&gt;
+          &lt;/Box&gt;
+        &lt;/Paper&gt;
+      &lt;/Grid&gt;
+      &lt;Grid item&gt;
+        &lt;Grid container justify="flex-end"&gt;
+          &lt;ButtonList /&gt;
+        &lt;/Grid&gt;
+      &lt;/Grid&gt;
+    &lt;/Grid&gt;</content>
+          <language>en</language>
+        </item>
+      </translations>
+      <name>Content</name>
+    </item>
+  </blocks>
+  <template_widgets/>
+  <keywords/>
+  <name>Lenns</name>
+  <comment/>
+  <state>prealpha</state>
+  <published>False</published>
+  <frontend>Web</frontend>
+  <primary_language>en</primary_language>
+</template>

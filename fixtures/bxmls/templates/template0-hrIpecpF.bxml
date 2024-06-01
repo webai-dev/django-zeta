@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <slug>template0-hrIpecpF</slug>
+  <state>prealpha</state>
+  <parental_template/>
+  <frontend>Web</frontend>
+  <template_widgets/>
+  <blocks>
+    <item>
+      <translations>
+        <item>
+          <language>en</language>
+          <content>&lt;Content/&gt;</content>
+        </item>
+      </translations>
+      <name>Root</name>
+    </item>
+  </blocks>
+  <primary_language>en</primary_language>
+  <name>default-web-command-template</name>
+  <comment>Default root for rendering command's output</comment>
+  <published>True</published>
+  <keywords/>
+</template>

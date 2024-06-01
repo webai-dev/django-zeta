@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  ery_runner:
+    build:
+      context: ../../..
+      dockerfile: ./config/docker/Dockerfile-web-runner
+    command: DJANGO_SETTINGS_MODULE=config.settings.web_runner.production /usr/local/bin/gunicorn config.wsgi
+    image: "${WEB_RUNNER_IMAGE}"

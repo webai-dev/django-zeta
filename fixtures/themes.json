@@ -1,0 +1,26 @@
+[
+{
+  "model": "base.eryfile",
+  "pk": 8,
+  "fields": {
+    "created": "2020-04-23T16:57:54.548Z",
+    "modified": "2020-04-23T16:57:54.552Z",
+    "slug": "DefaultTheme-GGGlqICG",
+    "comment": null,
+    "state": "prealpha",
+    "name": "Default Theme",
+    "published": true,
+    "keywords": []
+  }
+},
+
+{
+  "model": "themes.theme",
+  "pk": 8,
+  "fields": {
+    "logo": null,
+    "legal_text": null,
+    "keywords": []
+  }
+}
+]

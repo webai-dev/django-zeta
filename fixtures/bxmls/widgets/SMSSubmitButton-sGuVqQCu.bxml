@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>SMSSubmitButton-sGuVqQCu</slug>
+  <state>prealpha</state>
+  <frontend>SMS-NOhjZDUD</frontend>
+  <related_widgets/>
+  <connections/>
+  <events>
+    <item>
+      <name/>
+      <event_type>onReply</event_type>
+      <steps>
+        <item>
+          <event_action_type>submit</event_action_type>
+          <code/>
+          <order>0</order>
+        </item>
+      </steps>
+    </item>
+  </events>
+  <props/>
+  <states/>
+  <name>SMSSubmitButton</name>
+  <comment>Allows forward stage progression.</comment>
+  <published>False</published>
+  <code>''</code>
+  <is_multiple_choice>False</is_multiple_choice>
+  <address/>
+  <external>False</external>
+  <namespace>Widget</namespace>
+  <value_parameter>event.target.value</value_parameter>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <save_null>True</save_null>
+  <primary_language>en</primary_language>
+  <keywords/>
+</widget>

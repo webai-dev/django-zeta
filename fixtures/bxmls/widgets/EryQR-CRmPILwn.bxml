@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>EryQR-CRmPILwn</slug>
+  <state>prealpha</state>
+  <frontend>Web-foKmSGxB</frontend>
+  <related_widgets/>
+  <connections>
+    <item>
+      <target>QR-cpwpXWXg</target>
+      <name>QR</name>
+      <comment/>
+    </item>
+    <item>
+      <target>Box-ewCfjnQt</target>
+      <name>Box</name>
+      <comment/>
+    </item>
+    <item>
+      <target>Container-RYylgXcT</target>
+      <name>Container</name>
+      <comment/>
+    </item>
+    <item>
+      <target>Typography-GoPCrlLg</target>
+      <name>Typography</name>
+      <comment/>
+    </item>
+  </connections>
+  <events>
+    <item>
+      <name/>
+      <event_type>onScan</event_type>
+      <steps/>
+    </item>
+  </events>
+  <props>
+    <item>
+      <name>helperText</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>OptionalInput</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+    <item>
+      <name>defaultValue</name>
+      <comment/>
+      <default_value/>
+      <preview_value/>
+    </item>
+  </props>
+  <states/>
+  <name>EryQR</name>
+  <comment/>
+  <published>False</published>
+  <code>&lt;Container maxWidth="lg"&gt;
+  &lt;Box mx="auto" width="50%"&gt;
+    &lt;Typography&gt;
+      {helperText}
+    &lt;/Typography&gt;
+    &lt;QR maxWidth="4000" width="100%" onScan={handleScan} /&gt;
+    {OptionalInput ? &lt;OptionalInput defaultValue={defaultValue} /&gt; : "" }
+  &lt;/Box&gt;
+&lt;/Container&gt;</code>
+  <is_multiple_choice>False</is_multiple_choice>
+  <address/>
+  <external>False</external>
+  <namespace>Widget</namespace>
+  <value_parameter>data</value_parameter>
+  <parameters>
+    <item>data</item>
+  </parameters>
+  <save_null>False</save_null>
+  <primary_language>en</primary_language>
+  <keywords/>
+</widget>

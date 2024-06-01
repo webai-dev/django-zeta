@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template>
+  <slug>pizzapineappletemplate-etXHSHxV</slug>
+  <state>prealpha</state>
+  <parental_template>template0-hrIpecpX</parental_template>
+  <frontend>SMS</frontend>
+  <template_widgets/>
+  <blocks>
+    <item>
+      <translations>
+        <item>
+          <frontend>SMS</frontend>
+          <language>en</language>
+          <content>பீஸ்ஸாவில் பின்தொடரும்?</content>
+        </item>
+      </translations>
+      <name>Content</name>
+    </item>
+  </blocks>
+  <primary_language>en</primary_language>
+  <name>PizzaPinappleTemplate</name>
+  <comment>A very serious template that addresses an even more grave question.</comment>
+  <published>False</published>
+  <keywords/>
+</template>

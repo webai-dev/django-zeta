@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<module_definition>
+  <start_stage/>
+  <warden_stage/>
+  <start_era/>
+  <action_set/>
+  <stage_definitions/>
+  <era_set/>
+  <variabledefinition_set/>
+  <condition_set/>
+  <command_set/>
+  <module_widgets/>
+  <comment>OcKySpOyhkodFjTEoWuaATaxrlNzKogvzyIWxemKDqVjrfUqhnINqJPGsmgKhUiTMulETlASMZOiABXuVbEpxuirKqpOpRDTfJuS</comment>
+  <name>ModuleDefinitionZero</name>
+  <min_team_size>0</min_team_size>
+  <max_team_size>9</max_team_size>
+  <version>0</version>
+  <primary_frontend>Web</primary_frontend>
+  <primary_language>en</primary_language>
+  <default_template>defaulttemplate-asd123</default_template>
+  <default_theme>defaulttheme-asd123</default_theme>
+</module_definition>

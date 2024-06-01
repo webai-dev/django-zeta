@@ -1,0 +1,87 @@
+syntax = "proto3";
+
+message Peer {
+  uint64 id = 1;
+  string name = 2;
+}
+
+message Account {
+  string placeholder = 1;
+}
+
+message OwnedAccount {
+  Peer owner = 1;
+  Account account = 2;
+}
+
+message StintInfo {
+  uint64 stint_specification_id = 1;
+  uint64 stint_id = 2;
+  uint64 module_id = 3;
+  uint64 action_id = 4;
+  uint64 action_step_id = 5;
+  uint64 hand_id = 6;
+}
+
+message Transferal {
+  Peer creditor = 1;
+  Peer debitor = 2;
+  float amount = 3;
+  float fee = 4;
+  string description = 5;
+}
+
+message Deposal {
+  Peer creditor = 1;
+  float credit = 2;
+  string description = 3;
+}
+
+message Payment {
+  enum ImmediatePaymentMethod {
+    PHONE_RECHARGE = 0;
+  }
+
+  Transferal transfer = 1;
+  StintInfo stint = 2;
+  ImmediatePaymentMethod immediate_payment_method = 3;
+}
+
+message Purchase {
+  Transferal transfer = 1;
+  string service_type = 2;
+  string service_id = 3;
+}
+
+message Withdrawal {
+  uint64 quote_id = 1;
+  Peer debitor = 2;
+  float debit = 3;
+  Account account = 4;
+}
+
+message QuoteError {
+  string reference_id = 1;
+  uint64 quote_id = 2;
+  string error = 3;
+  string timestamp = 4;
+}
+
+message StatusError {
+  string reference_id = 1;
+  string status = 2;
+  string error = 3;
+  string timestamp = 4;
+}
+
+service Ledger {
+  rpc AddAccount(OwnedAccount) returns (StatusError);
+  rpc Buy(Purchase) returns (StatusError);
+  rpc Deposit(Deposal) returns (StatusError);
+  rpc Donate(Transferal) returns (StatusError);
+  rpc Pay(Payment) returns (StatusError);
+  rpc Quote(Withdrawal) returns (QuoteError);
+  rpc Transfer(Transferal) returns (StatusError);
+  rpc ValidateAccount(Account) returns (StatusError);
+  rpc Withdraw(Withdrawal) returns (StatusError);
+}

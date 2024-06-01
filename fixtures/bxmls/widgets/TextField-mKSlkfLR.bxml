@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget>
+  <slug>TextField-mKSlkfLR</slug>
+  <state>prealpha</state>
+  <frontend>Web-foKmSGxB</frontend>
+  <related_widgets/>
+  <connections/>
+  <events>
+    <item>
+      <name/>
+      <event_type>onChange</event_type>
+      <steps/>
+    </item>
+    <item>
+      <name/>
+      <event_type>onFocus</event_type>
+      <steps/>
+    </item>
+    <item>
+      <name/>
+      <event_type>onBlur</event_type>
+      <steps/>
+    </item>
+  </events>
+  <props/>
+  <states/>
+  <name>TextField</name>
+  <comment>Wrapper for Material Design Component</comment>
+  <published>True</published>
+  <code/>
+  <is_multiple_choice>False</is_multiple_choice>
+  <address>@material-ui/core/TextField</address>
+  <external>True</external>
+  <namespace>mui</namespace>
+  <value_parameter>event.target.value</value_parameter>
+  <parameters>
+    <item>event</item>
+  </parameters>
+  <save_null>True</save_null>
+  <primary_language>en</primary_language>
+  <keywords/>
+</widget>

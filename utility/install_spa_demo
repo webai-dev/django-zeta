@@ -1,0 +1,5 @@
+#! /bin/bash
+
+source $HOME/.virtualenvs/ery/bin/activate
+echo 'from scripts.spa_demo_files.install_spa_demo import setup; setup()' | ./manage.py shell
+

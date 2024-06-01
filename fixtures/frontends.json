@@ -1,0 +1,35 @@
+[
+{
+  "model": "frontends.frontend",
+  "pk": 1,
+  "fields": {
+    "created": "2018-04-19T14:37:29.525Z",
+    "modified": "2018-04-19T14:43:19.789Z",
+    "slug": "SMS-NOhjZDUD",
+    "name": "SMS",
+    "comment": "For stints conducted over mobile sms"
+  }
+},
+{
+  "model": "frontends.frontend",
+  "pk": 2,
+  "fields": {
+    "created": "2018-04-19T14:38:44.857Z",
+    "modified": "2018-04-19T14:38:46.543Z",
+    "slug": "Email-QUondgtA",
+    "name": "Email",
+    "comment": "For stints conducted over email"
+  }
+},
+{
+  "model": "frontends.frontend",
+  "pk": 3,
+  "fields": {
+    "created": "2018-04-19T14:41:24.698Z",
+    "modified": "2018-04-19T14:41:26.363Z",
+    "slug": "Web-foKmSGxB",
+    "name": "Web",
+    "comment": "For stints conducted over web browser"
+  }
+}
+]
